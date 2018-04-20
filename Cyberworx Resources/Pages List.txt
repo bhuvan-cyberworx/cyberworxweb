@@ -1,0 +1,64 @@
+Pages list and structure - 
+
+1. Home 
+2. About Cyberworx
+3. Services page 
+4. Portfolio 
+5. Case Studies
+6. Blog 
+7. Post 
+8. Contact us
+9. Careers
+
+Home page - 
+Homepage can be divided into followin sections -
+1. Slider with projects or services
+2.  
+
+Services can be categorised into two section - 
+1. Normal services 
+2. Domain based - Like Medical, Education etc.
+
+Portfolio - 
+Simpe page with a short description and a link to the website.
+
+Case Studies - 
+1. Detailed report of few best projects.
+2. We can also include the revamped website case studies like Shaala Shaarthi etc with before and after images
+
+Blogs - 
+
+
+
+Careers page -
+Reference links 
+1. https://www.datarobot.com/careers/
+2. https://www.eventbrite.com/careers/
+3. https://www.airbnb.co.in/careers/departments/position/1032247 - main page 
+
+
+Footer - Minimal or informative??
+ 
+
+
+
+For comments - disqus
+
+
+Frameworks - 
+CSS Frameworks - 
+1. Bootstrap - Basic
+2. MaterialCss - Form elements
+
+Javascript Framework - 
+1. JQuery
+
+
+
+
+
+
+
+
+
+

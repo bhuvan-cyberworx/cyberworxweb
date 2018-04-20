@@ -1,0 +1,13 @@
+Project Components - 
+1. Page loading effects 
+2. Animated slider
+3. Full Page Scroll
+4. Split scroll javascript 
+5. Page piling js
+6. http://darsa.in/sly/
+7. https://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/
+8. https://tympanus.net/Development/AnimatedGridLayout/
+9. https://tympanus.net/Development/ClickEffects/ - Subttle icon click effetcs
+9. https://tympanus.net/Development/CreativeLinkEffects/#cl-effect-1 - navigation Click Effetc
+10. https://tympanus.net/Development/MenuHoverEffects/ - click effects second
+11. https://tympanus.net/Development/SearchUIEffects/ - Search UI effects
