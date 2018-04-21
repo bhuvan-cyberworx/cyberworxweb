@@ -1,0 +1,181 @@
+/* Main Custom Style Sheet */
+
+/* own custom keyframe animations */
+@keyframes preLoader{
+
+    0% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: scale(1);
+    }
+
+   50% {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform: scale(1.15);
+        }
+  
+    75%{
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: scale(1.1);
+    }
+    100%{
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: scale(1);
+    }
+  }
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+.preLoaderAnimation{
+   animation: preLoader 2s infinite;
+}
+
+#pre-loader{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    transition: all 1s; 
+    overflow-y: hidden;
+    z-index: 1000;
+}
+#pre-loader-content {
+    height: 20vh;
+    margin-top: 30vh;
+}
+#pre-loader-image img {
+    height: 100px;
+    
+}
+#pre-loader-text{
+    color: #fff;
+    font-size: 16px;
+    margin-top: -20px;
+}
+#pre-loader-text h4{
+    font-weight: 700;
+}
+
+#customSlider{
+    height: 100vh;
+    width: 100vw;
+}
+
+.customSlider_slide{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+.slide-wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #F0E500;
+    right: -00vw;
+    transition: all 0.5s;
+    
+}
+
+.parallax-item{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;;
+    z-index: 5;
+}
+
+.scene-items{
+    transform: translate3d(5.7px, 0px, 0px);
+
+transition: all 1.5s;
+
+transform-style: preserve-3d;
+
+backface-visibility: hidden;
+}
+.scene-content{
+    position: absolute;
+    width: 35vw;
+    left: 55vw !important;
+    top: 35vh !important;
+    -webkit-z-index: 6;
+    -moz-z-index: 6;
+    -ms-z-index: 6;
+    -o-z-index: 6;
+    z-index: 6;
+}
+
+.scene-content span{
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.scene-content a{
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+}
+
+.element-a-1{
+    background: url("https://www.exitable.nl/dist/assets/img/x-element-3.png");
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+
+}
+.element-a-2{
+    background: url("https://www.exitable.nl/dist/assets/img/x-element-2.png");
+    position: absolute;
+    width: 20vw;
+    height: 30vh;
+    z-index: 7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5vh;
+    left: 30vw;
+
+}
+
+.element-a-3{
+    background: url("https://www.exitable.nl/dist/assets/img/x-element-1.png");
+    position: absolute;
+    width: 30vw;
+    height: 45vh;
+    z-index: 7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 00vh;
+    left: 10vw;
+    background-position: bottom left;
+
+}
+
+.svg-letter{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 20vw;
+    top: 15vh;
+
+}
+ .svg-letter img {
+    position: absolute;
+    top: 0;
+    max-height: 100%;
+    width:auto;
+    left: 0;
+    transition: 0.5s;
+}
