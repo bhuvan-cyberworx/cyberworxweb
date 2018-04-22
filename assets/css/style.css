@@ -32,6 +32,9 @@ body{
     border: 0;
     overflow-x: hidden;
 }
+.zHigh{
+    z-index: 1000;
+}
 .preLoaderAnimation{
    animation: preLoader 2s infinite;
 }
@@ -43,7 +46,7 @@ body{
     position: absolute;
     top: 0;
     transition: all 1s; 
-    overflow-y: hidden;
+    overflow: hidden;
     z-index: 1000;
 }
 #pre-loader-content {
@@ -66,6 +69,9 @@ body{
 #customSlider{
     height: 100vh;
     width: 100vw;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .customSlider_slide{
@@ -77,27 +83,31 @@ body{
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background: #F0E500;
     right: -00vw;
     transition: all 0.5s;
-    
 }
-
+.bg-color img{
+    object-fit : cover;
+    width: 100%;
+}
 .parallax-item{
     position: absolute;
     width: 100vw;
     height: 100vh;;
     z-index: 5;
+    transition: all 0.5s;
 }
 
-.scene-items{
-    transform: translate3d(5.7px, 0px, 0px);
+.scene-item{
+   
 
-transition: all 1.5s;
+transition: all 0.5s;
 
 transform-style: preserve-3d;
 
 backface-visibility: hidden;
+transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 .scene-content{
     position: absolute;
@@ -165,12 +175,14 @@ backface-visibility: hidden;
 
 .svg-letter{
     position: absolute;
-    width: 500px;
-    height: 500px;
-    left: 20vw;
+    width: 600px;
+    height: 600px;
+    left: 15vw;
     top: 15vh;
-
+    z-index: 1;
 }
+
+
  .svg-letter img {
     position: absolute;
     top: 0;
@@ -178,4 +190,92 @@ backface-visibility: hidden;
     width:auto;
     left: 0;
     transition: 0.5s;
+}
+
+.slide-b{
+    z-index: 200;
+}
+
+.element-b-1{
+    background: url("https://www.exitable.nl/dist/assets/img/gilde-3.png");
+    position: absolute;
+    width: 25vw;
+    height: 25vh;
+    z-index: 5;
+    left: 10vw;
+    bottom: 15vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+.element-b-2{
+    background: url("https://www.exitable.nl/dist/assets/img/gilde-2.png");
+    position: absolute;
+    width: 25vw;
+    height: 25vh;
+    z-index: 7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 16vh;
+    left: 15vw;
+    z-index: 0;
+
+}
+
+.element-b-3{
+    background: url("https://www.exitable.nl/dist/assets/img/gilde-1.png");
+    position: absolute;
+    width: 15vw;
+    height: 15vh;
+    z-index: 7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 45vh;
+    left: 10vw;
+    background-position: bottom left;
+
+}
+
+.controlBtn{
+    position: absolute;
+    top: 48%;
+    z-index: 10000;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.controlBtn i{
+   font-size: 40px;
+}
+
+#prevBtn{
+    left: 20px;
+}
+
+#nextBtn{
+    right: 20px;
+}
+
+.customSlider_slide{
+    z-index: 5;
+    position: absolute;
+}
+
+.active_slide{
+    display: block;
+    z-index: 10;
+    position: absolute;
+}
+.active_slide .scene-item{
+    display: block;
+    -webkit-animation: fadeInUp 0.5s;
+     animation: fadeInUp 0.5s;
+}
+
+.scene-item{
+    display: none;
+    -webkit-animation: fadeOutDown 0.5s;
+     animation: fadeOutDown 0.5s;
 }
