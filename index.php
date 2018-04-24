@@ -99,6 +99,36 @@
 
 </div>
 
+<div>
+    <h3 class="text-center title">Onze verhalen</h3>
+</div>
+<div class="blog-container ">
+    <div class="col-md-12 row p0">
+        <div class="col-md-4 p0 blog-tile">
+            <div class="blog-image">
+                <img src="https://cdn2.hubspot.net/hubfs/2061749/AVG-HT.png">
+            </div>
+            <div class="blog-content">
+                <h4 class="blog-title">
+                    Demo Blog Title One
+                </h4>
+            </div>
+
+            <div class="blog-admin">
+                <span class="admin-image">
+                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
+                </span>
+                <span class="admin-name">
+                    Admin Two
+                </span>
+            </div>
+
+
+        </div>
+        <div class="col-md-4 blog-tile"></div>
+        <div class="col-md-4 blog-tile"></div>
+    </div>
+</div>
 
 <!-- Icluding footer file -->
 <?php include_once("includes/footer.php"); ?>

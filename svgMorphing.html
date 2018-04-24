@@ -37,13 +37,14 @@ path{
   height:100px;
 }
 
-.svg-letter{
+#svg-letter{
     position: absolute;
     width: 600px;
     height: 600px;
     left: 15vw;
     top: 15vh;
     z-index: 1;
+    transition: 0.35s;
 }
 
     </style>
@@ -51,7 +52,7 @@ path{
 <body>
 
 
-<div class="svg-letter">
+<div id="svg-letter">
  <svg viewBox="0 0 700 700" preserveAspectRatio="none" width="100%" height="100%" >
     <path id="one" class="letter-x" stroke-width="" stroke="black" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
 
@@ -68,13 +69,12 @@ path{
 
 <script type="text/javascript">
 function changeSVG(){
-    // let lx = document.getElementsByClassName('letter-x');
-    // let bh = lx[0].getAttribute('d');
-    // // alert(bh);
-    // lx[0].setAttribute('d','M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z' ) ;
-    // alert(lx[0].getAttribute('d'));
+  let svgLetter = document.getElementById("svg-letter");
 
-    var tween = KUTE.to('#one', { path: '#two' }, {
+  setTimeout(function(){
+    svgLetter.style.left = "30vw";
+  },1000);
+    setTimeout(function() {var tween = KUTE.to('#one', { path: '#two' }, {
       duration: 400,
       morphPrecision: 4,
       morphIndex: 16,
@@ -84,7 +84,7 @@ function changeSVG(){
     });
 
     tween.start();
-
+  }, 2000);
 
 }
 
@@ -92,3 +92,5 @@ window.addEventListener('click',changeSVG);
 </script>
 </body>
 </html>
+
+s

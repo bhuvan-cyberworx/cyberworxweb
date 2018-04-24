@@ -74,29 +74,22 @@ function activeSlide(n){
     // // customSlider_slide[slideIndex].classList.add("active_slide");
 
     setTimeout(function () {
-        slideWrapper[0].style.right = '-100vw';
+        slideWrapper[i].style.right = '-100vw';
     }, 500);
 
     setTimeout(function () {
-        slideWrapper[0].style.right = '00vw';
+        slideWrapper[i].style.right = '00vw';
     }, 1000);
+
 
     setTimeout( function () { 
     customSlider_slide[slideIndex].classList.add("active_slide");
     }, 2000);
 
-
-
-    
-
-
-    
-
     // console.log(slideIndex);
     // console.log(customSlider_slide[0]);
     console.log(customSlider_slide[slideIndex]);
 }
-
 
 
 function changeSVG(){
