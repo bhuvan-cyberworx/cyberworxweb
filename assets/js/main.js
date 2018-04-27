@@ -8,6 +8,11 @@ window.onload = function(){
         preLoader.style.top = -100+'vh';
     }
 
+setTimeout(function(){
+    let preLoaderImage = document.getElementById("pre-loader-image");
+    preLoaderImage.style.animation = "preLoader 2s infinite";
+},1000);
+
 
 // event handler function
 function handler(e) {
@@ -75,21 +80,22 @@ function activeSlide(n){
 
     setTimeout(function () {
         slideWrapper[i].style.right = '-100vw';
-    }, 500);
+    }, 100);
 
     setTimeout(function () {
         slideWrapper[i].style.right = '00vw';
-    }, 1000);
+    }, 100);
 
 
     setTimeout( function () { 
     customSlider_slide[slideIndex].classList.add("active_slide");
-    }, 2000);
+    }, 100);
 
     // console.log(slideIndex);
     // console.log(customSlider_slide[0]);
     console.log(customSlider_slide[slideIndex]);
 }
+
 
 
 function changeSVG(){
