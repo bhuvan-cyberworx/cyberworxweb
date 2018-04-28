@@ -345,3 +345,12 @@ transform-style: preserve-3d;
     width: 50px;
     object-fit: contain;
 }
+
+#svg-change{
+    position: absolute;
+    z-index: 1000000;
+    width: 600px;
+    height: 600px;
+    left: 15vw;
+    top: 15vh;
+}

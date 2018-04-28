@@ -11,9 +11,22 @@
     </div>
 </div>
 
-<div id="customSlider">
 
-    <!-- Custom slider slide number one -->
+<!-- Slider Begins Here  -->
+<div id="customSlider">
+    <!-- Changing SVG Letter Animation Starts Here -->
+    <div id="svg-change">
+     <svg viewBox="0 0 700 700" preserveAspectRatio="none"  width="100%" height="100%" >
+        <path id="svgone" class="letter  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
+        </path>
+        <path id="svgtwo" class="letter letter-e" fill="black" fill="white" stroke-width="" stroke="white" d="M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z" ></path>
+
+       <path id="svgthree" class="letter letter-e" fill="white" stroke-width="" stroke="white" d="M130.12,50.07h440.1v130.5H284.92v99.9h279v131.4h-279v108h285.3v130.5H130.12Z" data-reactid=".0.$/.3.2.1.2.0.0" ></path>
+      </svg>
+    </div>
+    <!-- Changing SVG letter Animation Ends Here -->
+
+    <!-- Slide number one -->
     <div class="customSlider_slide slide-a active_slide">
         <!-- slider coloured wrapper background -->
         <div class="slide-wrapper">
@@ -21,6 +34,7 @@
                 <img src="https://www.exitable.nl/dist/assets/img/x-background.png">
             </div>
         </div>
+        <!-- slider coloured wrapper background Ends Here -->
 
         <!-- Parallax items begin here -->
         <div class="parallax-item">
@@ -37,10 +51,9 @@
 
             <!-- SVG Letter  -->
             <div class="svg-letter">
-             <svg viewBox="0 0 700 700" preserveAspectRatio="none" width="100%" height="100%" >
+<!--              <svg viewBox="0 0 700 700" preserveAspectRatio="none" width="100%" height="100%" >
                 <path id="one" class="letter-x" stroke-width="" stroke="black" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
-                <path id="two" class="letter-e" fill="black" stroke-width="" stroke="black" d="M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z" ></path>
-                </path></svg>
+                </path></svg> -->
              <img src="https://www.exitable.nl/dist/assets/img/slider/X.png" >
             </div>
             <!-- scene item three -->
@@ -54,7 +67,7 @@
         </div>
     </div> <!-- Slide one ends here -->
 
-    <!-- Slide two begins here -->
+    <!-- Slide Number Two -->
     <div class="customSlider_slide slide-b">
         <div class="slide-wrapper">
             <div class="bg-color">
@@ -73,9 +86,9 @@
                 
             </div>
             <div class="svg-letter ">
-             <svg viewBox="0 0 700 700" preserveAspectRatio="none" width="100%" height="100%">
+           <!--   <svg viewBox="0 0 700 700" preserveAspectRatio="none" width="100%" height="100%">
                 <path class="letter-e" fill="black" stroke-width="" stroke="black" d="M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z" ></path>
-            </svg>
+            </svg> -->
              <img src="https://www.exitable.nl/dist/assets/img/slider/G2.png" >
             </div>
 
@@ -88,11 +101,12 @@
             </div>
 
             
-
         </div>
-    </div> <!-- Slide two ends here -->
+    </div> 
+    <!-- Slide two ends here -->
 
-    <!-- Slide Controls  -->
+
+    <!-- Slide Controls  begin here -->
     <div class="sliderControl">
         <div id="prevBtn" class="controlBtn">
             <i class="fa fa-chevron-circle-left"></i>
@@ -101,10 +115,12 @@
             <i class="fa fa-chevron-circle-right"></i>
         </div>
     </div>
+    <!-- Slide Controls End Here -->
 
 </div>
 
 <!-- Slider ends here -->
+
 
 <!-- Blog section begins here -->
 <img src="assets/images/img1.png" alt="">

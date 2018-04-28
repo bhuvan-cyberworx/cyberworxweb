@@ -11,7 +11,13 @@
 <script src="https://cdn.jsdelivr.net/kute.js/1.5.0/kute.min.js"></script> <!-- core KUTE.js -->
 
 <script src="https://cdn.jsdelivr.net/kute.js/1.5.0/kute-svg.min.js"></script> <!-- SVG Plugin -->
+<!-- Including SVG  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+<!-- Slider JS File -->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<!-- Main JS File -->
 <script type="text/javascript" src="assets/js/main.js"> </script>
+
 
 
 <script>
