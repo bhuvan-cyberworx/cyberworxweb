@@ -1,32 +1,3 @@
-// Elements motion function 
-function handler(e) {
-    e = e || window.event;
-
-    let pageX = e.pageX;
-    let pageY = e.pageY;
-    let h = window.innerHeight;
-    let w = window.innerWidth;
-
-    // IE 8
-    if (pageX === undefined) {
-        pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-        pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-    }  
-
-    let sceneItem = document.getElementsByClassName("scene-item");
-    
-    for (let i = 0; i < sceneItem.length; i++){
-        itemDepth =sceneItem[i].dataset.depth;
-        let tXV = ((w/2 - pageX)/w)  * 14 * itemDepth + 'px';
-        let tXY = ((h/2 - pageY)/h)  * 7 * itemDepth +'px';
-        sceneItem[i].style.transform = "translate3d("+ tXV + "," + tXY + ", 0px)";
-
-    }
-
-}
-
-// Elements motion function  ends here
-
 
 // Declaring Variables
 let i = 0; 
@@ -37,39 +8,53 @@ let previousID;
 let letter = document.getElementsByClassName("letter");
 let slideWrapper  = document.getElementsByClassName("slide-wrapper");
 let parallaxItem = document.getElementsByClassName("parallax-item");
-var svgLetter = document.getElementsByClassName("svg-letter");
-
+let svgLetter = document.getElementsByClassName("svg-letter");
+let slider = document.getElementsByClassName("customSlider_slide");
 // Initializing the display property of every letter class element as block
 document.getElementById(letter[currentID].id).style.display = "block";
 
+let sceneItem = document.getElementsByClassName("scene-item");
 
 // Main slider function 
 function changeSVG(nextID){
-  
+  for (let i = 0; i < sceneItem.length; i++){
+    sceneItem[i].style.transform = "translate3d(0px, 0px, 0px)";
+  }
+    document.removeEventListener("mousemove", handler);
   //Parallax item exit function
+  
+  // parallaxItem[currentID].style.top = "20px";
+    
   setTimeout(function(){
+    // parallaxItem[currentID].style.opacity = "0";
+    parallaxItem[currentID].style.top = "20px";
     parallaxItem[currentID].style.display = "none";
-    // parallaxItem[nextID].style.display = "block";
-  },100);
+    // parallaxItem[currentID].classList.add("fadeOutDown");
+
+    
+  },400);
 
   // Slide wrapper exit function 
   setTimeout(function(){
-    // slideWrapper[currentID].style.display = "none";
     slideWrapper[currentID].style.right = '-100vw';
-  },300);
+  },400);
 
   // SVG Letter Exit Function 
   setTimeout(function(){
-    console.log(svgLetter[currentID]);
+    // console.log(svgLetter[currentID]);
     svgImg = svgLetter[currentID].getElementsByTagName('img');
     svgImg[0].style.display = "none";
-  },600);
-
+  },800);
+  setTimeout(function(){
+    slider[currentID].classList.remove("active_slide");
+    // slider[nextID].classList.add("active_slide");
+  },850 );
+  
   //SVG letter change effect function 
   setTimeout(function(){
     var svg = document.getElementById("svg-change");
     var s = Snap(svg);
-    var currentLetter = Snap.select('#'+letter[currentID].id);
+    var currentLetter = Snap.select('#basesvg');
     var nextLetter =  Snap.select('#'+letter[nextID].id);
     var currentLetterPoints = currentLetter.node.getAttribute('d');
     var nextLetterPoints = nextLetter.node.getAttribute('d');
@@ -81,32 +66,40 @@ function changeSVG(nextID){
     }
       toSimple();
       console.log("I value inside :" + i);
+      console.log(currentLetterPoints);
+    console.log(nextLetterPoints);
   },900);
+
+  setTimeout(function(){
+    slider[nextID].classList.add("active_slide");
+  },1800 );
 
   // Next Slide Wrapper Entry Function
   setTimeout(function(){
     // slideWrapper[nextID].style.display = "block";
     slideWrapper[nextID].style.right = '0vw';
-  },1500);
+    console.log(slideWrapper[nextID]);
+  },1600);
 
   // Next Parralex Item Entry Function
   setTimeout(function(){
     parallaxItem[nextID].style.display = "block";
-  },1800);
+  },2000);
 
   // Next SVG Letter entry function
   setTimeout(function(){
-    console.log(svgLetter[nextID]);
+    // console.log(svgLetter[nextID]);
     svgImg = svgLetter[nextID].getElementsByTagName('img');
     svgImg[0].style.display = "block";
-  },2000);
+  },1400);
   console.log(currentID);
   console.log(nextID);
 
   // Changing the currentID value
   setTimeout(function(){
     currentID = nextID;
-  },2100);
+    document.addEventListener("mousemove", handler);
+  },2300);
   
 
 }

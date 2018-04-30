@@ -44,6 +44,8 @@ path{
 
 <div id="svg-letter">
  <svg viewBox="0 0 700 700" preserveAspectRatio="none"  width="100%" height="100%" >
+    <path id="basesvg" class="letter-base  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
+    </path>
     <path id="one" class="letter  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
     </path>
     <path id="two" class="letter letter-e" fill="black" fill="white" stroke-width="" stroke="white" d="M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z" ></path>
@@ -85,11 +87,16 @@ function changeSVG(nextID){
   var s = Snap(svg);
   // var simpleCup = Snap.select('#simple-cup');
   // var fancyCup = Snap.select('#fancy-cup');
-
-  var currentLetter = Snap.select('#'+letter[currentID].id);
+ // var previousID = currentID - 1;
+  var currentLetter = Snap.select('#basesvg');
   var nextLetter =  Snap.select('#'+letter[nextID].id);
+  // var prevLetter =  Snap.select('#'+letter[previousID].id);
   var currentLetterPoints = currentLetter.node.getAttribute('d');
   var nextLetterPoints = nextLetter.node.getAttribute('d');
+  // var prevLetterPoints = prevLetter.node.getAttribute('d');
+
+  // letter[0].setAttribute("d", "M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z");
+
   var toFancy = function(){
     currentLetter.animate({ d: currentLetterPoints }, 500, mina.linear, toSimple);  
   }
@@ -100,6 +107,10 @@ function changeSVG(nextID){
     toSimple();
   },0);
   console.log("I value inside :" + i);
+  console.log('current' + currentLetterPoints);
+    console.log('next'+ nextLetterPoints);
+    // console.log('prev'+prevLetterPoints);
+
 }
 
 // check slide number status function
