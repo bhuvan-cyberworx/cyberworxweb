@@ -1,4 +1,3 @@
-
 // Declaring Variables
 let i = 0; 
 let currentID = i;
@@ -17,10 +16,7 @@ let sceneItem = document.getElementsByClassName("scene-item");
 
 // Main slider function 
 function changeSVG(nextID){
-  for (let i = 0; i < sceneItem.length; i++){
-    sceneItem[i].style.transform = "translate3d(0px, 0px, 0px)";
-  }
-    document.removeEventListener("mousemove", handler);
+ 
   //Parallax item exit function
   
   // parallaxItem[currentID].style.top = "20px";
@@ -28,16 +24,24 @@ function changeSVG(nextID){
   setTimeout(function(){
     // parallaxItem[currentID].style.opacity = "0";
     parallaxItem[currentID].style.top = "20px";
-    parallaxItem[currentID].style.display = "none";
+    parallaxItem[currentID].style.opacity = "0";
     // parallaxItem[currentID].classList.add("fadeOutDown");
 
     
-  },400);
+  },00);
+
+  setTimeout( function(){
+    for (let i = 0; i < sceneItem.length; i++){
+    sceneItem[i].style.transform = "translate3d(0px, 0px, 0px)";
+  }
+    document.removeEventListener("mousemove", handler);
+  },400)
+   
 
   // Slide wrapper exit function 
   setTimeout(function(){
     slideWrapper[currentID].style.right = '-100vw';
-  },400);
+  },200);
 
   // SVG Letter Exit Function 
   setTimeout(function(){
@@ -59,10 +63,10 @@ function changeSVG(nextID){
     var currentLetterPoints = currentLetter.node.getAttribute('d');
     var nextLetterPoints = nextLetter.node.getAttribute('d');
     var toFancy = function(){
-      currentLetter.animate({ d: currentLetterPoints }, 500, mina.linear, toSimple);  
+      currentLetter.animate({ d: currentLetterPoints }, 400, mina.linear, toSimple);  
     }
     var toSimple = function(){
-      currentLetter.animate({ d: nextLetterPoints }, 500, mina.linear); 
+      currentLetter.animate({ d: nextLetterPoints }, 400, mina.linear); 
     }
       toSimple();
       console.log("I value inside :" + i);
@@ -83,7 +87,8 @@ function changeSVG(nextID){
 
   // Next Parralex Item Entry Function
   setTimeout(function(){
-    parallaxItem[nextID].style.display = "block";
+    parallaxItem[nextID].style.top = "00px";
+    parallaxItem[nextID].style.opacity = "1";
   },2000);
 
   // Next SVG Letter entry function
