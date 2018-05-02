@@ -20,7 +20,9 @@
 
 <script src="assets/js/search.js"></script>
 
-<script src="assets/js/scrollawarehover.js"></script>
+<!-- <script src="assets/js/scrollawarehover.js"></script> -->
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- Main JS File -->
 <script type="text/javascript" src="assets/js/main.js"> </script>
 
@@ -29,6 +31,12 @@
 	$(function() {
 		Grid.init();
 	});
+	$(document).ready(function(){
+	  $('.process-slider').slick({
+	    
+	  });
+	});
+	
 </script>
 
 </body>

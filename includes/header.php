@@ -19,6 +19,8 @@
     <script src="assets/js/modernizr.custom.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/direction-reveal.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>

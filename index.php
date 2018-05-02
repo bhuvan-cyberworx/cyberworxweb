@@ -163,7 +163,7 @@
       </a>
 
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/Wipro-logo-Digital.jpg" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
@@ -171,7 +171,7 @@
       </a>
 
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/krispykreme.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
@@ -179,7 +179,7 @@
       </a>
 
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/Body-Shope-Logo.jpg" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
@@ -348,6 +348,53 @@
    
 </ul>
 </section>
+
+
+<div class="section process-section">
+    <div class="container">
+        <div class="">
+            <div>
+                <h3 class="text-center title ">Our strengths</h3>
+            </div>
+                
+                
+                    <div class="process-slider " >
+
+                        <div class="item slick-active" > 
+                            <span class="number">01</span>
+                            <h3>Engage</h3>
+                            <div class="slide-content">
+                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                         <div class="item " > 
+                            <span class="number">01</span>
+                            <h3>Engage</h3>
+                            <div class="slide-content">
+                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                         <div class="item " > 
+                            <span class="number">01</span>
+                            <h3>Engage</h3>
+                            <div class="slide-content">
+                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Blog section begins here -->
 <!-- <img src="assets/images/img1.png" alt=""> -->
 <div class="blog-container ">
@@ -416,6 +463,14 @@
         </div>
     </div>
 </div>
+
+<section class="closing"><h4>Join the community that is committed to making a difference in the world we share.</h4>
+
+<div class="text-center col-12">
+    <a href="/explore/" title="Explore Campaigns" class="cta button button--wayra button--border-thick button--text-upper text-center">Get A Callback</a>
+</div> 
+<!-- <h2 id="phoneNumbers" style="font-size: 26px;">610.952.1398   <span style="padding:0px 2.5%; display:inline-block;">|</span>   856.816.6159</h2> -->
+</section>
 
 <!-- Including the footer menu -->
 <?php include_once("includes/footer-menu.php"); ?>

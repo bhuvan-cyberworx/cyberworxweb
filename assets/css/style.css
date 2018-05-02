@@ -514,6 +514,7 @@ span.admin-name {
     overflow: hidden;
     width: 32%;
     height: 400px;
+    margin: 10px 5px 5px 5px;
 }
 
 .og-grid li > a:hover   img{
@@ -609,7 +610,9 @@ span.portfolio-data h4 {
 
 
 
-
+a.direction-reveal__card:hover img {
+    transform: scale(1.1);
+}
 
 
 
@@ -710,6 +713,7 @@ a.direction-reveal__card img {
     height: 100%;
     object-fit: contain;
     object-position: center;
+    transition: 0.3s;
 }
 a.direction-reveal__overlay{
     padding: 25px;
@@ -722,7 +726,7 @@ a.direction-reveal__overlay img {
 
 .direction-reveal--3-grid-flexbox .direction-reveal__card{
     max-width: 20%;
-    border: 1px solid #eee;
+    border: 1px solid #fff;
 }
 
 
@@ -819,7 +823,7 @@ footer ul li {
     position: absolute;
     width: 1px;
     height: 120%;
-    background: #000000;
+    background: #222;
     left: 0;
     top: 0;
 }
@@ -835,7 +839,7 @@ footer ul li {
 .footer_addressbar  h4 {
     font-size: 16px;
     margin: 10px 0 20px;
-    color: #f58221;
+    color: #f0e300;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -894,7 +898,7 @@ footer ul li .fa {
 }
 
 .pd a.direction i {
-    color: #f44f21;
+    color: #f0e300;
 }
 
 .footer_bottom a{
@@ -919,4 +923,144 @@ p.branch_city {
     font-size: 12px;
     letter-spacing: 2px;
     letter-spacing: 0px;
+}
+
+.footer_addressbar {
+    padding-left: 80px;
+}
+
+
+section.closing {
+    padding: 60px 80px;
+    margin: 0 auto;
+    text-align: center;
+    background: #1a1a1a !important;
+    border-bottom: 1px solid #222;
+}
+
+section.closing h4 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #ebebeb;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+
+section.closing .cta:first-of-type {
+    margin-right: 20px;
+}
+section.closing .cta {
+        display: block;
+    margin: 50px auto 20px;
+    padding: 15px 30px;
+    border-radius: 3px;
+    color: #f0e300;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: 2px solid #f0e300;
+    float: none;
+    text-align: center;
+    margin-left: 40%;
+    width: 20%;
+}
+#phoneNumbers {
+    font-size: 20px !important;
+    color: #f1f1ea;
+    font-family: "montserrat";
+    width: 100%;
+    display: inline-block;
+}
+#phoneNumbers span {
+
+    color: #f1f1ea;
+
+}
+
+
+/*process section css*/
+.process-section {
+    padding: 120px 0 80px;
+}
+
+.process-section {
+    padding: 40px 10px;
+    background: #ffdc29;
+}
+
+.process-section .process-slider .item .number {
+    float: left;
+    margin: 13px 0 0;
+    width: 8%;
+    font-size: 26px;
+}
+.process-section .process-slider .item .number {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+    display: block;
+    font-weight: 700;
+    line-height: 1;
+    -moz-transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    transform: translateX(-50px);
+    -webkit-transition: all 350ms cubic-bezier(.86,0,.07,1);
+    -moz-transition: all 350ms cubic-bezier(.86,0,.07,1);
+    -o-transition: all 350ms cubic-bezier(.86,0,.07,1);
+    transition: all 350ms cubic-bezier(.86,0,.07,1);
+    -webkit-transition-delay: 750ms;
+    -moz-transition-delay: 750ms;
+    -o-transition-delay: 750ms;
+    transition-delay: 750ms;
+}
+.process-section .process-slider .item h3 {
+    color: white;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1;
+
+}
+.process-section .process-slider .item .slide-content {
+    margin-left: 400px;
+    font-size: 20px;
+}
+.process-slider{
+    position: relative;
+}
+/*.slick-slider .slide-btn, .slick-slider .slick-arrow {
+    position: absolute;
+    display: block;
+    bottom: 30px;
+    width: 39px;
+    height: 22px;
+    margin: 0;
+    color: #212121;
+    font-size: 0;
+    z-index: 50;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 200%;
+    border: 0;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 39px 22px;
+}*/
+.slick-slider .slide-btn.prev-slide, .slick-slider .slide-btn.slick-prev, .slick-slider .slick-arrow.prev-slide, .slick-slider .slick-arrow.slick-prev {
+    left: 0;
+    background-image: url(https://designstack.com/wp-content/themes/design-stack/assets/images/slider-arrow-prev.svgg);
+}
+
+.slick-slider {
+    visibility: visible;
+    opacity: 1;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    min-height: inherit;
 }
