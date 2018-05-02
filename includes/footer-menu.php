@@ -1,150 +1,67 @@
-<footer class="site-footer">
-    <div class="site-footer__full-width">
-      <section class="footer-section footer-section--contact">
-        <!-- <div class="footer-grid contact-section">
-          <div class="footer-grid__item footer-grid__item--contact">
-            <a class="contact-section__logo icon-building-white" href="/">
-              
-            </a>
-          </div>
-      
-          <div class="footer-grid__item">
-            <a class="native-map-link contact-section__address-link" href="https://www.google.com/maps/place/123+Webster+St.,+Dayton,+OH+45402">
-              <div class="vcard contact-section__address icon-location-gem-city">
-                <i class="location-icon fas fa-home"></i>
-                <div class="adr">
-                  <h2 class="contact-section__address-title">Gem City</h2>
-                  <div class="street-address">123 Webster St.</div>
-                    <div>Studio 2</div>
-                  <div class="contact-section__address-region">
-                    <span class="locality">Dayton</span>,
-                    <abbr class="region" title="Ohio">OH</abbr>
-                    <span class="postal-code">45402</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="footer-grid__item">
-            <a class="native-map-link contact-section__address-link" href="https://www.google.com/maps/place/1+PPG+Place,+Pittsburgh,+PA+15222">
-              <div class="vcard contact-section__address icon-location-steel-city">
-                <i class="location-icon fas fa-location-arrow"></i>
-                <div class="adr">
-                  <h2 class="contact-section__address-title">Steel City</h2>
-                  <div class="street-address">One PPG Place</div>
-                    <div>Floor 31</div>
-                  <div class="contact-section__address-region">
-                    <span class="locality">Pittsburgh</span>,
-                    <abbr class="region" title="Pennsylvania">PA</abbr>
-                    <span class="postal-code">15222</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-      
-          <div class="footer-grid__item">
-            <a class="contact-section__phone" href="tel:19374010915">
-              937.401.0915
-            </a>
-          </div>
-        </div> -->
-      </section>
-    </div>
-    <div class="site-footer__full-width">
-      <div class="footer-grid footer-grid--bottom">
-        <div class="footer-grid__item footer-grid__item--careers">
-          <section class="footer-section footer-section--careers">
-            <h2 class="footer-section__heading">Careers</h2>
-            <div class="footer-section__content footer-section__content--careers">
-              <p>Do you love the web as much as we&nbsp;do?</p>
-          <p><a href="/jobs">Come work at Cyberworx</a></p>
-          
-            </div>
-          </section>
+<div class="footer_bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12 footer_quick_link">
+        <ul>
+          <li><a href="index.php">HOME</a></li>
+          <li><a href="about.php">ABOUT</a></li>
+          <li><a href="work.php">WORK</a></li>
+          <li><a href="services.php">SERVICES</a></li>
+          <!--<li><a href="coming-soon.php">BLOG</a></li>-->
+          <li><a href="careers.php">CAREERS</a></li>
+          <li><a href="contact.php">CONTACT</a></li>
+        </ul>
+        <ul>
+          <li><a href="social-media-marketing.php">SOCIAL MEDIA MARKETING</a></li>
+          <li><a href="content-marketing.php">CONTENT MARKETING</a></li>
+          <li><a href="search-engine-optimization.php">SEARCH ENGINE OPTIMIZATION</a></li>
+          <li><a href="online-reputation-management.php">ONLINE REPUTATION MANAGEMENT</a></li>
+          <li><a href="customer-review-management.php">CUSTOMER REVIEW MANAGEMENT</a></li>
+          <li><a href="ecommerce-seo.php">E-COMMERCE SEO</a></li>
+          <li><a href="design.php">DESIGN</a></li>
+        </ul>
+        <ul>
+          <li><a href="website-design-development.php">WEBSITE DESIGN &amp; DEVELOPMENT</a></li>
+          <li><a href="digital-films.php">DIGITAL FILMS</a></li>
+          <li><a href="photography.php">PHOTOGRAPHY</a></li>
+          <li><a href="digital-advertising.php">DIGITAL ADVERTISING</a></li>
+          <li><a href="search-marketing.php">SEARCH MARKETING</a></li>
+          <li><a href="display-advertising.php">DISPLAY ADVERTISING</a></li>
+          <li><a href="emailer-marketing.php">EMAILER MARKETING</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-sm-12 footer_addressbar">
+        <h4>Our Adresses</h4>
+        <div class="digital_page">
+        <p class="branch_city">Digital</p>
+        <p>
+          </p><ul>
+            <li><a href="https://www.facebook.com/RepIndia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/3374677/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        <p></p>
+        <div class="clearfix"></div>
         </div>
-  
-        <div class="footer-grid__item footer-grid__item--speaking">
-          <section class="footer-section footer-section--speaking">
-            <h2 class="footer-section__heading">Get in Touch</h2>
-            <div class="footer-section__content footer-section__content--speaking">
-              <p>Interested in having  make your website, app, manage your social accounts? <a href="mailto:info@cyberworx.com">Drop us a line and say&nbsp;hello</a>.</p>
-              <!-- <p>Or, you can join us at one of the <a href="https://buildright.io/">workshops we host</a> at our Dayton office. We look forward to meeting you soon! </p> -->
-            </div>
-          </section>
-        </div>
-        <div class="footer-grid__item footer-grid__item--speaking">
-          <section class="footer-section footer-section--speaking">
-            <h2 class="footer-section__heading">We Are Social</h2>
-            <div class="footer-section__content footer-section__content--speaking">
-             <ul class="footer-social__list">
-              <li class="footer-social__item">
-                <a href="https://twitter.com/hear" class="footer-social__social-link">
-                  <span class="icon icon-twitter"><i class="fab fa-twitter"></i></span>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="https://github.com/" class="footer-social__social-link">
-                  <span class="icon icon-instagram"><i class="fab fa-instagram"></i></span>
-                </a>
-              </li>
-              
-              <li class="footer-social__item">
-                <a href="http://dribbble.com/" class="footer-social__social-link">
-                  <span class="icon icon-google"><i class="fab fa-google-plus-g"></i></span>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="https://www.facebook.com/see" class="footer-social__social-link">
-                  <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
-                </a>
-              </li>
-            </ul>
-            </div>
-          </section>
-        </div>
-  
-       <!--  <div class="footer-grid__item footer-grid__item--social">
-          <h2 class="footer-section__heading">Follow Us :</h2>
-          <section class="footer-social">
-
-            <ul class="footer-social__list">
-              <li class="footer-social__item">
-                <a href="https://twitter.com/hear" class="footer-social__social-link">
-                  <span class="icon icon-twitter"><i class="fab fa-twitter"></i></span>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="https://github.com/" class="footer-social__social-link">
-                  <span class="icon icon-instagram"><i class="fab fa-instagram"></i></span>
-                </a>
-              </li>
-              
-              <li class="footer-social__item">
-                <a href="http://dribbble.com/" class="footer-social__social-link">
-                  <span class="icon icon-google"><i class="fab fa-google-plus-g"></i></span>
-                </a>
-              </li>
-              <li class="footer-social__item">
-                <a href="https://www.facebook.com/see" class="footer-social__social-link">
-                  <span class="icon icon-facebook"><i class="fab fa-facebook-f"></i></span>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div> -->
-  
-        <div class="footer-grid__item footer-grid__item--details">
-          <section class="footer-details">
-            <h2 class="footer-section__heading">We love to build right.</h2>
-            <div class="footer-section__content footer-section__content--details">
-              <p>
-                <a href="#">See our beautiful portfolio.</a>
-              </p>
-              <p>© 2018 . All rights reserved.</p>
-            </div>
-          </section>
-        </div>
+        <p class="branch_city">Delhi</p>
+        <p>Top Floor, JP House, Plot 172 Lane 2, Westend Marg, Saidulajab, New Delhi 110030
+        </p>
+        <p class="branch_city blank">&nbsp;</p>
+        <p class="pd">
+        <!--<a href="tel:00919560456222" class="phpnenumber"><i class="fa fa-phone"></i>  +91 95604 56222</a> -->
+          <a href="https://www.google.co.in/maps/place/RepIndia/@28.520598,77.201381,17z/data=!3m1!4b1!4m2!3m1!1s0x390ce1fb5dcaf597:0x94dd337f13ddf4d0" class="direction" target="_blank"><i class="fa fa-map-marker"></i>  Directions</a> 
+        </p>
+        <p class="branch_city margin_b30">Mumbai</p>
+        <p>Gala 350, 3rd floor, A to Z Industrial Estate, Ganpatrao Kadam Marg, Lower Parel, Mumbai - 400013</p>
+        <div class="alearfix"></div>
+        <p class="branch_city blank">&nbsp;</p>
+        <p class="pd">
+          <!--<a href="tel:00919015419191" class="phpnenumber"><i class="fa fa-phone"></i> +91 90154 19191</a>-->
+          <a href="https://www.google.co.in/maps/place/RepIndia/@19.1180985,72.8635316,15.25z/data=!4m5!3m4!1s0x3be7c83cc3f9cb91:0xea856eb286c18003!8m2!3d19.1178576!4d72.8711588" target="_blank" class="direction"><i class="fa fa-map-marker"></i> Directions</a> 
+        </p>      
       </div>
     </div>
-  </footer>
+    </div>
+    <p class="copy">© 2017 Repindia</p>
+    <!--<p class="privacy"><a href="privacy.php">Privacy Policy</a></p>-->
+    <div class="clearfix"></div>
+  </div>

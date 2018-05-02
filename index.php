@@ -1,5 +1,8 @@
 <!-- Including Header File -->
 <?php include_once("includes/header.php"); ?>
+
+<!-- Including menu File -->
+<?php include_once("includes/menu.php"); ?>
 <div id="pre-loader">
     <div id="pre-loader-content">
         <div id="pre-loader-image" class="text-center">
@@ -126,11 +129,230 @@
 <!-- Slider ends here -->
 
 
+<!-- Our Clients Section  -->
+
+<div class="container demo pt80 pb80">
+    <div>
+        <h3 class="text-center title pb40">Our Clients</h3>
+    </div>
+
+    <div class="direction-reveal direction-reveal--3-grid-flexbox direction-reveal--demo-slide-push">
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/CISCO.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/intuit.jpg" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/CISCO.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/CISCO.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/Accenture-Logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+
+        <div class="direction-reveal__overlay direction-reveal__anim--in">
+           <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+<!-- our services section begins here -->
+<!-- <section id="our-services" class="">
+    <div class="container p0">
+        <div>
+            <h3 class="text-center title pb40">Our Services</h3>
+        </div>
+        <div class="row p0">
+            <div class="service col-md-4 text-center service-one">
+                <div class="service-image">
+                    <img src="assets/images/services/ico-strategy.png" alt="">
+                </div>
+                <div class="service-content">
+                    <div class="service-title">
+                        <h2>Marketing</h2>
+                    </div>
+                    <div class="service-info">
+                        <p>Hoe vertaal je marketing- en salesdoelstellingen naar een toepasbare digitale strategie? Dat is waar onze online marketeers zich dagelijks mee bezig houden.</p>
+                    </div>
+                </div>
+                <div class="service-link">
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+            <div class="service col-md-4 text-center service-two">
+                <div class="service-image">
+                    <img src="assets/images/services/ico-design.png" alt="">
+                </div>
+                <div class="service-content">
+                    <div class="service-title">
+                        <h2>Design</h2>
+                    </div>
+                    <div class="service-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel ullamcorper enim. Nulla maximus odio dui, in sagittis magna vehicula sed. Vestibulum orci ipsum, ultrices at urna et.</p>
+                    </div>
+                </div>
+                <div class="service-link">
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+            <div class="service col-md-4 text-center service-three">
+                <div class="service-image">
+                    <img src="assets/images/services/ico-develop.png" alt="">
+                </div>
+                <div class="service-content">
+                    <div class="service-title">
+                        <h2>Development</h2>
+                    </div>
+                    <div class="service-info">
+                        <p>Hoe vertaal je marketing- en salesdoelstellingen naar een toepasbare digitale strategie? Dat is waar onze online marketeers zich dagelijks mee bezig houden.</p>
+                    </div>
+                </div>
+                <div class="service-link">
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- our services section ends here -->
+<section id="our-portfolio">
+    <div>
+        <h3 class="text-center title ">Our Portfolio</h3>
+    </div>
+<ul id="og-grid" class="og-grid">
+    
+    <li>
+        <a href="#" data-largesrc="assets/images/sbi.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+            <img src="assets/images/thumbs/sbi.jpg" alt="img01"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+            <img src="assets/images/thumbs/2.jpg" alt="img02"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+            <img src="assets/images/thumbs/3.jpg" alt="img03"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-largesrc="assets/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+            <img src="assets/images/thumbs/1.jpg" alt="img01"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+            <img src="assets/images/thumbs/2.jpg" alt="img02"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+            <img src="assets/images/thumbs/3.jpg" alt="img03"/>
+            <span class="portfolio-data">
+                <span>State Bank of India </span>
+                <h4>Brand Identity</h4>
+            </span>
+        </a>
+    </li>
+    
+    
+   
+   
+</ul>
+</section>
 <!-- Blog section begins here -->
 <!-- <img src="assets/images/img1.png" alt=""> -->
 <div class="blog-container ">
     <div>
-        <h3 class="text-center title pb50">Onze verhalen</h3>
+        <h3 class="text-center title pb40">Latest From Our Blog</h3>
     </div>
     <div class="col-md-12 row p0">
         <div class="col-md-4 p0 blog-tile">
