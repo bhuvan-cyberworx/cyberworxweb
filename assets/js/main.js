@@ -42,8 +42,88 @@ function handler(e) {
 
 }
 
+
+let pi = 0; 
+let currentProcessID = pi;
+let nextProcessID; 
+let processHeading = document.getElementsByClassName("process-heading");
+let slideContent  = document.getElementsByClassName("slide-content");
+
+// Previous Slide Function
+function prevProcess() {
+  // changeSVG(i -= 1);
+  processNumber(pi -= 1);
+}
+
+// Next slide function
+function nextProcess() {
+ processNumber(pi += 1);
+}
+
+function processNumber(processID){
+  if(processID >= letter.processHeading){
+    alert("i is greater");
+    pi -= 1;
+    console.log(pi);
+  }
+  else if(processID <0){
+    alert("i is less");
+    pi += 1;
+    console.log(pi);
+
+  }
+  else{
+    changeProcess(processID);
+  }
+  
+}
+
+
+
+
+function changeProcess(nextProcessID){
+ 
+    
+  setTimeout(function(){
+    // parallaxItem[currentID].style.opacity = "0";
+    processHeading[currentProcessID].style.marginLeft = "-50px";
+    processHeading[currentProcessID].style.opacity = "0";
+
+  },00);
+
+setTimeout(function(){
+   
+    slideContent[currentProcessID].style.marginTop = "50px";
+    slideContent[currentProcessID].style.opacity = "0";
+
+  },300);
+
+ setTimeout(function(){
+    // parallaxItem[currentID].style.opacity = "0";
+    processHeading[nextProcessID].style.marginLeft = "0px";
+    processHeading[nextProcessID].style.opacity = "1";
+
+  },500);
+
+setTimeout(function(){
+   
+    slideContent[nextProcessID].style.marginTop = "0px";
+    slideContent[nextProcessID].style.opacity = "1";
+
+  },800);
+
+  setTimeout(function(){
+    currentProcessID = nextProcessID;
+    document.addEventListener("mousemove", handler);
+  },2300);
+  
+
+}
+
+
+
 document.addEventListener("mousemove", handler);
-
-
+document.getElementById("prevProcess").addEventListener('click',prevProcess);
+document.getElementById("nextProcess").addEventListener('click',nextProcess);
 
 // Elements motion function  ends here

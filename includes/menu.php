@@ -11,6 +11,7 @@
 </svg>
 <main class="main-wrap">
 	<header class="main-header">
+		
 		<div class="search-wrap">
 			<button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
 		</div>
@@ -37,3 +38,4 @@
 		</div>
 	</div>
 </div><!-- /search -->
+

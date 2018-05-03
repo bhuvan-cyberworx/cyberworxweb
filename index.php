@@ -354,37 +354,42 @@
     <div class="container">
         <div class="">
             <div>
-                <h3 class="text-center title ">Our strengths</h3>
+                <h3 class="text-center title ">Our Process</h3>
             </div>
                 
                 
                     <div class="process-slider " >
 
-                        <div class="item slick-active" > 
-                            <span class="number">01</span>
-                            <h3>Engage</h3>
+                        <div class="process-item process-active" > 
+                            
+                            <h3 class="process-heading"><span class="number">01</span> Engage</h3>
                             <div class="slide-content">
                                 <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
                                 </p>
                             </div>
                         </div>
 
-                         <div class="item " > 
-                            <span class="number">01</span>
-                            <h3>Engage</h3>
+                         <div class="process-item " > 
+                            
+                            <h3 class="process-heading"><span class="number">02</span> Organic Traffic</h3>
                             <div class="slide-content">
                                 <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
                                 </p>
                             </div>
                         </div>
 
-                         <div class="item " > 
-                            <span class="number">01</span>
-                            <h3>Engage</h3>
+                         <div class="process-item" > 
+                            
+                            <h3 class="process-heading"><span class="number">03</span> Create Audience</h3>
                             <div class="slide-content">
                                 <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
                                 </p>
                             </div>
+                        </div>
+
+                        <div class="process-slider-controls">
+                            <i id='prevProcess' class='a-left control-c  slick-prev fas fa-arrow-left'></i>
+                            :"<i id='nextProcess' class='a-left control-c  slick-next fas fa-arrow-right'></i>
                         </div>
 
                     </div>
@@ -467,7 +472,7 @@
 <section class="closing"><h4>Join the community that is committed to making a difference in the world we share.</h4>
 
 <div class="text-center col-12">
-    <a href="/explore/" title="Explore Campaigns" class="cta button button--wayra button--border-thick button--text-upper text-center">Get A Callback</a>
+    <a href="/explore/" title="Explore Campaigns" class="cta button button--wayra button--border-thick button--text-upper text-center"><i class="fas fa-reply"></i> Get A Callback</a>
 </div> 
 <!-- <h2 id="phoneNumbers" style="font-size: 26px;">610.952.1398   <span style="padding:0px 2.5%; display:inline-block;">|</span>   856.816.6159</h2> -->
 </section>

@@ -33,11 +33,12 @@
       <div class="col-md-5 col-sm-12 footer_addressbar">
         <h4>Our Adresses</h4>
         <div class="digital_page">
-        <p class="branch_city">Digital</p>
+        <p class="branch_city">Follow: </p>
         <p>
           </p><ul>
-            <li><a href="https://www.facebook.com/RepIndia/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/3374677/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="htt#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="htt#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
           </ul>
         <p></p>
         <div class="clearfix"></div>
@@ -48,15 +49,15 @@
         <p class="branch_city blank">&nbsp;</p>
         <p class="pd">
         <!--<a href="tel:00919560456222" class="phpnenumber"><i class="fa fa-phone"></i>  +91 95604 56222</a> -->
-          <a href="https://www.google.co.in/maps/place/RepIndia/@28.520598,77.201381,17z/data=!3m1!4b1!4m2!3m1!1s0x390ce1fb5dcaf597:0x94dd337f13ddf4d0" class="direction" target="_blank"><i class="fa fa-map-marker"></i>  Directions</a> 
+          <a href="#" class="direction" target="_blank"><i class="fa fa-map-marker"></i>  Directions</a> 
         </p>
         <p class="branch_city margin_b30">Mumbai</p>
-        <p>Gala 350, 3rd floor, A to Z Industrial Estate, Ganpatrao Kadam Marg, Lower Parel, Mumbai - 400013</p>
+        <p>Gala 350, 3rd floor, A to Z Industrial Estate, Lower Parel, Mumbai - 400013</p>
         <div class="alearfix"></div>
         <p class="branch_city blank">&nbsp;</p>
         <p class="pd">
           <!--<a href="tel:00919015419191" class="phpnenumber"><i class="fa fa-phone"></i> +91 90154 19191</a>-->
-          <a href="https://www.google.co.in/maps/place/RepIndia/@19.1180985,72.8635316,15.25z/data=!4m5!3m4!1s0x3be7c83cc3f9cb91:0xea856eb286c18003!8m2!3d19.1178576!4d72.8711588" target="_blank" class="direction"><i class="fa fa-map-marker"></i> Directions</a> 
+          <a href="#" target="_blank" class="direction"><i class="fa fa-map-marker"></i> Directions</a> 
         </p>      
       </div>
     </div>

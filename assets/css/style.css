@@ -442,7 +442,7 @@ transform-style: preserve-3d;
 span.admin-name {
     margin-left: 25px;
     font-size: 18px;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
     color: #fff;
 }
 
@@ -492,7 +492,10 @@ span.admin-name {
     font-family: open sans;
     font-size: 18px;
 }
-
+.section.process-section .title {
+    color: #fff;
+    margin-bottom: 50px;
+}
 .service-link:after {
     content: "";
     display: inline-block;
@@ -584,7 +587,9 @@ button#btn-search-close {
     right: 10px;
 }
 
-
+.process-heading{
+    transition: 0.5s;
+}
 
 
 
@@ -828,6 +833,11 @@ footer ul li {
     top: 0;
 }
 
+
+.digital_page ul {
+    width: auto;
+}
+
 .footer_addressbar h4 {
     font-weight: 300;
     letter-spacing: 0;
@@ -899,6 +909,7 @@ footer ul li .fa {
 
 .pd a.direction i {
     color: #f0e300;
+    margin-right: 5px;
 }
 
 .footer_bottom a{
@@ -966,6 +977,10 @@ section.closing .cta {
     margin-left: 40%;
     width: 20%;
 }
+section.closing .cta:hover{
+    color: #000;
+    font-weight: 600;
+}
 #phoneNumbers {
     font-size: 20px !important;
     color: #f1f1ea;
@@ -987,27 +1002,23 @@ section.closing .cta {
 
 .process-section {
     padding: 40px 10px;
-    background: #ffdc29;
+    background: #222;
 }
 
-.process-section .process-slider .item .number {
+.process-section .process-slider .process-item .number {
     float: left;
     margin: 13px 0 0;
     width: 8%;
     font-size: 26px;
 }
-.process-section .process-slider .item .number {
+.process-section .process-slider .process-item .number {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     margin: 20px 0;
     display: block;
     font-weight: 700;
     line-height: 1;
-    -moz-transform: translateX(-50px);
-    -webkit-transform: translateX(-50px);
-    -o-transform: translateX(-50px);
-    -ms-transform: translateX(-50px);
-    transform: translateX(-50px);
+
     -webkit-transition: all 350ms cubic-bezier(.86,0,.07,1);
     -moz-transition: all 350ms cubic-bezier(.86,0,.07,1);
     -o-transition: all 350ms cubic-bezier(.86,0,.07,1);
@@ -1017,19 +1028,23 @@ section.closing .cta {
     -o-transition-delay: 750ms;
     transition-delay: 750ms;
 }
-.process-section .process-slider .item h3 {
+.process-section .process-slider .process-item h3 {
     color: white;
     margin: 0;
     font-size: 60px;
     line-height: 1;
+    margin-bottom: 30px;
 
 }
-.process-section .process-slider .item .slide-content {
+.process-section .process-slider .process-item .slide-content {
     margin-left: 400px;
     font-size: 20px;
+    margin-bottom: 40px;
+    transition: 0.5s;
 }
 .process-slider{
     position: relative;
+    height: 300px;
 }
 /*.slick-slider .slide-btn, .slick-slider .slick-arrow {
     position: absolute;
@@ -1056,6 +1071,15 @@ section.closing .cta {
     background-image: url(https://designstack.com/wp-content/themes/design-stack/assets/images/slider-arrow-prev.svgg);
 }
 
+.process-item{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    
+}
+.process-active{
+    opacity: 1;
+}
 .slick-slider {
     visibility: visible;
     opacity: 1;
@@ -1063,4 +1087,32 @@ section.closing .cta {
     padding: 0;
     position: relative;
     min-height: inherit;
+    margin-top: 50px;
+}
+
+button.slick-arrow {
+    bottom: 0;
+    position: absolute;
+    /* top: 40%; */
+}
+
+.control-c {
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+    z-index: 20;
+    color: #fff;
+}
+.slick-next {
+    right: 0;
+}
+.slide-content p {
+    color: #ccc;
+    font-weight: 400 !important;
+    font-size: 17px;
+}
+.slick-prev {
+    left: 0;
 }

@@ -31,11 +31,15 @@
 	$(function() {
 		Grid.init();
 	});
-	$(document).ready(function(){
-	  $('.process-slider').slick({
-	    
-	  });
-	});
+	// $(document).ready(function(){
+	//   $('.process-slider').slick({
+	//     // autoplay : true,
+	//     // autoplaySpeed: 5000,
+	//     prevArrow:"<i id='prevProcess' class='a-left control-c  slick-prev fas fa-arrow-left'></i> ",
+ //   		nextArrow:"<i id='nextProcess' class='a-left control-c  slick-next fas fa-arrow-right'></i>"
+
+	//   });
+	// });
 	
 </script>
 
