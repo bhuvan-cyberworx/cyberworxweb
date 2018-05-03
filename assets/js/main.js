@@ -43,11 +43,16 @@ function handler(e) {
 }
 
 
+
+// Process Slider Function Begins here
+
 let pi = 0; 
 let currentProcessID = pi;
 let nextProcessID; 
 let processHeading = document.getElementsByClassName("process-heading");
 let slideContent  = document.getElementsByClassName("slide-content");
+let processItem  = document.getElementsByClassName("process-item");
+
 
 // Previous Slide Function
 function prevProcess() {
@@ -78,13 +83,14 @@ function processNumber(processID){
   
 }
 
+processHeading[currentProcessID].style.opacity = "1";
 
-
-
+slideContent[currentProcessID].style.opacity = "1";
+    
 function changeProcess(nextProcessID){
  
     
-  setTimeout(function(){
+setTimeout(function(){
     // parallaxItem[currentID].style.opacity = "0";
     processHeading[currentProcessID].style.marginLeft = "-50px";
     processHeading[currentProcessID].style.opacity = "0";
@@ -95,14 +101,16 @@ setTimeout(function(){
    
     slideContent[currentProcessID].style.marginTop = "50px";
     slideContent[currentProcessID].style.opacity = "0";
+    
 
   },300);
 
  setTimeout(function(){
     // parallaxItem[currentID].style.opacity = "0";
+    // processItem[nextProcessID].classList.add("process-active");
     processHeading[nextProcessID].style.marginLeft = "0px";
     processHeading[nextProcessID].style.opacity = "1";
-
+    console.log(processHeading[nextProcessID]);
   },500);
 
 setTimeout(function(){
@@ -112,10 +120,7 @@ setTimeout(function(){
 
   },800);
 
-  setTimeout(function(){
-    currentProcessID = nextProcessID;
-    document.addEventListener("mousemove", handler);
-  },2300);
+  
   
 
 }

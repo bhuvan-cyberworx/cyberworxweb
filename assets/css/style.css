@@ -589,6 +589,7 @@ button#btn-search-close {
 
 .process-heading{
     transition: 0.5s;
+    opacity: 0;
 }
 
 
@@ -1041,6 +1042,8 @@ section.closing .cta:hover{
     font-size: 20px;
     margin-bottom: 40px;
     transition: 0.5s;
+    opacity: 0;
+
 }
 .process-slider{
     position: relative;
@@ -1074,7 +1077,7 @@ section.closing .cta:hover{
 .process-item{
     position: absolute;
     height: 100%;
-    opacity: 0;
+    opacity: 1;
     
 }
 .process-active{

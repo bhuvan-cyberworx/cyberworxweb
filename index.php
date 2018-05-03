@@ -360,7 +360,7 @@
                 
                     <div class="process-slider " >
 
-                        <div class="process-item process-active" > 
+                        <div class="process-item " > 
                             
                             <h3 class="process-heading"><span class="number">01</span> Engage</h3>
                             <div class="slide-content">
