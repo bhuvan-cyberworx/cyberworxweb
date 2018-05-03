@@ -110,7 +110,7 @@ setTimeout(function(){
     // processItem[nextProcessID].classList.add("process-active");
     processHeading[nextProcessID].style.marginLeft = "0px";
     processHeading[nextProcessID].style.opacity = "1";
-    console.log(processHeading[nextProcessID]);
+    
   },500);
 
 setTimeout(function(){
@@ -120,8 +120,12 @@ setTimeout(function(){
 
   },800);
 
-  
-  
+  console.log(processHeading[currentProcessID]);
+  console.log(processHeading[nextProcessID]);
+  setTimeout(function(){
+    currentProcessID = nextProcessID;
+    
+  },800);
 
 }
 
