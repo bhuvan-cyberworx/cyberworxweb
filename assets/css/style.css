@@ -46,6 +46,12 @@
 .mb20{
     margin-bottom: 20px !important;
 }
+.mt60{
+    margin-top: 60px !important;
+}
+.ml0{
+    margin-left: 0px !important;
+}
 *{
     /*transition: all 0.3s;*/
 }
@@ -621,9 +627,16 @@ a.direction-reveal__card:hover img {
 
 
 
+.og-expander{
+    z-index: 10000000;
+}
 
-
-/**/
+.carousel-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
 
 
 
@@ -646,7 +659,7 @@ section.hero-banner{
 .banner-title h2 {
     text-align: center;
     color: #fff;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     font-size: 40px;
 }
 ul.about-info{
@@ -830,7 +843,7 @@ footer ul li {
     content: "";
     position: absolute;
     width: 1px;
-    height: 120%;
+    height: 100%;
     background: #222;
     left: 0;
     top: 0;
@@ -1131,3 +1144,201 @@ button.slick-arrow {
 i#prevProcess{
     display: none;
 }
+
+/*Enquiry Page CSS*/
+span.enqiry-heading {
+    font-size: 15px;
+    font-weight: 700;
+    color: #444;
+    /* border-bottom: 2px solid #333; */
+    /*background: #da2128;*/
+    /*padding: 6px 20px 6px 10px;*/
+    border-radius: 0px 30px 30px 0;
+}
+
+
+h5.enqiry-subheading {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "montserrat";
+    color: #999;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+section.content.row {
+    margin-bottom: 00px;
+}
+
+
+.cbox:first-child {
+    margin-left: 0;
+}
+.cbox {
+    position: relative;
+    top: 0;
+    float: left;
+    margin-left: 29px;
+}
+input[type=checkbox]#thing3 + label, input[type=checkbox]#thing3:checked + label, .cbox {
+    width: 100px;
+    height: 100px;
+}
+input[type=checkbox]#thing2 + label, input[type=checkbox]#thing2:checked + label, .cbox {
+    width: 100px;
+    height: 100px;
+}
+input[type=checkbox]#thing1 + label, input[type=checkbox]#thing1:checked + label, .cbox {
+    width: 100px;
+    height: 100px;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]#thing1 + label {
+    background-image: url(https://lollypop.biz/media/1828/lollypop_mobile_grey.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #c3c3c3;
+    color: #c3c3c3;
+}
+
+input[type=checkbox]#thing2 + label {
+    background-image: url(https://lollypop.biz/media/1828/lollypop_mobile_grey.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #c3c3c3;
+    color: #c3c3c3;
+}
+
+input[type=checkbox]#thing3 + label {
+    background-image: url(https://lollypop.biz/media/1828/lollypop_mobile_grey.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #c3c3c3;
+    color: #c3c3c3;
+}
+.cbox span {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'montserrat';
+    color: #999;
+    font-weight: 600;
+}
+
+.datepicker td, .datepicker th{
+    font-size: 12px;
+}
+
+textarea.input__field--jiro {
+    height: 150px;
+  
+}
+
+.project-summary .input{
+    max-width: 93%;
+}
+
+.button--ujarak:hover {
+    color: #fff;
+    border-color: #da2128;
+    background: #da2128;
+    
+}
+
+.button--ujarak {
+    color: #da2128;
+    font-weight: 700 !important;
+    border: 2px solid #da2128;
+    max-width: 400px;
+}
+.button--ujarak::before {
+    background: #da2128;
+    }
+
+span.input__label-content.input__label-content--jiro {
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.enquiry-page-logo a.direction-reveal__card {
+    height: 100px;
+    padding: 10px;
+}
+
+section#testimonial {
+    padding-top: 120px;
+}
+section#testimonial  div#slider {
+    padding-bottom: 50px;
+}
+section#testimonial  .carousel-indicators .active {
+    background-color: #333;
+}
+
+section#testimonial  .carousel-indicators li {
+
+    background-color: rgba(0,0,0,.5);
+}
+section#testimonial  .carousel-item h5 {
+    color: #333;
+}
+
+.container.demo.enquiry-page-logo.pt80.pb80 {
+    padding-top: 40px !important;
+}
+
+section#testimonial h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+section#testimonial  span.testimonial-dash {
+    width: 10%;
+    height: 2px;
+    background: #afafaf;
+    border: 0px solid #233;
+    position: absolute;
+    left: 45%;
+    /* top: 10px; */
+}
+section#testimonial  .carousel-item img {
+    margin-top: 20px;
+}
+section#testimonial .carousel-item  h5{
+    margin-bottom: 0;
+}
+
+span.client-company-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+/*Caraousel */

@@ -20,7 +20,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/direction-reveal.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Including input Box Animation Css -->
+    <link rel="stylesheet" href="assets/css/input-animation.css">
 
+    <!-- Including Bootsrap Date Picker Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+    
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>

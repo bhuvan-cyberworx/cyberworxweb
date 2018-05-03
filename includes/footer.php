@@ -23,6 +23,11 @@
 <!-- <script src="assets/js/scrollawarehover.js"></script> -->
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Including input Animation Js -->
+<script type="text/javascript" src="assets/js/input-animation.js"> </script>
+<!-- Including bootstrap datepicker js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 <!-- Main JS File -->
 <script type="text/javascript" src="assets/js/main.js"> </script>
 
@@ -31,6 +36,13 @@
 	$(function() {
 		Grid.init();
 	});
+		$('#start-date').datepicker({
+	});
+		$('#end-date').datepicker({
+	});
+
+
+
 	// $(document).ready(function(){
 	//   $('.process-slider').slick({
 	//     // autoplay : true,
@@ -40,8 +52,42 @@
 
 	//   });
 	// });
-	
-</script>
+	</script>
+	<script>
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+	</script>
 
 </body>
 </html>

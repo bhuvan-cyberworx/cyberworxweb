@@ -3,7 +3,7 @@
 
 <!-- Including menu File -->
 <?php include_once("includes/menu.php"); ?>
-<div id="pre-loader">
+<!-- <div id="pre-loader">
     <div id="pre-loader-content">
         <div id="pre-loader-image" class="text-center">
             <img src="assets/images/logo.png" alt="logo" class="animated fadeInDown">
@@ -12,7 +12,7 @@
             <h4 class="text text-center animated slideInUp">Cyberworx - Digital Solutions. <span style="color:#F0E500">Made </span>Easy.</h4>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <!-- Slider Begins Here  -->
@@ -20,13 +20,15 @@
     <!-- Changing SVG Letter Animation Starts Here -->
     <div id="svg-change">
      <svg viewBox="0 0 700 700" preserveAspectRatio="none"  width="100%" height="100%" >
-        <path id="basesvg" class="letter-base  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
+        <path id="basesvg" class="letter-base  letter-x" stroke-width="" fill="white" stroke="white" d="M600.383,549.682H496.717l-29.545-229.988l-96.548,229.988h-41.248l-92.159-229.988l-33.936,229.988
+            H99.617l67.412-399.364H269.56l81.211,212.995l85.9-212.995h103.665L600.383,549.682z" >
         </path>
-        <path id="svgone" class="letter  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" >
+        <path id="svgone" class="letter  letter-x" stroke-width="" fill="white" stroke="white" d="M600.383,549.682H496.717l-29.545-229.988l-96.548,229.988h-41.248l-92.159-229.988l-33.936,229.988
+            H99.617l67.412-399.364H269.56l81.211,212.995l85.9-212.995h103.665L600.383,549.682z" >
         </path>
          <!-- <path id="svgone-a" class="letter  letter-x" stroke-width="" fill="white" stroke="white" d="M260.9,330.5L74.7,49.1h174.1L352,220.7l100-171.6h173.2L441.5,333.7l208.2,317.2H475.7L345.5,437.8L221.9,650.9H50.3 L260.9,330.5z" > -->
         </path>
-        <path id="svgtwo" class="letter letter-e"  fill="white" stroke-width="" stroke="white" d="M378.38,50.5c126.81,0,205,62.54,247.55,134.63l-125.08,66c-23.45-38.22-67.75-68.62-122.47-68.62-94.68,0-161.56,73-161.56,167.64S283.7,517.8,378.38,517.8c45.17,0,86-15.64,109.44-34.74V434.42H354.93V310.21H634.62v226.7c-62.54,68.62-146.79,112.92-256.24,112.92-172.85,0-313.56-115.52-313.56-299.66S205.53,50.5,378.38,50.5Z" ></path>
+        <path id="svgtwo" class="letter letter-e"  fill="white" stroke-width="" stroke="white" d="M474.903,549.682H186.096V110.5h131.222v329.531h196.587v109.65H474.903z" ></path>
 
        <!-- <path id="svgthree" class="letter letter-e" fill="white" stroke-width="" stroke="white" d="M130.12,50.07h440.1v130.5H284.92v99.9h279v131.4h-279v108h285.3v130.5H130.12Z" data-reactid=".0.$/.3.2.1.2.0.0" ></path> -->
       </svg>
