@@ -49,6 +49,7 @@ function handler(e) {
 let pi = 0; 
 let currentProcessID = pi;
 let nextProcessID; 
+let previousProcessID;
 let processHeading = document.getElementsByClassName("process-heading");
 let slideContent  = document.getElementsByClassName("slide-content");
 let processItem  = document.getElementsByClassName("process-item");
@@ -66,19 +67,26 @@ function nextProcess() {
 }
 
 function processNumber(processID){
-  if(processID >= letter.processHeading){
-    alert("i is greater");
-    pi -= 1;
-    console.log(pi);
+  // if(processID = 0){
+  //   document.getElementById("prevProcess").style.display = "none";
+  //   changeProcess(processID);
+  // }
+   if(processID == processItem.length-1){
+    changeProcess(processID);
+    // pi -= 1;
+    document.getElementById("nextProcess").style.display = "none";
   }
-  else if(processID <0){
-    alert("i is less");
-    pi += 1;
-    console.log(pi);
+  else if(processID <= 0){
+    changeProcess(processID);
+    // pi += 1;
+    document.getElementById("prevProcess").style.display = "none";
+
 
   }
   else{
     changeProcess(processID);
+    document.getElementById("nextProcess").style.display = "block";
+    document.getElementById("prevProcess").style.display = "block";
   }
   
 }
@@ -86,24 +94,28 @@ function processNumber(processID){
 processHeading[currentProcessID].style.opacity = "1";
 
 slideContent[currentProcessID].style.opacity = "1";
-    
+
+processHeading[currentProcessID].style.marginLeft = "00px";
+
+slideContent[currentProcessID].style.marginTop = "00px";
+
 function changeProcess(nextProcessID){
  
     
 setTimeout(function(){
     // parallaxItem[currentID].style.opacity = "0";
-    processHeading[currentProcessID].style.marginLeft = "-50px";
+    processHeading[currentProcessID].style.marginLeft = "-100px";
     processHeading[currentProcessID].style.opacity = "0";
 
   },00);
 
 setTimeout(function(){
    
-    slideContent[currentProcessID].style.marginTop = "50px";
+    
     slideContent[currentProcessID].style.opacity = "0";
     
 
-  },300);
+  },00);
 
  setTimeout(function(){
     // parallaxItem[currentID].style.opacity = "0";
@@ -117,12 +129,14 @@ setTimeout(function(){
    
     slideContent[nextProcessID].style.marginTop = "0px";
     slideContent[nextProcessID].style.opacity = "1";
+    slideContent[currentProcessID].style.marginTop = "100px";
 
-  },800);
+  },400);
 
   console.log(processHeading[currentProcessID]);
   console.log(processHeading[nextProcessID]);
   setTimeout(function(){
+    previousProcessID = currentProcessID;
     currentProcessID = nextProcessID;
     
   },800);

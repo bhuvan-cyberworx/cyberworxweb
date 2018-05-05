@@ -389,7 +389,7 @@
 
                         <div class="process-slider-controls">
                             <i id='prevProcess' class='a-left control-c  slick-prev fas fa-arrow-left'></i>
-                            :"<i id='nextProcess' class='a-left control-c  slick-next fas fa-arrow-right'></i>
+                            <i id='nextProcess' class='a-left control-c  slick-next fas fa-arrow-right'></i>
                         </div>
 
                     </div>

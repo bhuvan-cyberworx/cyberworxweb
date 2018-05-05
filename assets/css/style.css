@@ -43,6 +43,9 @@
 .pt40{
     padding-top: 40px !important;
 }
+.mb20{
+    margin-bottom: 20px !important;
+}
 *{
     /*transition: all 0.3s;*/
 }
@@ -587,10 +590,6 @@ button#btn-search-close {
     right: 10px;
 }
 
-.process-heading{
-    transition: 0.5s;
-    opacity: 0;
-}
 
 
 
@@ -598,8 +597,8 @@ button#btn-search-close {
 span.portfolio-data {
     position: absolute;
     z-index: 100000;
-    bottom: 10%;
-    left: 5%;
+    bottom: 0%;
+    left: 0%;
     background: #fff;
     padding: 10px 47px 10px 15px;
     /* font-family: "montserrat"; */
@@ -676,7 +675,7 @@ ul.about-info li:not(:first-of-type):before {
 .feature-image img {
     object-fit: contain;
     height: 100%;
-    width: 100%;
+    width: 80%;
     object-position: top;
 }
 
@@ -687,7 +686,7 @@ ul.about-info li:not(:first-of-type):before {
     margin-bottom: 50px;
 }
 p.about-para.text-center {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .feature-title h6 {
@@ -696,11 +695,14 @@ p.about-para.text-center {
 
 .feature-info p {
     color: #999;
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 10px;
-    line-height: 25px;
+    line-height: 30px;
 }
-
+.feature-title h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
 p.about-para.text-center {
     font-size: 16px;
     font-weight: 500;
@@ -713,7 +715,7 @@ p.about-para.text-center {
 
 a.direction-reveal__card {
     height: 200px;
-    padding: 25px;
+    padding: 40px;
 }
 a.direction-reveal__card img {
     height: 100%;
@@ -997,13 +999,10 @@ section.closing .cta:hover{
 
 
 /*process section css*/
-.process-section {
-    padding: 120px 0 80px;
-}
 
 .process-section {
-    padding: 40px 10px;
-    background: #222;
+    padding: 60px 10px;
+    background: #1a1a1a;
 }
 
 .process-section .process-slider .process-item .number {
@@ -1031,7 +1030,6 @@ section.closing .cta:hover{
 }
 .process-section .process-slider .process-item h3 {
     color: white;
-    margin: 0;
     font-size: 60px;
     line-height: 1;
     margin-bottom: 30px;
@@ -1041,8 +1039,13 @@ section.closing .cta:hover{
     margin-left: 400px;
     font-size: 20px;
     margin-bottom: 40px;
-    transition: 0.5s;
+    transition: all 900ms cubic-bezier(.86,0,.07,1);
+    -webkit-transition-delay: 350ms;
+    -moz-transition-delay: 350ms;
+    -o-transition-delay: 350ms;
+    transition-delay: 350ms;
     opacity: 0;
+    margin-top: 100px;
 
 }
 .process-slider{
@@ -1118,4 +1121,13 @@ button.slick-arrow {
 }
 .slick-prev {
     left: 0;
+}
+
+.process-heading{
+    transition: all 750ms cubic-bezier(.86,0,.07,1);
+    opacity: 0;
+    margin-left: -100px;
+}
+i#prevProcess{
+    display: none;
 }
