@@ -606,7 +606,7 @@ button#btn-search-close {
 
 span.portfolio-data {
     position: absolute;
-    z-index: 100000;
+    z-index: 1;
     bottom: 0%;
     left: 0%;
     background: #f5f5f5;
