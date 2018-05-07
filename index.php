@@ -3,6 +3,7 @@
 
 <!-- Including menu File -->
 <?php include_once("includes/menu.php"); ?>
+<?php include_once("includes/menu-two.php"); ?>
 <!-- <div id="pre-loader">
     <div id="pre-loader-content">
         <div id="pre-loader-image" class="text-center">

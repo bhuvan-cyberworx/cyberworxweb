@@ -523,7 +523,7 @@ span.admin-name {
 
 /*Portfolio Grid CSS Start here*/
 #our-portfolio{
-    background: #eee;
+    background: #fff;
     padding: 50px 00;
 }
 .og-grid li {
@@ -609,7 +609,7 @@ span.portfolio-data {
     z-index: 100000;
     bottom: 0%;
     left: 0%;
-    background: #fff;
+    background: #f5f5f5;
     padding: 10px 47px 10px 15px;
     /* font-family: "montserrat"; */
     text-align: left;
@@ -751,7 +751,7 @@ a.direction-reveal__overlay img {
 
 .direction-reveal--3-grid-flexbox .direction-reveal__card{
     max-width: 20%;
-    border: 1px solid #fff;
+    border: 1px solid #f5f5f5;
 }
 
 
