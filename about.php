@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="banner-title col-12">
-				<h2>We Are Cyberlynkers</h2>
+				<h2>We Are Lykan Media</h2>
 			</div>
 			<div class="banner-info col-12">
 				<ul class="about-info list-unstyled justify-content-center">

@@ -300,8 +300,8 @@
         </a>
     </li>
     <li>
-        <a href="#" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-            <img src="assets/images/thumbs/2.jpg" alt="img02"/>
+        <a href="#" data-largesrc="assets/images/portfolio/sephora0.gif" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
+            <img src="assets/images/portfolio/sephora0.gif" alt="img02"/>
             <span class="portfolio-data">
                 <span>State Bank of India </span>
                 <h4>Brand Identity</h4>
@@ -310,7 +310,7 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-            <img src="assets/images/thumbs/3.jpg" alt="img03"/>
+            <img src="assets/images/portfolio/dhaba.jpg" alt="img03"/>
             <span class="portfolio-data">
                 <span>State Bank of India </span>
                 <h4>Brand Identity</h4>
@@ -319,7 +319,7 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-            <img src="assets/images/thumbs/1.jpg" alt="img01"/>
+            <img src="assets/images/portfolio/go-air.jpg" alt="img01"/>
             <span class="portfolio-data">
                 <span>State Bank of India </span>
                 <h4>Brand Identity</h4>
@@ -328,7 +328,7 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-            <img src="assets/images/thumbs/2.jpg" alt="img02"/>
+            <img src="assets/images/portfolio/bk0.jpg" alt="img02"/>
             <span class="portfolio-data">
                 <span>State Bank of India </span>
                 <h4>Brand Identity</h4>
@@ -337,7 +337,7 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-            <img src="assets/images/thumbs/3.jpg" alt="img03"/>
+            <img src="assets/images/portfolio/benetton0.gif" alt="img03"/>
             <span class="portfolio-data">
                 <span>State Bank of India </span>
                 <h4>Brand Identity</h4>
