@@ -1,4 +1,4 @@
-<div class="footer_bottom">
+<div class="footer_bottom" id="footer-bottom">
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-12 footer_quick_link">

@@ -144,9 +144,45 @@ setTimeout(function(){
 }
 
 
+let menuSlideContent = document.getElementsByClassName("menu-slide-content");
+let navigationSectionInfoBox = document.getElementsByClassName("navigation-section-info-box");
+
+function openMenu(){
+  document.getElementById("slider-section").style.left = "0";
+  document.getElementById("navigation-section").style.right = "0";
+  setTimeout(function(){
+    for(let msci = 0; msci < menuSlideContent.length; msci++){
+    menuSlideContent[msci].style.opacity = 1;
+  }
+  for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
+    navigationSectionInfoBox[nsib].style.opacity = 1;
+    navigationSectionInfoBox[nsib].style.marginTop = "0px";
+  }
+  },800);
+  
+}
+function closeMenu(){
+  document.getElementById("slider-section").style.left = "-50%";
+  document.getElementById("navigation-section").style.right = "-70%";
+  setTimeout(function(){
+    for(let msci = 0; msci < menuSlideContent.length; msci++){
+    menuSlideContent[msci].style.opacity = 0;
+  }
+  for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
+    navigationSectionInfoBox[nsib].style.opacity = 0;
+    navigationSectionInfoBox[nsib].style.marginTop = "-20px";
+  }
+  },800);
+
+}
+document.getElementById("open-menu").addEventListener('click',openMenu);
+document.getElementById("menu-close").addEventListener('click',closeMenu);
+
 
 document.addEventListener("mousemove", handler);
 document.getElementById("prevProcess").addEventListener('click',prevProcess);
 document.getElementById("nextProcess").addEventListener('click',nextProcess);
 
+
 // Elements motion function  ends here
+

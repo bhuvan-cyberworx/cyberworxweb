@@ -4,11 +4,14 @@ let currentID = i;
 let previousID; 
 
 // Getting all the elements with class name letter
+let outerContainer = document.getElementById("outer-container");
+let footerBottom = document.getElementById("footer-bottom");
 let letter = document.getElementsByClassName("letter");
 let slideWrapper  = document.getElementsByClassName("slide-wrapper");
 let parallaxItem = document.getElementsByClassName("parallax-item");
 let svgLetter = document.getElementsByClassName("svg-letter");
 let slider = document.getElementsByClassName("customSlider_slide");
+
 // Initializing the display property of every letter class element as block
 document.getElementById(letter[currentID].id).style.display = "block";
 
@@ -112,15 +115,26 @@ function changeSVG(nextID){
 // check slide number status function
 function slideNumber(slideID){
   if(slideID >= letter.length){
-    alert("i is greater");
     i -= 1;
-    console.log(i);
+    outerContainer.style.display = "block";
+    document.body.style.overflow = "scroll";
+    document.body.style.overflowX  = "hidden";
+    let outerTop = outerContainer.offsetTop;
+    scrollTo(document.documentElement, outerTop+20, 1250); 
+    setTimeout(function(){
+        window.addEventListener("scroll",scrollFunction);  
+    },1350);
+    
+    // var sli = 0;
+    // var int = setInterval(function() {
+    //   window.scrollTo(0, sli);
+    //   sli +=10;
+    //   if (sli >= outerTop+20) clearInterval(int);
+    // }, 20);
+  
   }
   else if(slideID <0){
-    alert("i is less");
     i += 1;
-    console.log(i);
-
   }
   else{
     changeSVG(slideID);
@@ -128,6 +142,36 @@ function slideNumber(slideID){
   
 }
 
+  
+
+    
+function scrollTo(element, to, duration) {
+    var start = element.scrollTop,
+        change = to - start,
+        currentTime = 0,
+        increment = 20;
+        
+    var animateScroll = function(){        
+        currentTime += increment;
+        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+        element.scrollTop = val;
+        if(currentTime < duration) {
+            setTimeout(animateScroll, increment);
+        }
+    };
+    animateScroll();
+}
+
+//t = current time
+//b = start value
+//c = change in value
+//d = duration
+Math.easeInOutQuad = function (t, b, c, d) {
+  t /= d/2;
+  if (t < 1) return c/2*t*t + b;
+  t--;
+  return -c/2 * (t*(t-2) - 1) + b;
+};
 
 // Previous Slide Function
 function prevFunction() {
@@ -140,7 +184,26 @@ function nextFunction() {
  slideNumber(i += 1);
 }
 
+function scrollFunction(){
+  offTop =document.getElementById("outer-container").offsetTop;
+  if(window.pageYOffset > (offTop*0.8) && window.pageYOffset < (offTop*0.85) ){
+    
+    scrollTo(document.documentElement, 0, 1250);
+    setTimeout(function(){
+      outerContainer.style.display = "none";
+      document.body.style.overflow = "hidden";
+      document.body.style.overflowX  = "hidden";  
+
+    },1250);
+
+    // Remove the scroll up event Listener
+    window.removeEventListener("scroll",scrollFunction);
+  }
+}
+
+
 
 // Initializing Event Listener Events 
+
 document.getElementById("prevBtn").addEventListener('click', prevFunction );
 document.getElementById("nextBtn").addEventListener('click', nextFunction );

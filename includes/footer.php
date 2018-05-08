@@ -13,8 +13,7 @@
 <script src="https://cdn.jsdelivr.net/kute.js/1.5.0/kute-svg.min.js"></script> <!-- SVG Plugin -->
 <!-- Including SVG  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
-<!-- Slider JS File -->
-<script type="text/javascript" src="assets/js/slider.js"> </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="assets/js/grid.js"></script>
 
@@ -28,6 +27,8 @@
 <script type="text/javascript" src="assets/js/input-animation.js"> </script>
 <!-- Including bootstrap datepicker js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+<!-- Slider JS File -->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
 <!-- Main JS File -->
 <script type="text/javascript" src="assets/js/main.js"> </script>
 
@@ -87,6 +88,31 @@
 				}
 			}
 		})();
+
+
+// var lastScrollTop = 0;
+// $(window).scroll(function(event){
+//    var st = $(this).scrollTop();
+//    if (st > lastScrollTop){
+//         slideNumber(i += 1);
+//    } else {
+//        slideNumber(i -= 1);
+//    }
+//    lastScrollTop = st;
+// });
+
+ $("#customSlider").on('wheel', function(event) {
+    if (event.originalEvent.deltaY  < 0) {
+        slideNumber(i -= 1);
+        console.log(i);
+    }
+    else {
+        slideNumber(i += 1);
+        console.log(i);
+    }
+});
+
+
 	</script>
 
 </body>

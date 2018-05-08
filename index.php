@@ -133,7 +133,7 @@
 
 
 <!-- Our Clients Section  -->
-
+<div id="outer-container">
 <div class="container demo pt80 pb80">
     <div>
         <h3 class="text-center title pb40">Our Clients</h3>
@@ -400,7 +400,7 @@
             </div>
         </div>
     </div>
-</div>
+
 
 
 <!-- Blog section begins here -->
@@ -479,8 +479,9 @@
 </div> 
 <!-- <h2 id="phoneNumbers" style="font-size: 26px;">610.952.1398   <span style="padding:0px 2.5%; display:inline-block;">|</span>   856.816.6159</h2> -->
 </section>
-
+</div>
 <!-- Including the footer menu -->
 <?php include_once("includes/footer-menu.php"); ?>
+
 <!-- Icluding footer file -->
 <?php include_once("includes/footer.php"); ?>
