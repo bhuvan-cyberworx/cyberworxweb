@@ -585,10 +585,12 @@ span.og-close{
 
 .js .main-wrap {
     position: fixed;
+    height: 55px;
 }
 .search__suggestion {
     color: #fff;
 }
+
 button#btn-search {
     color: #fff;
     font-size: 16px;
@@ -601,7 +603,7 @@ button#btn-search {
     height: 35px;
 }
 
- button#btn-search .icon {
+button#btn-search .icon {
     color: #444;
     font-size: 100%;
 }
