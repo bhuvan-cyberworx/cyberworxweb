@@ -11,9 +11,12 @@
 </svg>
 <main class="main-wrap">
   <header class="main-header">
+    <div class="logo-box">
+      <img src="assets/images/logo_white.png" alt="">
+    </div>
     <div class="open-menu" id="open-menu">
-    <i class="fas fa-bars"></i>
-  </div>
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="search-wrap">
       <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
     </div>
@@ -41,7 +44,7 @@
   </div>
 </div><!-- /search -->
 
-<section class="menu-section">
+<section class="menu-section d-none-sm">
   
   <div class="">
     <div class="row" id="main-menu">
@@ -49,11 +52,11 @@
         
         <div class="menu-slider">
           <!-- Slide One  -->
-          <div class="menu-slider-item">
+          <div class="menu-slider-item active-menu-slide">
             <div class="menu-slide-image">
               <img src="https://big-daddy-kane.s3.amazonaws.com/uploads/projects/media/featured-mobile/FEwx35noHP3KzHMo.jpg" alt="">
             </div>
-            <div class="menu-slide-content">
+            <div class="menu-slide-content" data-animation-in="fadeIn">
               <div class="menu-slide-title"><span class="menu-slide-number">02. </span> opus grows</div>
               <div class="menu-slide-desciption">Selling premium organic soil online.</div>
               <div class="menu-slide-button btn">
@@ -62,28 +65,30 @@
           </div>
 
           <!-- Slide Two  -->
-          <!-- <div class="menu-slider-item">
+          <div class="menu-slider-item">
             <div class="menu-slide-image">
               <img src="https://big-daddy-kane.s3.amazonaws.com/uploads/projects/media/featured-mobile/jIA_3OhMroKib5Ws.jpg" alt="">
             </div>
-            <div class="menu-slide-content">
-              <div class="menu-slide-title"><span class="menu-slide-number">01. </span> lensabl</div>
+            <div class="menu-slide-content" >
+              <div class="menu-slide-title" style="color: #9cdbd9 "><span class="menu-slide-number">01. </span> lensabl</div>
               <div class="menu-slide-desciption">Prescription lenses directly to your door.</div>
-              <div class="menu-slide-button btn">
+              <div class="menu-slide-button btn" style="background: #9cdbd9 !important">
                 <div class="menu-slide-button-text">enter case study <i class="fas fa-arrow-right case-study-arrow"></i></div></div>
             </div>
-          </div> -->
-
-
-          <div class="menu-slider-control">
-            <div id="menuPrevBtn" class="controlBtn">
-                    <i class="fas fa-caret-left"></i>
-                </div>
-                <div id="menuNextBtn" class="controlBtn">
-                    <i class="fas fa-caret-right"></i>
-                </div>
           </div>
+
+
+          
         </div>
+
+        <!-- <div class="menu-slider-control">
+          <div id="menuPrevBtn" class="controlBtn">
+                  <i class="fas fa-caret-left"></i>
+          </div>
+          <div id="menuNextBtn" class="controlBtn">
+              <i class="fas fa-caret-right"></i>
+          </div>
+        </div> -->
 
         
 
@@ -93,7 +98,7 @@
       <div class="col-md-7 navigation-section" id="navigation-section">
         <div class="navigation-section-header row">
           <div class="col-md-4 menu-logo">
-            <img src="" alt="">Lykan Media
+           <img src="assets/images/logo_new.png" alt="" style="width: 75%; transition: 0.5s; margin-top: 4px;">
           </div>
           <div class="col-md-2 offset-md-6 menu-close text-right" id="menu-close">
             <i class="fas fa-times-circle"></i>
@@ -165,4 +170,3 @@
     </div>
   </div>
 </section>
-

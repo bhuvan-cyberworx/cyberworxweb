@@ -45,6 +45,7 @@ function handler(e) {
 
 
 // Process Slider Function Begins here
+// Process Slider Function Begins here
 
 let pi = 0; 
 let currentProcessID = pi;
@@ -143,6 +144,10 @@ setTimeout(function(){
 
 }
 
+// Process Slider Function Ends here
+// Process Slider Function Ends here
+
+
 
 let menuSlideContent = document.getElementsByClassName("menu-slide-content");
 let navigationSectionInfoBox = document.getElementsByClassName("navigation-section-info-box");
@@ -151,7 +156,7 @@ function openMenu(){
   document.getElementById("slider-section").style.left = "0";
   document.getElementById("navigation-section").style.right = "0";
   setTimeout(function(){
-    for(let msci = 0; msci < menuSlideContent.length; msci++){
+  for(let msci = 0; msci < menuSlideContent.length; msci++){
     menuSlideContent[msci].style.opacity = 1;
   }
   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
@@ -165,7 +170,7 @@ function closeMenu(){
   document.getElementById("slider-section").style.left = "-50%";
   document.getElementById("navigation-section").style.right = "-70%";
   setTimeout(function(){
-    for(let msci = 0; msci < menuSlideContent.length; msci++){
+  for(let msci = 0; msci < menuSlideContent.length; msci++){
     menuSlideContent[msci].style.opacity = 0;
   }
   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
@@ -183,6 +188,20 @@ document.addEventListener("mousemove", handler);
 document.getElementById("prevProcess").addEventListener('click',prevProcess);
 document.getElementById("nextProcess").addEventListener('click',nextProcess);
 
+
+  $(document).ready(function(){
+  $('.menu-slider').slick({
+     infinite: true,
+      slidesToShow: 1,
+      autoplay:true,
+      autoplaySpeed:8000,
+
+    prevArrow:'<div id="menuPrevBtn" class="controlBtn"><i class="fas fa-caret-left"></i></div>',
+    nextArrow:'<div id="menuNextBtn" class="controlBtn"><i class="fas fa-caret-right"></i></div>'
+  });
+});
+
+  $('.menu-slider').slickAnimation();
 
 // Elements motion function  ends here
 
