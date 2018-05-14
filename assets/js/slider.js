@@ -19,7 +19,7 @@ let sceneItem = document.getElementsByClassName("scene-item");
 
 // Main slider function 
 function changeSVG(nextID){
- 
+  document.getElementById("icon-scroll").style.display ="none";
   //Parallax item exit function
   
   // parallaxItem[currentID].style.top = "20px";
@@ -111,27 +111,29 @@ function changeSVG(nextID){
   
 
 }
+let mainWrap = document.getElementById("main-wrap");
+let logoImg = document.getElementById("logo-img");
+let menuIcon = document.getElementById("menu-icon");
 
 // check slide number status function
 function slideNumber(slideID){
   if(slideID >= letter.length){
     i -= 1;
+    console.log("slideNumber Script working");
     outerContainer.style.display = "block";
     document.body.style.overflow = "scroll";
     document.body.style.overflowX  = "hidden";
     let outerTop = outerContainer.offsetTop;
     scrollTo(document.documentElement, outerTop+20, 1250); 
-    setTimeout(function(){
-        window.addEventListener("scroll",scrollFunction);  
-    },1350);
     
-    // var sli = 0;
-    // var int = setInterval(function() {
-    //   window.scrollTo(0, sli);
-    //   sli +=10;
-    //   if (sli >= outerTop+20) clearInterval(int);
-    // }, 20);
-  
+    mainWrap.style.background = "#fff";
+    mainWrap.style.borderBottom = "1px solid #eee";
+    logoImg.src  = "assets/images/logo_new.png";
+    menuIcon.style.color = "#333";
+    setTimeout(function(){
+        window.addEventListener("scroll",scrollSlideFunction);  
+    },2500);
+    
   }
   else if(slideID <0){
     i += 1;
@@ -184,20 +186,26 @@ function nextFunction() {
  slideNumber(i += 1);
 }
 
-function scrollFunction(){
+
+
+function scrollSlideFunction(){
   offTop =document.getElementById("outer-container").offsetTop;
   if(window.pageYOffset > (offTop*0.8) && window.pageYOffset < (offTop*0.85) ){
-    
+    console.log("scrollFunction Script working");
     scrollTo(document.documentElement, 0, 1250);
     setTimeout(function(){
       outerContainer.style.display = "none";
       document.body.style.overflow = "hidden";
-      document.body.style.overflowX  = "hidden";  
+      document.body.style.overflowX  = "hidden";
+      mainWrap.style.background = "transparent";
+      mainWrap.style.borderBottom = "0px";
+      logoImg.src  = "assets/images/logo_white.png";
+      menuIcon.style.color = "#fff";  
 
     },1250);
 
     // Remove the scroll up event Listener
-    window.removeEventListener("scroll",scrollFunction);
+    window.removeEventListener("scroll",scrollSlideFunction);
   }
 }
 

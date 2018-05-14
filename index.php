@@ -15,6 +15,7 @@
     </div>
 </div> -->
 
+    <div class='icon-scroll' id="icon-scroll"></div>
 
 <!-- Slider Begins Here  -->
 <div id="customSlider">

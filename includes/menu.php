@@ -9,19 +9,18 @@
   </symbol>
   
 </svg>
-<main class="main-wrap">
+<main class="main-wrap" id="main-wrap">
   <header class="main-header">
     <div class="logo-box">
-      <img src="assets/images/logo_white.png" alt="">
+      <img id="logo-img" src="assets/images/logo_white.png" alt="">
     </div>
     <div class="open-menu" id="open-menu">
-      <i class="fas fa-bars"></i>
+      <i id="menu-icon" class="fas fa-bars"></i>
     </div>
     <div class="search-wrap">
       <button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
     </div>
   </header>
-  
 </main>
 <!-- /main-wrap -->
 
@@ -44,7 +43,7 @@
   </div>
 </div><!-- /search -->
 
-<section class="menu-section d-none-sm">
+<section class="menu-section ">
   
   <div class="">
     <div class="row" id="main-menu">
@@ -79,22 +78,10 @@
 
 
           
-        </div>
-
-        <!-- <div class="menu-slider-control">
-          <div id="menuPrevBtn" class="controlBtn">
-                  <i class="fas fa-caret-left"></i>
-          </div>
-          <div id="menuNextBtn" class="controlBtn">
-              <i class="fas fa-caret-right"></i>
-          </div>
-        </div> -->
-
-        
-
-          
+        </div>       
 
       </div>
+
       <div class="col-md-7 navigation-section" id="navigation-section">
         <div class="navigation-section-header row">
           <div class="col-md-4 menu-logo">
