@@ -36,7 +36,7 @@ function handler(e) {
         itemDepth =sceneItem[i].dataset.depth;
         let tXV = ((w/2 - pageX)/w)  * 14 * itemDepth + 'px';
         let tXY = ((h/2 - pageY)/h)  * 7 * itemDepth +'px';
-        sceneItem[i].style.transform = "translate3d("+ tXV + "," + tXY + ", 0px)";
+        sceneItem[i].style.transform = "translate3d("+ tXV + "," + tXY + ", 0px) !important";
 
     }
 
@@ -152,36 +152,37 @@ setTimeout(function(){
 let menuSlideContent = document.getElementsByClassName("menu-slide-content");
 let navigationSectionInfoBox = document.getElementsByClassName("navigation-section-info-box");
 
-function openMenu(){
-  document.getElementById("slider-section").style.left = "0";
-  document.getElementById("navigation-section").style.right = "0";
-  setTimeout(function(){
-  for(let msci = 0; msci < menuSlideContent.length; msci++){
-    menuSlideContent[msci].style.opacity = 1;
-  }
-  for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
-    navigationSectionInfoBox[nsib].style.opacity = 1;
-    navigationSectionInfoBox[nsib].style.marginTop = "0px";
-  }
-  },800);
+// function openMenu(){
+//   document.getElementById("slider-section").style.left = "0";
+//   document.getElementById("navigation-section").style.right = "0";
+//   setTimeout(function(){
+//   for(let msci = 0; msci < menuSlideContent.length; msci++){
+//     menuSlideContent[msci].style.opacity = 1;
+//   }
+//   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
+//     navigationSectionInfoBox[nsib].style.opacity = 1;
+//     navigationSectionInfoBox[nsib].style.marginTop = "0px";
+//   }
+//   },800);
   
-}
-function closeMenu(){
-  document.getElementById("slider-section").style.left = "-50%";
-  document.getElementById("navigation-section").style.right = "-70%";
-  setTimeout(function(){
-  for(let msci = 0; msci < menuSlideContent.length; msci++){
-    menuSlideContent[msci].style.opacity = 0;
-  }
-  for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
-    navigationSectionInfoBox[nsib].style.opacity = 0;
-    navigationSectionInfoBox[nsib].style.marginTop = "-20px";
-  }
-  },800);
+// }
 
-}
-document.getElementById("open-menu").addEventListener('click',openMenu);
-document.getElementById("menu-close").addEventListener('click',closeMenu);
+// function closeMenu(){
+//   document.getElementById("slider-section").style.left = "-50%";
+//   document.getElementById("navigation-section").style.right = "-70%";
+//   setTimeout(function(){
+//   for(let msci = 0; msci < menuSlideContent.length; msci++){
+//     menuSlideContent[msci].style.opacity = 0;
+//   }
+//   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
+//     navigationSectionInfoBox[nsib].style.opacity = 0;
+//     navigationSectionInfoBox[nsib].style.marginTop = "-20px";
+//   }
+//   },800);
+
+// }
+// document.getElementById("open-menu").addEventListener('click',openMenu);
+// document.getElementById("menu-close").addEventListener('click',closeMenu);
 
 
 document.addEventListener("mousemove", handler);
@@ -189,7 +190,7 @@ document.getElementById("prevProcess").addEventListener('click',prevProcess);
 document.getElementById("nextProcess").addEventListener('click',nextProcess);
 
 
-  $(document).ready(function(){
+$(document).ready(function(){
   $('.menu-slider').slick({
      infinite: true,
       slidesToShow: 1,
@@ -201,7 +202,38 @@ document.getElementById("nextProcess").addEventListener('click',nextProcess);
   });
 });
 
-  $('.menu-slider').slickAnimation();
+
+$(document).ready(function(){
+  $('#open-menu,#menu-close').click(function(){
+    $('#main-menu').toggleClass('active-menu');   
+
+    // $('#main-wrapper').toggleClass('shift-left');
+    // $('#overlay-box').toggleClass('overlay-box-active');
+
+  });
+
+
+
+ 
+    // $(".back-button").click(function() {
+    //   $(".segment").removeClass("active-segment");
+    //   $(".main-blocks").removeClass("active-intro");
+    //   setTimeout(function(){
+    //     document.getElementById('main-blocks').style.zIndex = 51;
+    //   },1600),
+    //     $("#site-content").removeClass("active-site-content")
+
+    // });
+
+    // function changeSegment(t) {
+    //   console.log(".segment#" + t);
+    //    $(".main-blocks").addClass("active-intro"), 
+    //    $("#site-content").addClass("active-site-content"), 
+    //    $(".segment").removeClass("active-segment"), 
+    //    $(".segment#" + t).addClass("active-segment")
+      
+    // }
+});
 
 // Elements motion function  ends here
 

@@ -12,7 +12,7 @@
 <main class="main-wrap" id="main-wrap">
   <header class="main-header">
     <div class="logo-box">
-      <img id="logo-img" src="assets/images/logo_white.png" alt="">
+      <img id="logo-img" src="assets/images/logo-lykan-white.png" alt="">
     </div>
     <div class="open-menu" id="open-menu">
       <i id="menu-icon" class="fas fa-bars"></i>
@@ -46,7 +46,7 @@
 <section class="menu-section ">
   
   <div class="">
-    <div class="row" id="main-menu">
+    <div class="row" id="main-menu" class="">
       <div class="col-md-5 slider-section" id="slider-section">
         
         <div class="menu-slider">
@@ -94,9 +94,10 @@
         <div class="navigation-section-links">
           <ul class="list-unstyled">
             <li class="list-unstyled-item"><a href="">Home<span class="menu_period">.</span></a></li>
-            <li class="list-unstyled-item"><a href="">Work<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Our Story<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Services<span class="menu_period">.</span></a></li>
+            <li class="list-unstyled-item"><a href="">Case Studies<span class="menu_period">.</span></a></li>
+            <li class="list-unstyled-item"><a href="">Case Studies<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Enquire Now<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Contact<span class="menu_period">.</span></a></li>
           </ul>     

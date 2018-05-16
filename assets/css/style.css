@@ -1,4 +1,4 @@
-/* Main Custom Style Sheet */
+ Main Custom Style Sheet */
 @font-face{
     font-family:itc;
     src:url(../fonts/itc-avantgarde.otf) format("opentype");
@@ -151,6 +151,7 @@ a:hover{
 .bg-color img{
     object-fit : cover;
     width: 100%;
+    height: 100%;
 }
 .parallax-item{
     position: absolute;
@@ -236,11 +237,11 @@ transform-style: preserve-3d;
 }
 
 .svg-letter{
-    position: absolute;
-    width: 380px;
-    height: 383px;
-    left: 57vh;
-    top: 29vh;
+     position: absolute;
+    width: 500px;
+    height: 452px;
+    left: 42.7vh;
+    top: 23.6vh;
     z-index: 1;
 }
 
@@ -253,7 +254,7 @@ transform-style: preserve-3d;
     max-height: 100%;
     width:auto;
     left: 0;
-    transition: 0.5s;
+    transition: 0.2s;
     z-index: 1;
     display: none;
     z-index: 10000000000;
@@ -266,6 +267,9 @@ transform-style: preserve-3d;
     z-index: 200;
 }
 
+.bg-color {
+    height: 100%;
+}
 .element-b-1{
     background: url("https://www.exitable.nl/dist/assets/img/gilde-3.png");
     position: absolute;
@@ -344,14 +348,16 @@ transform-style: preserve-3d;
 }
 
 .scene-item{
-    display: none;
     -webkit-animation: fadeOutDown 0.5s;
      animation: fadeOutDown 0.5s;
+     transform: translate(0rem,2rem) !important;
+
 }
 
 /*SLIDER PARAMETERES */
 #outer-container{
     display: none;
+    background: #F7F6F6;
 }
 #footer-bottom{
     /*display: none;*/
@@ -649,7 +655,7 @@ span.portfolio-data h4 {
 
 
 a.direction-reveal__card:hover img {
-    transform: scale(1.1);
+    /*transform: scale(1.0);*/
 }
 
 
@@ -755,15 +761,14 @@ p.about-para.text-center {
 
 a.direction-reveal__card {
     height: 200px;
-    padding: 40px;
+    padding: 25px;
 }
 a.direction-reveal__card img {
     height: 100%;
     object-fit: contain;
     object-position: center;
     transition: 0.3s;
-    filter: grayscale(100%);
-    opacity: 0.4;
+    
 }
 a.direction-reveal__overlay{
     padding: 25px;
@@ -776,7 +781,8 @@ a.direction-reveal__overlay img {
 
 .direction-reveal--3-grid-flexbox .direction-reveal__card{
     max-width: 25%;
-    border: 1px solid #f5f5f5;
+    /*border: 1px solid #f5f5f5;*/
+    text-align: center;
 }
 
 
@@ -1786,7 +1792,7 @@ background: rgba(255,255,255,0.4);
 
 /*MENU STARTS HERE */
 .logo-box img {
-    width: 60%;
+    width: 40%;
 }
 .logo-box {
     position: absolute;
@@ -1852,6 +1858,8 @@ section.menu-section {
     transition: 0.3s;
     opacity: 0;
     padding-right: 10%;
+    transition-delay: 0.3s;
+    transform: translate(0,3rem);
 }
 .navigation-section-info-box{
     opacity: 0;
@@ -2023,7 +2031,7 @@ div#menuNextBtn {
      padding: 0 3%;
     position: absolute;
     height: 100vh;
-    right: -60%;
+    right: 0%;
     transition: 0.7s;
     /*transition-timing-function: ease-out;*/
     background: #fff;
@@ -2032,7 +2040,7 @@ div#menuNextBtn {
 .slider-section {
     position: absolute;
     padding: 0;
-    left: -50%;
+    left: 0%;
     transition: 0.7s;
     /*transition-timing-function: ease-out;*/
 }
@@ -2068,48 +2076,6 @@ div#menuNextBtn {
     position: relative;
     width: auto;
 }
-.navigation-section-links li{
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.menu-open .menu-item {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    transition: all .5s;
-    opacity: 1
-}
-
-.menu-open .menu-item:nth-child(1) {
-    transition-delay: .2s
-}
-.menu-open .menu-item:nth-child(2) {
-    transition-delay: .3s
-}
-.menu-open .menu-item:nth-child(3) {
-    transition-delay: .4s
-}
-.menu-open .menu-item:nth-child(4) {
-    transition-delay: .5s
-}
-.menu-open .menu-item:nth-child(5) {
-    transition-delay: .6s
-}
-.menu-open .menu-item:nth-child(6) {
-    transition-delay: .7s
-}
-.menu-open .menu-item:nth-child(7) {
-    transition-delay: .8s
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2187,3 +2153,165 @@ ul.social-links li a:hover i{
 }
 
 
+
+/*Slide Animation Styling*/
+
+.slide-wrapper{
+        transform: translate(100%,0);
+}
+ 
+.scene-item {
+    transform: translate(0rem,0rem);
+    opacity: 0;
+}
+
+.svg-letter {
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.svg-change {
+      opacity: 0; 
+    
+}
+.svg-change-transition{
+    opacity: 1; 
+}
+.svg-letter{
+    transform: translate(0rem,0rem);
+}
+
+
+
+/*Active Slide CSS*/
+.active-slide  .slide-wrapper{
+    transform: translate(00%,0);
+    transition-delay: 0.2s;
+}
+ 
+.active-slide  .scene-item {
+    transform: translate(0rem,0rem) !important;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.active-slide  .svg-letter {
+    opacity: 1;
+}
+
+.svg-change {
+    opacity: 1;  
+}
+.active-slide  .svg-letter{
+    transform: translate(0rem,0rem);
+    transition-delay: 0.2s;
+}
+
+
+
+
+/*Menu Open Close CSS*/
+
+.navigation-section-info-box:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.navigation-section-info-box:nth-child(2) {
+   transition-delay: 0.3s;
+}
+.navigation-section-info-box {
+    transform: translate(0,3rem);
+    opacity: 0;
+}
+
+.menu-logo {
+    transform: translate(3rem,0);
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+.navigation-section {
+    transform: translate(100%,0);
+}
+
+.slider-section {
+    transform: translate(-100%,0);
+
+}
+
+.navigation-section-links li {
+
+    transform: translate(3rem,0rem);
+    transition: 0.3s;
+    opacity: 0;
+
+}
+
+
+
+
+
+
+.active-menu .navigation-section-info-box {
+    transform: translate(0,0rem);
+    opacity: 1;
+    transition-delay: 0.3s;
+
+}
+
+.active-menu .menu-logo {
+    transform: translate(0rem,0);
+    transition: 0.5s;
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.active-menu .navigation-section {
+    transform: translate(000%,0);
+    opacity: 1;
+}
+
+.active-menu .slider-section {
+    transform: translate(000%,0);
+    opacity: 1;
+}
+
+.active-menu .navigation-section-links li {
+    transition-delay: 0.5s;
+    transform: translate(0rem,0rem);
+    opacity:1;
+
+}
+
+.active-menu .navigation-section-links li:nth-child(1) {
+    transition-delay: .2s
+}
+.active-menu .navigation-section-links li:nth-child(2) {
+    transition-delay: .3s
+}
+.active-menu .navigation-section-links li:nth-child(3) {
+    transition-delay: .4s
+}
+.active-menu .navigation-section-links li:nth-child(4) {
+    transition-delay: .5s
+}
+.active-menu .navigation-section-links li:nth-child(5) {
+    transition-delay: .6s
+}
+.active-menu .navigation-section-links li:nth-child(6) {
+    transition-delay: .7s
+}
+.active-menu .navigation-section-links li:nth-child(7) {
+    transition-delay: .8s
+}
+
+.active-menu .menu-close i{
+    color: #333;
+}
+
+.active-menu .menu-slide-content{
+    opacity: 1;
+    transition-delay: 0.7s;
+    transform: translate(0,0rem);
+}
