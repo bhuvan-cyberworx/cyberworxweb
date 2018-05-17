@@ -524,6 +524,8 @@ transform-style: preserve-3d;
     width: 100vw;
     height: 100vh;
     z-index: 5;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 .element-a-2{
