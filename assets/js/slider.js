@@ -3,19 +3,31 @@
 // })();
 
 
-var wheelFunction = function() {$("#customSlider").on('wheel', function(event) {
-    if (event.originalEvent.deltaY  < 1) {
+// var wheelFunction = function() {$("#customSlider").on('wheel', function(event) {
+//     if (event.originalEvent.deltaY  < 1) {
+//         slideNumber(i -= 1);
+//         console.log(i);
+//     }
+//     else {
+//         slideNumber(i += 1);
+//         console.log(i);
+//     }
+// });
+// };
+
+
+$('html').keydown(function(e){
+       if(e.which == 38){
         slideNumber(i -= 1);
         console.log(i);
-    }
-    else {
+       }
+       if(e.which == 40){
         slideNumber(i += 1);
         console.log(i);
-    }
+       }
 });
-};
 
-wheelFunction();
+// wheelFunction();
 
 let outerContainer = document.getElementById("outer-container");
 let outerTop = outerContainer.offsetTop;
