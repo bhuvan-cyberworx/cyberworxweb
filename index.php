@@ -15,6 +15,28 @@
     </div>
 </div> -->
 
+
+<div id="pre-loader">
+    <div class="content ">
+        <div class="content__container">
+            <p class="content__container__text">
+              You Need
+            </p>
+
+            <ul class="content__container__list">
+              <li class="content__container__list__item">SEO ?</li>
+              <li class="content__container__list__item">Maketing ?</li>
+              <li class="content__container__list__item">Something ?</li>
+              <li class="content__container__list__item">LYKAN !</li>
+            </ul>
+        </div>
+    </div>
+
+     <div id="pre-loader-image" class="text-center">
+        <img src="assets/images/logo-lykan-white.png" alt="">
+    </div>
+</div>
+
     <div class='icon-scroll' id="icon-scroll"></div>
 
 <!-- Slider Begins Here  -->
@@ -37,7 +59,7 @@
     <!-- Changing SVG letter Animation Ends Here -->
 
     <!-- Slide number one -->
-    <div class="customSlider_slide slide-a active_slide active-slide">
+    <div class="customSlider_slide   active-slide slide-a" >
         <!-- slider coloured wrapper background -->
         <div class="slide-wrapper">
             <div class="bg-color">
@@ -51,9 +73,9 @@
             <!-- scene item one -->
             <div class="scene-item scene-content" data-depth="1.1">
                 <span>
-                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. Vier jij met ons mee?
+                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. <span class="white">Vier jij met ons mee?</span>
                 </span>
-                <a href="#">View Case Study Now -></a>
+                <a href="#">View Case Study Now <i class="fas fa-arrow-right case-study-arrow"></i></a>
             </div>
             <!-- scene item two -->
             <div class="scene-item element-a-1" data-depth="0.5">
@@ -78,7 +100,7 @@
     </div> <!-- Slide one ends here -->
 
     <!-- Slide Number Two -->
-    <div class="customSlider_slide active_slide slide-b">
+    <div class="customSlider_slide slide-b">
         <div class="slide-wrapper">
             <div class="bg-color">
                 <img src="assets/images/banner/b2-bac.png">
@@ -88,9 +110,9 @@
         <div class="parallax-item">
             <div class="scene-item scene-content" data-depth="1.1">
                 <span>
-                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. Vier jij met ons mee?
+                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. <span class="white">Vier jij met ons mee?</span>
                 </span>
-                <a href="#">View Case Study Now -></a>
+                <a href="#">View Case Study Now <i class="fas fa-arrow-right case-study-arrow"></i></a>
             </div>
 
             <div class="scene-item element-b-1" data-depth="1.5">

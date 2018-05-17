@@ -1,7 +1,16 @@
-window.onload = function(){
 
-        preLoader();
-    }
+window.onload = function(){
+  setTimeout(function(){
+    $('#pre-loader').addClass('content-hidden');
+  },3000);
+
+  setTimeout(function(){ 
+          preLoader();
+  },5000);
+  
+}
+
+
 
     function preLoader(){
         let preLoader = document.getElementById("pre-loader");
@@ -10,7 +19,7 @@ window.onload = function(){
 
 setTimeout(function(){
     let preLoaderImage = document.getElementById("pre-loader-image");
-    preLoaderImage.style.animation = "preLoader 2s infinite";
+    // preLoaderImage.style.animation = "preLoader 2s infinite";
 },1000);
 
 
@@ -36,7 +45,7 @@ function handler(e) {
         itemDepth =sceneItem[i].dataset.depth;
         let tXV = ((w/2 - pageX)/w)  * 14 * itemDepth + 'px';
         let tXY = ((h/2 - pageY)/h)  * 7 * itemDepth +'px';
-        sceneItem[i].style.transform = "translate3d("+ tXV + "," + tXY + ", 0px) !important";
+        sceneItem[i].style.transform = "translate3d("+ tXV + "," + tXY + ", 0px)";
 
     }
 

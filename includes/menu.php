@@ -12,7 +12,7 @@
 <main class="main-wrap" id="main-wrap">
   <header class="main-header">
     <div class="logo-box">
-      <img id="logo-img" src="assets/images/logo-lykan-white.png" alt="">
+      <img id="logo-img" src="assets/images/logo_white.png" alt="">
     </div>
     <div class="open-menu" id="open-menu">
       <i id="menu-icon" class="fas fa-bars"></i>
@@ -97,8 +97,8 @@
             <li class="list-unstyled-item"><a href="">Our Story<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Services<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Case Studies<span class="menu_period">.</span></a></li>
-            <li class="list-unstyled-item"><a href="">Case Studies<span class="menu_period">.</span></a></li>
-            <li class="list-unstyled-item"><a href="">Enquire Now<span class="menu_period">.</span></a></li>
+            <li class="list-unstyled-item"><a href="">Clients<span class="menu_period">.</span></a></li>
+            <li class="list-unstyled-item"><a href="">Partner Us<span class="menu_period">.</span></a></li>
             <li class="list-unstyled-item"><a href="">Contact<span class="menu_period">.</span></a></li>
           </ul>     
         </div>

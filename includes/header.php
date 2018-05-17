@@ -28,5 +28,5 @@
     
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="home-slide-active">
     
