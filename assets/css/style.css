@@ -247,6 +247,10 @@ div#pre-loader-image {
         opacity: 1;
        }
   
+    /*#pre-loader.content-hidden{
+        opacity: 0;
+        transition-delay: 5.3s;
+    }*/
 
 @-webkit-keyframes opacity {
   0%,
