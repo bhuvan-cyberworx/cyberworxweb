@@ -105,24 +105,9 @@
 //    lastScrollTop = st;
 // });
 
- $("#customSlider").on('wheel', function(event) {
-    if (event.originalEvent.deltaY  < 1) {
-        slideNumber(i -= 1);
-        console.log(i);
-    }
-    else {
-        slideNumber(i += 1);
-        console.log(i);
-    }
-});
+ 
 
-navigator.getBattery().then(function(battery) {
-    if (battery.charging && battery.chargingTime === 0) {
-        console.log("I'm a desktop")
-    } else {
-        console.log("I'm not a desktop")
-    }
-});
+
 
 </script>
 
