@@ -12,10 +12,10 @@ window.onload = function(){
 
 
 
-    function preLoader(){
-        let preLoader = document.getElementById("pre-loader");
-        preLoader.style.top = -100+'vh';
-    }
+  function preLoader(){
+      let preLoader = document.getElementById("pre-loader");
+      preLoader.style.top = -100+'vh';
+  }
 
 setTimeout(function(){
     let preLoaderImage = document.getElementById("pre-loader-image");
