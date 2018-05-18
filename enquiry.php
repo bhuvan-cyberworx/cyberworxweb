@@ -1,37 +1,9 @@
 <!-- Including Header File -->
-<?php include_once("includes/header.php"); ?>
+<?php include_once("includes/header-open.php"); ?>
 
 <!-- Including menu File -->
 <?php include_once("includes/menu-two.php"); ?>
 
-<!-- <div id="pre-loader">
-    <div id="pre-loader-content">
-        <div id="pre-loader-image" class="text-center">
-            <img src="assets/images/logo.png" alt="logo" class="animated fadeInDown">
-        </div>
-        <div id="pre-loader-text">
-            <h4 class="text text-center animated slideInUp">Cyberworx - Digital Solutions. <span style="color:#F0E500">Made </span>Easy.</h4>
-        </div>
-    </div>
-</div> -->
-
-<!-- <section class="hero-banner" style="background: url('assets/images/about-img.png'); ">
-	<div class="container">
-		<div class="row">
-			<div class="banner-title col-12">
-				<h2>LET’S CRAFT BRILLIANCE 
-
-</h2>
-			</div>
-			<div class="banner-info col-12">
-				<ul class="about-info list-unstyled justify-content-center">
-					<li>Get Started</li>
-					
-				</ul>
-			</div>
-		</div>
-	</div>
-</section> -->
 
 <!-- <span class="enqiry-heading">Ready to work with us? Tell us more.</span> -->
 <div class="contact-enquiry ">
@@ -226,50 +198,42 @@
   </div>
     
 </div>
+
 <div class="col-md-6" style="padding: 50px; padding-top: 0">
-<form action="/project-enquiry" enctype="multipart/form-data" method="post" novalidate="novalidate" style="    background: #f5f5f5;    padding: 50px; padding-bottom: 135px;">        
+<form action="/project-enquiry" enctype="multipart/form-data" method="post" novalidate="novalidate" style="    background: #F1F4F5;    padding: 50px; padding-bottom: 135px;">        
 	<span class="enqiry-heading">Little about you</span>
         <section class="content row">
 
         	<!-- Your Name Field -->
             <div class="col-md-6 p0">
-               <span class="input input--jiro">
-					<input class="input__field input__field--jiro" type="text" id="input-10" />
-					<label class="input__label input__label--jiro" for="input-10">
-						<span class="input__label-content input__label-content--jiro">Your Name</span>
-					</label>
-				</span>
-                <span class="pErrorMessage" id="p_1194_error" style=""><span class="field-validation-valid" data-valmsg-for="projectEnquiryModel.Name" data-valmsg-replace="true"></span></span>
+               <label for="">Name</label>
+                <input type="text" name="name">
+                <span class="pErrorMessage" id="name_error" style=""></span>
             </div>
 
-			<!-- Your Company Name Field -->
+			      <!-- Your Company Name Field -->
             <div class="col-md-6 p0">
-                <span class="input input--jiro">
-                    <input class="input__field input__field--jiro reqire-fld" data-val="true" data-val-required="Please enter your company." id="input-4" maxlength="500" name="projectEnquiryModel.Company" type="text" value="">
-                    
-                    <label class="input__label input__label--jiro input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Your Company</span> </label>
-                </span>
-                <span class="pErrorMessage" id="p_1194_error" style=""><span class="field-validation-valid" data-valmsg-for="projectEnquiryModel.Company" data-valmsg-replace="true"></span></span>
+               <label for="">Your Company</label>
+                <input type="text" name="company">
+                <span class="pErrorMessage" id="name_error" style=""></span>
             </div>
+
+
+            <!-- Your Email Field -->
             <div class="col-md-6 p0">
-                <span class="input input--jiro">
-                    <input class="input__field input__field--jiro reqire-fld email-required" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="Please enter a valid email address." id="input-4" maxlength="500" name="projectEnquiryModel.Email" type="text" value="">
-                    
-                    <label class="input__label input__label--jiro input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Email Address</span> </label>
-                </span>
-                <span class="pErrorMessage" id="p_1194_error" style=""><span class="field-validation-valid" data-valmsg-for="projectEnquiryModel.Email" data-valmsg-replace="true"></span></span>
+               <label for="">Email Address</label>
+                <input type="text" name="email">
+                <span class="pErrorMessage" id="email_error" style=""></span>
             </div>
+
+
+            <!-- Your Email Field -->
             <div class="col-md-6 p0">
-                <span class="input input--jiro">
-                    <input class="input__field input__field--jiro reqire-fld" data-val="true" data-val-required="Please enter your phone number." id="input-4" maxlength="500" name="projectEnquiryModel.Phone" type="text" value="">
-                    
-                    <label class="input__label input__label--jiro input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Phone number</span> </label>
-                </span>
-                <span class="pErrorMessage" id="p_1194_error" style=""><span class="field-validation-valid" data-valmsg-for="projectEnquiryModel.Phone" data-valmsg-replace="true"></span></span>
+               <label for="">Phone Number</label>
+                <input type="text" name="mobile">
+                <span class="pErrorMessage" id="email_error" style=""></span>
             </div>
-            <!--<button class="button button--ujarak button--border-thin button--text-thick">
-            SENT
-            </button>-->
+            
         </section>
         <!-- START ABOUT PROJECT -->
         <div class="clearfix mt60" ></div>
@@ -298,16 +262,16 @@
         <section class="content row ">
             <div class="col-md-6 ">
                <span class="input input--jiro ml0">
-                    <input class="input__field input__field--jiro reqire-fld"  id="start-date" maxlength="500" name="projectEnquiryModel.Phone" type="text" value="">
+                    <input class="input__field  reqire-fld"  id="start-date" maxlength="500" name="projectEnquiryModel.Phone" type="text" value="">
                     
-                    <label class="input__label input__label--jiro input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Ideal Start Date</span> </label>
+                    <label class="input__label  -color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Ideal Start Date</span> </label>
                 </span>
             </div>
             <div class="col-md-6 ">
                 <span class="input input--jiro ml0">
-                    <input class="input__field input__field--jiro reqire-fld"  id="end-date" maxlength="500" name="projectEnquiryModel.Phone" type="text" value="">
+                    <input class="input__field  reqire-fld"  id="end-date" maxlength="500" name="projectEnquiryModel.Phone" type="text" value="">
                     
-                    <label class="input__label input__label--jiro input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Ideal End Date</span> </label>
+                    <label class="input__label  -color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Ideal End Date</span> </label>
                 </span>
             </div>
             <!--<button class="button button--ujarak button--border-thin button--text-thick">
@@ -319,9 +283,9 @@
         <section class="content project-summary clearfix">
             <div class="col-md-12 p0">
                 <span class="input input--jiro ml0 ">
-                    <textarea class="input__field input__field--jiro" cols="80" id="input-4" maxlength="10000" name="ProjectSummary" rows="3.5"></textarea>
+                    <textarea class="input__field " cols="80" id="input-4" maxlength="10000" name="ProjectSummary" rows="3.5"></textarea>
                     
-                    <label class="input__label input__label--jiro input_label_position input__label--jiro-color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Project summary: Share your thoughts on your project</span> </label>
+                    <label class="input__label  input_label_position -color-1" for="input-4"> <span class="input__label-content input__label-content--jiro">Project summary: Share your thoughts on your project</span> </label>
                 </span>
             </div>
         </section>

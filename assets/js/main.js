@@ -1,3 +1,44 @@
+var hr = (new Date()).getHours();
+var dn = document.getElementById("dn");
+
+// Initializing Check Day and Night Function
+checkDayNight();
+
+function checkDayNight() {
+
+  if(hr>7 && hr < 19){
+    $('body').addClass('day');
+    dn.checked = false;
+  }
+  else{
+    $('body').addClass('night');
+    dn.checked = true;
+  }
+  setTimeout(function(){
+     $('.alert').addClass('alertShow');
+   },1000);
+ 
+
+}
+
+$(".alert .close").on('click',function(){
+  $('.alert').removeClass('alertShow');
+  $('.alert').addClass('alertHide');
+});
+
+$(".toggleWrapper").on('click',toggleDayNight);
+
+function toggleDayNight(){
+  if(dn.checked){
+    $('body').addClass('night');
+    $('body').removeClass('day');
+  }
+
+  else{
+    $('body').addClass('day');
+    $('body').removeClass('night');
+  }
+}
 
 window.onload = function(){
   setTimeout(function(){
@@ -19,7 +60,7 @@ window.onload = function(){
 
 setTimeout(function(){
     let preLoaderImage = document.getElementById("pre-loader-image");
-    // preLoaderImage.style.animation = "preLoader 2s infinite";
+    
 },1000);
 
 
@@ -77,10 +118,7 @@ function nextProcess() {
 }
 
 function processNumber(processID){
-  // if(processID = 0){
-  //   document.getElementById("prevProcess").style.display = "none";
-  //   changeProcess(processID);
-  // }
+
    if(processID == processItem.length-1){
     changeProcess(processID);
     // pi -= 1;
@@ -113,7 +151,6 @@ function changeProcess(nextProcessID){
  
     
 setTimeout(function(){
-    // parallaxItem[currentID].style.opacity = "0";
     processHeading[currentProcessID].style.marginLeft = "-100px";
     processHeading[currentProcessID].style.opacity = "0";
 
@@ -128,8 +165,6 @@ setTimeout(function(){
   },00);
 
  setTimeout(function(){
-    // parallaxItem[currentID].style.opacity = "0";
-    // processItem[nextProcessID].classList.add("process-active");
     processHeading[nextProcessID].style.marginLeft = "0px";
     processHeading[nextProcessID].style.opacity = "1";
     
@@ -153,45 +188,9 @@ setTimeout(function(){
 
 }
 
-// Process Slider Function Ends here
-// Process Slider Function Ends here
-
-
 
 let menuSlideContent = document.getElementsByClassName("menu-slide-content");
 let navigationSectionInfoBox = document.getElementsByClassName("navigation-section-info-box");
-
-// function openMenu(){
-//   document.getElementById("slider-section").style.left = "0";
-//   document.getElementById("navigation-section").style.right = "0";
-//   setTimeout(function(){
-//   for(let msci = 0; msci < menuSlideContent.length; msci++){
-//     menuSlideContent[msci].style.opacity = 1;
-//   }
-//   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
-//     navigationSectionInfoBox[nsib].style.opacity = 1;
-//     navigationSectionInfoBox[nsib].style.marginTop = "0px";
-//   }
-//   },800);
-  
-// }
-
-// function closeMenu(){
-//   document.getElementById("slider-section").style.left = "-50%";
-//   document.getElementById("navigation-section").style.right = "-70%";
-//   setTimeout(function(){
-//   for(let msci = 0; msci < menuSlideContent.length; msci++){
-//     menuSlideContent[msci].style.opacity = 0;
-//   }
-//   for(let nsib = 0; nsib < navigationSectionInfoBox.length; nsib++){
-//     navigationSectionInfoBox[nsib].style.opacity = 0;
-//     navigationSectionInfoBox[nsib].style.marginTop = "-20px";
-//   }
-//   },800);
-
-// }
-// document.getElementById("open-menu").addEventListener('click',openMenu);
-// document.getElementById("menu-close").addEventListener('click',closeMenu);
 
 
 document.addEventListener("mousemove", handler);
@@ -216,32 +215,9 @@ $(document).ready(function(){
   $('#open-menu,#menu-close').click(function(){
     $('#main-menu').toggleClass('active-menu');   
 
-    // $('#main-wrapper').toggleClass('shift-left');
-    // $('#overlay-box').toggleClass('overlay-box-active');
-
   });
 
 
-
- 
-    // $(".back-button").click(function() {
-    //   $(".segment").removeClass("active-segment");
-    //   $(".main-blocks").removeClass("active-intro");
-    //   setTimeout(function(){
-    //     document.getElementById('main-blocks').style.zIndex = 51;
-    //   },1600),
-    //     $("#site-content").removeClass("active-site-content")
-
-    // });
-
-    // function changeSegment(t) {
-    //   console.log(".segment#" + t);
-    //    $(".main-blocks").addClass("active-intro"), 
-    //    $("#site-content").addClass("active-site-content"), 
-    //    $(".segment").removeClass("active-segment"), 
-    //    $(".segment#" + t).addClass("active-segment")
-      
-    // }
 });
 
 // Elements motion function  ends here

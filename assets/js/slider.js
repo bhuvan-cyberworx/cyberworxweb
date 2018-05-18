@@ -1,44 +1,42 @@
-// (function(){
-// 	$('.active-slide .scene-item').css('transition-delay','0s');
-// })();
 
-
-// var wheelFunction = function() {$("#customSlider").on('wheel', function(event) {
-//     if (event.originalEvent.deltaY  < 1) {
-//         slideNumber(i -= 1);
-//         console.log(i);
-//     }
-//     else {
-//         slideNumber(i += 1);
-//         console.log(i);
-//     }
-// });
-// };
-
-
-$('html').keydown(function(e){
+var keyFunction = function() {$('html').on('keydown', function(e){
+       
        if(e.which == 38){
         slideNumber(i -= 1);
-        console.log(i);
+        $('html').off();
+        setTimeout(function(){
+          keyFunction();
+        },1500);
        }
+
        if(e.which == 40){
         slideNumber(i += 1);
-        console.log(i);
+        $('html').off();
+        setTimeout(function(){
+          keyFunction();
+        },1500);
        }
 });
+}
 
-// wheelFunction();
+keyFunction();
+
 
 let outerContainer = document.getElementById("outer-container");
 let outerTop = outerContainer.offsetTop;
 let i = 0; 
 let letter = document.getElementsByClassName("letter");
+
 function slideNumber(slideID){
 	if(slideID >= letter.length){
 		i -= 1;
-		console.log("slideNumber Script working");
+    console.log(slideID);
+		setTimeout(function(){
+      $('html').off();
+    },1600);
+    
 		$('body').addClass('home-slide-inactive');
-		$("#customSlider").off();
+    $('#icon-scroll').css('display','none');
 		scrollTo(document.documentElement, outerTop+20, 1250); 
 		setTimeout(function(){
 		    window.addEventListener("scroll",scrollSlideFunction);  
@@ -54,20 +52,43 @@ function slideNumber(slideID){
 	}
 }
 
+
+// var scrollSlideFunction = function() {
+//   $('window').on('scroll',function(){
+//     if(window.pageYOffset < (outerTop*0.90) ){
+//       setTimeout(function(){
+//         keyFunction();
+//       }, 1500);
+//       console.log("scrollFunction Script working");
+//       // $('#icon-scroll').css('display','block');
+//       scrollTo(document.documentElement, 0, 800);
+//       setTimeout(function(){
+//         $('body').removeClass('home-slide-inactive');
+//       },800);
+
+//       // // Remove the scroll up event Listener
+//       window.removeEventListener("scroll",scrollSlideFunction);
+//     }
+//   })
+// }
+
+
 function scrollSlideFunction(){
 
-  if(window.pageYOffset < (outerTop*0.75) ){
-  	wheelFunction();
+  if(window.pageYOffset < (outerTop) ){
+    setTimeout(function(){
+      keyFunction();
+    }, 1500);
     console.log("scrollFunction Script working");
-    scrollTo(document.documentElement, 0, 1250);
+    $('#icon-scroll').css('display','block');
+    scrollTo(document.documentElement, 0, 800);
     setTimeout(function(){
    		$('body').removeClass('home-slide-inactive');
-    },1250);
+    },000);
 
-    // Remove the scroll up event Listener
+    // // Remove the scroll up event Listener
     window.removeEventListener("scroll",scrollSlideFunction);
   }
-
 }
 
 
@@ -102,7 +123,9 @@ function scrollTo(element, to, duration) {
 
 let currentID = i, prevID, nextID ;
 let slide = document.getElementsByClassName('customSlider_slide');
+
 function changeSlide(nextID){
+
 	$('#icon-scroll').css('display','none');
 	$(slide[currentID]).removeClass('active-slide');
 	$('#svg-change').css('opacity',1);

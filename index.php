@@ -15,7 +15,6 @@
     </div>
 </div> -->
 
-
 <div id="pre-loader">
     <div class="content ">
         <div class="content__container">
@@ -37,7 +36,9 @@
     </div>
 </div>
 
-    <div class='icon-scroll' id="icon-scroll"></div>
+    <div class='icon-scroll' id="icon-scroll">
+        Press <div class="key"><i class="fas fa-arrow-up"></i></div> or <div class="key"><i class="fas fa-arrow-down"></i></div> to change slide.
+    </div>
 
 <!-- Slider Begins Here  -->
 <div id="customSlider">
@@ -103,7 +104,7 @@
     <div class="customSlider_slide slide-b">
         <div class="slide-wrapper">
             <div class="bg-color">
-                <img src="assets/images/banner/b2-bac.png">
+                <img src="assets/images/banner/b2-bac-2.png">
             </div>
         </div>
 
@@ -228,7 +229,7 @@
       </a>
 
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Honest-&-Young.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/Singex.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
@@ -255,7 +256,7 @@
 
 
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/MTS-hotel.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/Temasek-Holdings-logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
@@ -263,16 +264,16 @@
       </a>
 
 
-      <a href="#" class="direction-reveal__card">
+      <!-- <a href="#" class="direction-reveal__card">
         <img src="assets/images/clients/Singex.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
         </div>
-      </a>
+      </a> -->
 
 
-      <a href="#" class="direction-reveal__card">
+      <!-- <a href="#" class="direction-reveal__card">
         <img src="assets/images/clients/Soletanche-Freyssinet.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
@@ -285,8 +286,12 @@
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
         </div>
-      </a>
+      </a> -->
 
+    </div>
+
+    <div class="view-more text-center">
+        <a href="">View All Clients</a>
     </div>
 
   </div>
@@ -547,6 +552,15 @@
 <!-- <h2 id="phoneNumbers" style="font-size: 26px;">610.952.1398   <span style="padding:0px 2.5%; display:inline-block;">|</span>   856.816.6159</h2> -->
 </section>
 </div>
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Hi There!</strong> You can switch modes anytime.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
 
 
 <!-- Including the footer menu -->
