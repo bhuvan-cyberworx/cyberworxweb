@@ -1,6 +1,8 @@
 var hr = (new Date()).getHours();
 var dn = document.getElementById("dn");
 
+
+
 // Initializing Check Day and Night Function
 checkDayNight();
 
@@ -14,9 +16,7 @@ function checkDayNight() {
     $('body').addClass('night');
     dn.checked = true;
   }
-  setTimeout(function(){
-     $('.alert').addClass('alertShow');
-   },1000);
+
  
 
 }
@@ -47,6 +47,10 @@ window.onload = function(){
 
   setTimeout(function(){ 
           preLoader();
+          setTimeout(function(){
+             $('.alert').addClass('alertShow');
+             document.getElementById('plucky_audio').play();
+           },2000);
   },5000);
   
 }

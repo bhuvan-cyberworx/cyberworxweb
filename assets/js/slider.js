@@ -80,7 +80,7 @@ function scrollSlideFunction(){
       keyFunction();
     }, 1500);
     console.log("scrollFunction Script working");
-    $('#icon-scroll').css('display','block');
+    // $('#icon-scroll').css('display','block');
     scrollTo(document.documentElement, 0, 800);
     setTimeout(function(){
    		$('body').removeClass('home-slide-inactive');

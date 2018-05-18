@@ -14,6 +14,7 @@
         </div>
     </div>
 </div> -->
+<audio id="plucky_audio" src="assets/sounds/plucky.mp3"></audio>
 
 <div id="pre-loader">
     <div class="content ">
