@@ -133,24 +133,23 @@ function changeSlide(nextID){
 
 	setTimeout(function(){
 		changeSVG(nextID);
-	},500);
-	setTimeout(function(){
-		$(slide[nextID]).addClass('active-slide');
+	},000);
 
-		currentID = nextID;
-		// $('#svg-change').css('transition-delay','5s');
-		setTimeout(function(){
-			$('#svg-change').css('transition','0.8s');
-			$('#svg-change').css('opacity',0);
-			$(slide[nextID]).removeClass('transition');
-			// $('.active-slide .scene-item').css('transition-delay','0s');
-		},200);
+	// setTimeout(function(){
+	// $(slide[nextID]).addClass('active-slide');
+	// currentID = nextID;
+	// // $('#svg-change').css('transition-delay','5s');
+	// setTimeout(function(){
+	// 	$('#svg-change').css('opacity',0);
+	// 	$(slide[nextID]).removeClass('transition');
+	// 	// $('.active-slide .scene-item').css('transition-delay','0s');
+	// },200);
 
-		// setTimeout(function(){
+	// 	// setTimeout(function(){
 			
-		// },200);
+	// 	// },200);
 
-	},1000);
+	// },1000);
 }
 
 // Change SVG function 
@@ -170,8 +169,6 @@ function changeSVG(nextID){
       currentLetter.animate({ d: nextLetterPoints }, 450, mina.linear); 
     }
     toSimple();
-    console.log("I value inside :" + i);
-    console.log(currentLetterPoints);
-    console.log(nextLetterPoints);
+  
 } 
 
