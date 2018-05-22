@@ -4,17 +4,6 @@
 <!-- Including menu File -->
 <?php include_once("includes/menu.php"); ?>
 
-<!-- <div id="pre-loader">
-    <div id="pre-loader-content">
-        <div id="pre-loader-image" class="text-center">
-            <img src="assets/images/logo.png" alt="logo" class="animated fadeInDown">
-        </div>
-        <div id="pre-loader-text">
-            <h4 class="text text-center animated slideInUp">Cyberworx - Digital Solutions. <span style="color:#F0E500">Made </span>Easy.</h4>
-        </div>
-    </div>
-</div> -->
-<audio id="plucky_audio" src="assets/sounds/plucky.mp3"></audio>
 
 <div id="pre-loader">
     <div class="content ">

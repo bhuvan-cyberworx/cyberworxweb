@@ -37,7 +37,7 @@ function slideNumber(slideID){
     
 		$('body').addClass('home-slide-inactive');
     $('#icon-scroll').css('display','none');
-		scrollTo(document.documentElement, outerTop+20, 1250); 
+		scrollTo(document.documentElement, outerTop+20, 800); 
 		setTimeout(function(){
 		    window.addEventListener("scroll",scrollSlideFunction);  
 		},2500);
@@ -46,31 +46,14 @@ function slideNumber(slideID){
 
 	else if(slideID <0){
 		i += 1;
+    keyFunction();
+
 	}
 	else{
 		changeSlide(slideID);
 	}
 }
 
-
-// var scrollSlideFunction = function() {
-//   $('window').on('scroll',function(){
-//     if(window.pageYOffset < (outerTop*0.90) ){
-//       setTimeout(function(){
-//         keyFunction();
-//       }, 1500);
-//       console.log("scrollFunction Script working");
-//       // $('#icon-scroll').css('display','block');
-//       scrollTo(document.documentElement, 0, 800);
-//       setTimeout(function(){
-//         $('body').removeClass('home-slide-inactive');
-//       },800);
-
-//       // // Remove the scroll up event Listener
-//       window.removeEventListener("scroll",scrollSlideFunction);
-//     }
-//   })
-// }
 
 
 function scrollSlideFunction(){
@@ -92,9 +75,6 @@ function scrollSlideFunction(){
 }
 
 
-function popUpMail(){
-
-}
 
 Math.easeInOutQuad = function (t, b, c, d) {
   t /= d/2;
@@ -133,23 +113,24 @@ function changeSlide(nextID){
 
 	setTimeout(function(){
 		changeSVG(nextID);
-	},000);
+	},500);
 
-	// setTimeout(function(){
-	// $(slide[nextID]).addClass('active-slide');
-	// currentID = nextID;
-	// // $('#svg-change').css('transition-delay','5s');
-	// setTimeout(function(){
-	// 	$('#svg-change').css('opacity',0);
-	// 	$(slide[nextID]).removeClass('transition');
-	// 	// $('.active-slide .scene-item').css('transition-delay','0s');
-	// },200);
+	setTimeout(function(){
+	$(slide[nextID]).addClass('active-slide');
+	currentID = nextID;
+	// $('#svg-change').css('transition-delay','5s');
+	setTimeout(function(){
+		$('#svg-change').css('opacity',0);
+    $('#svg-change').css('transition','0.5s');
+		$(slide[nextID]).removeClass('transition');
+		// $('.active-slide .scene-item').css('transition-delay','0s');
+	},200);
 
-	// 	// setTimeout(function(){
+		// setTimeout(function(){
 			
-	// 	// },200);
+		// },200);
 
-	// },1000);
+	},800);
 }
 
 // Change SVG function 

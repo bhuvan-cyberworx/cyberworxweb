@@ -28,5 +28,40 @@
     
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body class="home-slide-active ">
+<body class="home-slide-active">
+<audio id="plucky_audio" src="assets/sounds/plucky.mp3"></audio>
+
+<div class="popup">
+    <div class="popup-sub">
+        <h6>Free Brand Review</h6>
+    </div>
+
+    <div class="popup-head">
+        Interested in having the <span> Lykan Media </span> team take a look at your brand and provide valuable feedback?
+    </div>
+
+    <form action="" class="popup-form">
+        <div class="form-group">            
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+            
+        </div>
+
+        <div class="form-group">            
+            <input type="text" class="form-control" id="number" aria-describedby="numberHelp" placeholder="Enter Number">
+            
+        </div>
+
+        <button type="submit" class="popup-submit btn btn-primary">Let's Do This <i class="fas fa-arrow-right"></i></button>
+    </form>
+    <small id="spam-message" class="form-text text-muted">*We will never spam you.</small>
+    <div class="no-thanks">
+        <span >No Thanks, I Don't Like Free & Valuable Advice.</span>
+    </div>
+    
+</div>
+
+
+<div class="overlay">
+    
+</div>
     

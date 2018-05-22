@@ -1,3 +1,26 @@
+window.onload = function(){
+  setTimeout(function(){
+    $('#pre-loader').addClass('content-hidden');
+  },1000);
+
+  setTimeout(function(){ 
+          preLoader();
+          setTimeout(function(){
+             $('.alert').addClass('alertShow');
+             document.getElementById('plucky_audio').play();
+           },1000);
+  },2000);
+  
+}
+
+
+
+function preLoader(){
+    let preLoader = document.getElementById("pre-loader");
+    preLoader.style.top = -100+'vh';
+}
+
+
 var hr = (new Date()).getHours();
 var dn = document.getElementById("dn");
 
@@ -40,32 +63,12 @@ function toggleDayNight(){
   }
 }
 
-window.onload = function(){
-  setTimeout(function(){
-    $('#pre-loader').addClass('content-hidden');
-  },3000);
-
-  setTimeout(function(){ 
-          preLoader();
-          setTimeout(function(){
-             $('.alert').addClass('alertShow');
-             document.getElementById('plucky_audio').play();
-           },2000);
-  },5000);
-  
-}
 
 
-
-  function preLoader(){
-      let preLoader = document.getElementById("pre-loader");
-      preLoader.style.top = -100+'vh';
-  }
-
-setTimeout(function(){
-    let preLoaderImage = document.getElementById("pre-loader-image");
+// setTimeout(function(){
+//     let preLoaderImage = document.getElementById("pre-loader-image");
     
-},1000);
+// },1000);
 
 
 
@@ -224,5 +227,28 @@ $(document).ready(function(){
 
 });
 
-// Elements motion function  ends here
+// Exit intent Pop up Begins Here
+var mouseX = 0;
+var mouseY = 0;
+var popupCounter = 0;
+
+document.addEventListener("mousemove", function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    // document.getElementById("coordinates").innerHTML = "<br />X: " + e.clientX + "px<br />Y: " + e.clientY + "px";
+});
+
+$(document).mouseleave(function () {
+    if (mouseY < 100) {
+        if (popupCounter < 1) {
+             $('body').addClass('popup-on');
+        }
+        popupCounter ++;
+    }
+});
+
+$(".no-thanks span").on('click',function(){
+  $('body').removeClass('popup-on');
+  });
+
 
