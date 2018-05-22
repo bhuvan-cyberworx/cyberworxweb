@@ -1,7 +1,7 @@
 window.onload = function(){
   setTimeout(function(){
     $('#pre-loader').addClass('content-hidden');
-  },1000);
+  },100);
 
   setTimeout(function(){ 
           preLoader();
@@ -9,17 +9,15 @@ window.onload = function(){
              $('.alert').addClass('alertShow');
              document.getElementById('plucky_audio').play();
            },1000);
-  },2000);
-  
+  },1100);
 }
-
 
 
 function preLoader(){
     let preLoader = document.getElementById("pre-loader");
     preLoader.style.top = -100+'vh';
+    preLoader.style.opacity = 0;
 }
-
 
 var hr = (new Date()).getHours();
 var dn = document.getElementById("dn");

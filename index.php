@@ -5,7 +5,7 @@
 <?php include_once("includes/menu.php"); ?>
 
 
-<div id="pre-loader">
+<!-- <div id="pre-loader">
     <div class="content ">
         <div class="content__container">
             <p class="content__container__text">
@@ -24,8 +24,16 @@
      <div id="pre-loader-image" class="text-center">
         <img src="assets/images/logo-lykan-white.png" alt="">
     </div>
-</div>
+</div> -->
 
+<div id="pre-loader">
+  <div class="content ">
+    <img src="assets/images/pre-loader.gif" alt="">
+  </div>
+  <div id="pre-loader-image" class="text-center">
+      <img src="assets/images/logo-lykan-white.png" alt="">
+  </div>
+</div>
     <div class='icon-scroll' id="icon-scroll">
         Press <div class="key"><i class="fas fa-arrow-up"></i></div> or <div class="key"><i class="fas fa-arrow-down"></i></div> to change slide.
     </div>

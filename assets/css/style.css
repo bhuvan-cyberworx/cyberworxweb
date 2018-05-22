@@ -159,16 +159,22 @@ div#pre-loader-image {
 
 .content {
   position: absolute;
-  top: 54%;
-  left: 53%;
+  top: 48%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  height: 160px;
+  height: 120px;
   overflow: hidden;
   /*font-family: "Lato", sans-serif;*/
   font-size: 35px;
   line-height: 40px;
   color: #ecf0f1;
    transition: 0.5s;
+}
+
+.content img {
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .content__container {
