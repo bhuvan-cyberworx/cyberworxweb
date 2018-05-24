@@ -34,10 +34,10 @@
 								<img src="assets/images/icon/headphones.png">
 							</div>
 							<div class="block-title">
-								<h2>Meet Us</h2>
+								<h2>Open Positions</h2>
 							</div>
 							<div class="block-sub-title">
-								<p>know more about Lykan.</p>
+								<p>Work with the best.</p>
 							</div>
 						</a>
 					</li>
@@ -48,10 +48,10 @@
 								<img src="assets/images/icon/headphones.png">
 							</div>
 							<div class="block-title">
-								<h2>Meet Us</h2>
+								<h2>Start Project</h2>
 							</div>
 							<div class="block-sub-title">
-								<p>know more about Lykan.</p>
+								<p>Send us an enquiry.</p>
 							</div>
 						</a>
 					</li>
