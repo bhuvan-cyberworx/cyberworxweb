@@ -35,7 +35,7 @@
         <div class="digital_page">
         <p class="branch_city">Follow: </p>
         <p>
-          </p><ul>
+          </p><ul class="footer-social">
             <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
             <li><a href="htt#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="htt#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
@@ -46,17 +46,17 @@
         <p class="branch_city">Delhi</p>
         <p>Top Floor, JP House, Plot 172 Lane 2, Westend Marg, Saidulajab, New Delhi 110030
         </p>
-        <p class="branch_city blank">&nbsp;</p>
+        
         <p class="pd">
-        <!--<a href="tel:00919560456222" class="phpnenumber"><i class="fa fa-phone"></i>  +91 95604 56222</a> -->
+        <a href="tel:00919560456222" class="phpnenumber"><i class="fa fa-phone"></i>  +91 95604 56222</a> 
           <a href="#" class="direction" target="_blank"><i class="fa fa-map-marker"></i>  Directions</a> 
         </p>
         <p class="branch_city margin_b30">Mumbai</p>
         <p>Gala 350, 3rd floor, A to Z Industrial Estate, Lower Parel, Mumbai - 400013</p>
         <div class="alearfix"></div>
-        <p class="branch_city blank">&nbsp;</p>
+       
         <p class="pd">
-          <!--<a href="tel:00919015419191" class="phpnenumber"><i class="fa fa-phone"></i> +91 90154 19191</a>-->
+          <a href="tel:00919015419191" class="phpnenumber"><i class="fa fa-phone"></i> +91 90154 19191</a>
           <a href="#" target="_blank" class="direction"><i class="fa fa-map-marker"></i> Directions</a> 
         </p>      
       </div>

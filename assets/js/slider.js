@@ -153,3 +153,16 @@ function changeSVG(nextID){
   
 } 
 
+// Previous Slide Function
+function prevFunction() {
+  // changeSVG(i -= 1);
+  slideNumber(i -= 1);
+}
+
+// Next slide function
+function nextFunction() {
+ slideNumber(i += 1);
+}
+
+document.getElementById("prevBtn").addEventListener('click', prevFunction );
+document.getElementById("nextBtn").addEventListener('click', nextFunction );

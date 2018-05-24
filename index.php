@@ -26,14 +26,7 @@
     </div>
 </div> -->
 
-<div id="pre-loader">
-  <div class="content ">
-    <img src="assets/images/pre-loader.gif" alt="">
-  </div>
-  <div id="pre-loader-image" class="text-center">
-      <img src="assets/images/logo-lykan-white.png" alt="">
-  </div>
-</div>
+
     <div class='icon-scroll' id="icon-scroll">
         Press <div class="key"><i class="fas fa-arrow-up"></i></div> or <div class="key"><i class="fas fa-arrow-down"></i></div> to change slide.
     </div>
@@ -72,9 +65,9 @@
             <!-- scene item one -->
             <div class="scene-item scene-content" data-depth="1.1">
                 <span>
-                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. <span class="white">Vier jij met ons mee?</span>
+                Lykan Media helps in establishing "right" connection between brands & audience <span class="white">brands & audience.</span>
                 </span>
-                <a href="#">View Case Study Now <i class="fas fa-arrow-right case-study-arrow"></i></a>
+                <a href="#">About Lykan <i class="fas fa-arrow-right case-study-arrow"></i></a>
             </div>
             <!-- scene item two -->
             <div class="scene-item element-a-1" data-depth="0.5">
@@ -109,9 +102,9 @@
         <div class="parallax-item">
             <div class="scene-item scene-content" data-depth="1.1">
                 <span>
-                Wij zijn jarig! Dit jaar vieren we ons 10 jarig jubileum. <span class="white">Vier jij met ons mee?</span>
+                Marketing is really just about sharing your passion. We are proud to say that we share such passion with <span class="white">all our clients</span>
                 </span>
-                <a href="#">View Case Study Now <i class="fas fa-arrow-right case-study-arrow"></i></a>
+                <a href="#">Our Clients <i class="fas fa-arrow-right case-study-arrow"></i></a>
             </div>
 
             <div class="scene-item element-b-1" data-depth="1.5">
@@ -262,29 +255,29 @@
       </a>
 
 
-      <!-- <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Singex.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+      <a href="#" class="direction-reveal__card">
+        <img src="assets/images/clients/MTS-hotel.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
         </div>
-      </a> -->
+      </a>
 
-
-      <!-- <a href="#" class="direction-reveal__card">
+      <a href="#" class="direction-reveal__card">
         <img src="assets/images/clients/Soletanche-Freyssinet.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
         </div>
       </a>
+      
       <a href="#" class="direction-reveal__card">
-        <img src="assets/images/clients/Temasek-Holdings-logo.png" alt="Image" class="direction-reveal__anim--out img-fluid">
+        <img src="assets/images/clients/Honest-&-Young.png" alt="Image" class="direction-reveal__anim--out img-fluid">
 
         <div class="direction-reveal__overlay direction-reveal__anim--in">
            <img src="assets/images/clients/Logos4.png" alt="Image" class="img-fluid">
         </div>
-      </a> -->
+      </a>
 
     </div>
 
@@ -363,10 +356,10 @@
     
     <li>
         <a href="#" data-largesrc="assets/images/sbi.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-            <img src="assets/images/thumbs/sbi.jpg" alt="img01"/>
+            <img src="assets/images/portfolio/leat-ani.gif" alt="img01"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>L:EAT </span>
+                <h4>Brand Identity & Search Engine</h4>
             </span>
         </a>
     </li>
@@ -381,10 +374,10 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-            <img src="assets/images/portfolio/dhaba.jpg" alt="img03"/>
+            <img src="assets/images/portfolio/Lasosta.gif" alt="img03"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>Lasosta</span>
+                <h4>SEO & SMO</h4>
             </span>
         </a>
     </li>
@@ -435,30 +428,32 @@
 
                         <div class="process-item " > 
                             
-                            <h3 class="process-heading"><span class="number">01</span> Engage</h3>
+                            <h3 class="process-heading"><span class="number">01</span> Audience Identification</h3>
                             <div class="slide-content">
-                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                <p>Target Defined, we work round the clock, analyzing brand, defining service sets & mediums required for plotting right audience. Simultaneously constant updates on Brand's persona are being mined and forwarded on mediums to reach to creme da la creme in inspiring fashion. Output is premier brand positioning among all & proper audience
                                 </p>
                             </div>
                         </div>
 
                          <div class="process-item " > 
                             
-                            <h3 class="process-heading"><span class="number">02</span> Organic Traffic</h3>
+                            <h3 class="process-heading"><span class="number">02</span> Implementation</h3>
                             <div class="slide-content">
-                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                <p>Hovering from Audience Identification to implementation we diversify team into smaller sections with each of them working on specific steps to provide 360 degree positioning & the near impeccable implementation.
                                 </p>
                             </div>
                         </div>
 
                          <div class="process-item" > 
                             
-                            <h3 class="process-heading"><span class="number">03</span> Create Audience</h3>
+                            <h3 class="process-heading"><span class="number">03</span> Initial Result Analysis</h3>
                             <div class="slide-content">
-                                <p>Brief in hand, we immerse ourselves completely, analysing the brand and the competition to define an <strong>identity benchmark</strong>. Design-thinking tools, from persona-building to free association and plotting customer journeys, are employed in intense brainstorming. The output: a <strong>strategic brand positioning statement,</strong> including the target audience persona, benefits and values, to arrive at the <strong>identity brief</strong>.
+                                <p>The most crucial step, initial results provide us the required practical ground results which are round the clock monitored and data mined by our team to realign certain aspects of implementation. All this to provide the best possible ROI on brand's campaign.
                                 </p>
                             </div>
                         </div>
+
+                        
 
                         <div class="process-slider-controls">
                             <i id='prevProcess' class='a-left control-c  slick-prev fas fa-arrow-left'></i>

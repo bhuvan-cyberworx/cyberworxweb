@@ -1,27 +1,41 @@
+// (function(){scrollTo(document.documentElement, 0, 0);})();
+
 window.onload = function(){
   setTimeout(function(){
     $('#pre-loader').addClass('content-hidden');
+    
   },100);
 
   setTimeout(function(){ 
-          preLoader();
-          setTimeout(function(){
-             $('.alert').addClass('alertShow');
-             document.getElementById('plucky_audio').play();
-           },1000);
-  },1100);
+    preLoader();
+    setTimeout(function(){
+       $('.alert').addClass('alertShow');
+       document.getElementById('plucky_audio').play();
+     },1000);
+  },2000);
 }
 
+window.onbeforeunload = function () {
+  scrollTo(document.documentElement, 0, 0);
+}
+
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
+ // $(document).ready(function(){
+ //    $(this).scrollTop(0);
+ //  });
 
 function preLoader(){
+
     let preLoader = document.getElementById("pre-loader");
     preLoader.style.top = -100+'vh';
     preLoader.style.opacity = 0;
 }
 
+
 var hr = (new Date()).getHours();
 var dn = document.getElementById("dn");
-
 
 
 // Initializing Check Day and Night Function
@@ -245,8 +259,8 @@ $(document).mouseleave(function () {
     }
 });
 
-$(".no-thanks span").on('click',function(){
+$(".no-thanks span, .close-popup").on('click',function(){
   $('body').removeClass('popup-on');
-  });
+});
 
 
