@@ -21,3 +21,44 @@ https://codepen.io/yoannhel/pen/sJpDj
 
 https://codepen.io/bnthor/pen/WQBNxO
 https://dribbble.com/shots/3759326-Jampps-contact-us-form/attachments/845732
+
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+// Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'about',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Movies' ),
+                'singular_name' => __( 'Movie' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'movies'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
+
+
+<?php 
+
+		$menuLocations = get_nav_menu_locations(); 
+		$menuID = $menuLocations['header-menu']; // Get the *primary* menu ID
+		$primaryNav = wp_get_nav_menu_items($menuID); // Get the array of wp objects, the nav items for our queried location.
+
+		foreach ( $primaryNav as $navItem ) {
+		    echo '<li class="menu-item list-unstyled-item"><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a>
+				<span class="sub"> '.$navItem->description.'</span>
+		    </li>';
+		}
+
+		?>
