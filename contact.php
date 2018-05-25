@@ -7,7 +7,7 @@
 
 
 <div class="contact-enquiry contact-us-page animated fadeIn">
-	<section class="hero-banner" >
+<section class="hero-banner" >
 	<div class="container">
 		<div class="row">
 			<div class="banner-title col-12">

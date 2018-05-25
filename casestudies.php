@@ -15,7 +15,7 @@
 	<section id="our-portfolio">
 	    
 	<ul id="og-grid" class="og-grid">
-	    
+
 	    <li>
 	        <a href="#" data-largesrc="assets/images/sbi.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
 	            <img src="assets/images/portfolio/leat-ani.gif" alt="img01"/>
@@ -78,10 +78,6 @@
 	</section>
 
 </div>
-
-
-
-
 
 <!-- Including the footer menu -->
 <?php include_once("includes/footer-new.php"); ?>
