@@ -53,26 +53,26 @@
           <!-- Slide One  -->
           <div class="menu-slider-item active-menu-slide">
             <div class="menu-slide-image">
-              <img src="https://big-daddy-kane.s3.amazonaws.com/uploads/projects/media/featured-mobile/FEwx35noHP3KzHMo.jpg" alt="">
+              <img src="assets/images/portfolio/fiona.jpg" alt="">
             </div>
             <div class="menu-slide-content" data-animation-in="fadeIn">
-              <div class="menu-slide-title"><span class="menu-slide-number">02. </span> opus grows</div>
-              <div class="menu-slide-desciption">Selling premium organic soil online.</div>
-              <div class="menu-slide-button btn">
-                <div class="menu-slide-button-text">enter case study <i class="fas fa-arrow-right case-study-arrow"></i></div></div>
+              <div class="menu-slide-title" style="color: #A38F88 "><span class="menu-slide-number">01. </span> Fiona</div>
+              <div class="menu-slide-desciption">Brand Identity & SMO.</div>
+              <div class="menu-slide-button btn" style="background: #A38F88 !important">
+                <div class="menu-slide-button-text">View Our Portfolio <i class="fas fa-arrow-right case-study-arrow"></i></div></div>
             </div>
           </div>
 
           <!-- Slide Two  -->
           <div class="menu-slider-item">
             <div class="menu-slide-image">
-              <img src="https://big-daddy-kane.s3.amazonaws.com/uploads/projects/media/featured-mobile/jIA_3OhMroKib5Ws.jpg" alt="">
+              <img src="assets/images/portfolio/xelerate.gif" alt="">
             </div>
             <div class="menu-slide-content" >
-              <div class="menu-slide-title" style="color: #9cdbd9 "><span class="menu-slide-number">01. </span> lensabl</div>
-              <div class="menu-slide-desciption">Prescription lenses directly to your door.</div>
-              <div class="menu-slide-button btn" style="background: #9cdbd9 !important">
-                <div class="menu-slide-button-text">enter case study <i class="fas fa-arrow-right case-study-arrow"></i></div></div>
+              <div class="menu-slide-title" style="color: #349480 "><span class="menu-slide-number">02. </span> Xelerate</div>
+              <div class="menu-slide-desciption">Brand Activation.</div>
+              <div class="menu-slide-button btn" style="background: #349480 !important">
+                <div class="menu-slide-button-text">View Our Portfolio <i class="fas fa-arrow-right case-study-arrow"></i></div></div>
             </div>
           </div>
 
@@ -85,7 +85,7 @@
       <div class="col-md-7 navigation-section" id="navigation-section">
         <div class="navigation-section-header row">
           <div class="col-md-4 menu-logo">
-           <img src="assets/images/logo_new.png" alt="" style="width: 75%; transition: 0.5s; margin-top: 4px;">
+           <img id="menu-logo-id" src="assets/images/logo_new.png" alt="" style="width: 75%; transition: 0.5s; margin-top: 4px;">
           </div>
           <div class="col-md-2 offset-md-6 menu-close text-right" id="menu-close">
             <i class="fas fa-times-circle"></i>
@@ -118,8 +118,8 @@
                 <h6>Call Us Anytime</h6>
               </div>
               <div class="navigation-section-info-text">
-                <p>+91 9865895669
-                <br> +91 2653625636</p>
+                <p>+91-11-45517444
+                <br>+91-8377009038</p>
               </div>
             </div>
           </div>
@@ -130,9 +130,9 @@
                 <h6>Reach Us At</h6>
               </div>
               <div class="navigation-section-info-text">
-                <p>12655 W Jefferson Blvd
+                <p>Sector-7, Rohini, 
                   <br>
-                  Los Angeles, CA.
+                  New Delhi -110085
                 </p>
               </div>
             </div>

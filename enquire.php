@@ -83,9 +83,9 @@
 	</div>
 </div>
 
-
+</div>
 <!-- Including the footer menu -->
-<?php include_once("includes/footer-menu.php"); ?>
+<?php include_once("includes/footer-new.php"); ?>
 
 
 <!-- Icluding footer file -->

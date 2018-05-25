@@ -150,6 +150,12 @@
 <!-- Our Clients Section  -->
 <div id="outer-container">
 <div class="container demo pt80 pb80">
+  <div class="demo-pattern left-pattern">
+    <img src="assets/images/lbp-1.png" alt="">
+  </div>
+  <div class="demo-pattern right-pattern">
+    <img src="assets/images/lbp-2.png" alt="">
+  </div>
     <div>
         <h3 class="text-center title pb40">Our Clients</h3>
     </div>
@@ -285,67 +291,10 @@
         <a href="">View All Clients</a>
     </div>
 
-  </div>
+</div>
 
 
-<!-- our services section begins here -->
-<!-- <section id="our-services" class="">
-    <div class="container p0">
-        <div>
-            <h3 class="text-center title pb40">Our Services</h3>
-        </div>
-        <div class="row p0">
-            <div class="service col-md-4 text-center service-one">
-                <div class="service-image">
-                    <img src="assets/images/services/ico-strategy.png" alt="">
-                </div>
-                <div class="service-content">
-                    <div class="service-title">
-                        <h2>Marketing</h2>
-                    </div>
-                    <div class="service-info">
-                        <p>Hoe vertaal je marketing- en salesdoelstellingen naar een toepasbare digitale strategie? Dat is waar onze online marketeers zich dagelijks mee bezig houden.</p>
-                    </div>
-                </div>
-                <div class="service-link">
-                    <a href="#">Know More</a>
-                </div>
-            </div>
-            <div class="service col-md-4 text-center service-two">
-                <div class="service-image">
-                    <img src="assets/images/services/ico-design.png" alt="">
-                </div>
-                <div class="service-content">
-                    <div class="service-title">
-                        <h2>Design</h2>
-                    </div>
-                    <div class="service-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel ullamcorper enim. Nulla maximus odio dui, in sagittis magna vehicula sed. Vestibulum orci ipsum, ultrices at urna et.</p>
-                    </div>
-                </div>
-                <div class="service-link">
-                    <a href="#">Know More</a>
-                </div>
-            </div>
-            <div class="service col-md-4 text-center service-three">
-                <div class="service-image">
-                    <img src="assets/images/services/ico-develop.png" alt="">
-                </div>
-                <div class="service-content">
-                    <div class="service-title">
-                        <h2>Development</h2>
-                    </div>
-                    <div class="service-info">
-                        <p>Hoe vertaal je marketing- en salesdoelstellingen naar een toepasbare digitale strategie? Dat is waar onze online marketeers zich dagelijks mee bezig houden.</p>
-                    </div>
-                </div>
-                <div class="service-link">
-                    <a href="#">Know More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
+
 
 <!-- our services section ends here -->
 <section id="our-portfolio">
@@ -365,10 +314,10 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/portfolio/sephora0.gif" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-            <img src="assets/images/portfolio/sephora0.gif" alt="img02"/>
+            <img src="assets/images/portfolio/xelerate.gif" alt="img02"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>Xelerate India</span>
+                <h4>Brand Activation</h4>
             </span>
         </a>
     </li>
@@ -383,28 +332,28 @@
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-            <img src="assets/images/portfolio/go-air.jpg" alt="img01"/>
+            <img src="assets/images/portfolio/fiona.jpg" alt="img01"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>Fiona </span>
+                <h4>Brand Identity & SMO</h4>
             </span>
         </a>
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-            <img src="assets/images/portfolio/bk0.jpg" alt="img02"/>
+            <img src="assets/images/portfolio/innerchef.gif" alt="img02"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>Innerchef </span>
+                <h4>Creatives</h4>
             </span>
         </a>
     </li>
     <li>
         <a href="#" data-largesrc="assets/images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-            <img src="assets/images/portfolio/benetton0.gif" alt="img03"/>
+            <img src="assets/images/portfolio/hostle.jpg" alt="img03"/>
             <span class="portfolio-data">
-                <span>State Bank of India </span>
-                <h4>Brand Identity</h4>
+                <span>HostelAvie </span>
+                <h4>SEO, Search Marketing & Digital Media Buying</h4>
             </span>
         </a>
     </li>
@@ -477,67 +426,67 @@
     <div class="col-md-12 row p0">
         <div class="col-md-4 p0 blog-tile">
             <div class="blog-image">
-                <img src="https://cdn2.hubspot.net/hubfs/2061749/AVG-HT.png">
+                <img src="assets/images/blogs/iot.png">
             </div>
             <div class="blog-content">
                 <h4 class="blog-title">
-                    Demo Blog Title One
+                    Internet of Things: EXPLAINED
                 </h4>
             </div>
 
-            <div class="blog-admin">
+            <!-- <div class="blog-admin">
                 <span class="admin-image">
                     <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
                 </span>
                 <span class="admin-name">
                     Admin Two
                 </span>
-            </div>
+            </div> -->
 
 
         </div>
         <div class="col-md-4 blog-tile">
             <div class="blog-image">
-                <img src="https://cdn2.hubspot.net/hubfs/2061749/blog-header800x500.png">
+                <img src="assets/images/blogs/mobile-app.png">
             </div>
             <div class="blog-content">
                 <h4 class="blog-title">
-                   Een jaar lang feest!
+                   Future of mobile application development
                 </h4>
             </div>
 
-            <div class="blog-admin">
+            <!-- <div class="blog-admin">
                 <span class="admin-image">
                     <img src="https://cdn2.hubspot.net/hubfs/2061749/Exitable%20Logo.png" alt="">
                 </span>
                 <span class="admin-name">
                     Admin Woman
                 </span>
-            </div>
+            </div> -->
         </div>
         <div class="col-md-4 blog-tile">
             <div class="blog-image">
-                <img src="https://cdn2.hubspot.net/hubfs/2061749/thumbnailvero.png">
+                <img src="assets/images/blogs/domain.jpg">
             </div>
             <div class="blog-content">
                 <h4 class="blog-title">
-                   New kid on the block 'Vero' (of hype?)
+                   Domain name selection can make or break your business
                 </h4>
             </div>
 
-            <div class="blog-admin">
+            <!-- <div class="blog-admin">
                 <span class="admin-image">
                     <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
                 </span>
                 <span class="admin-name">
                     Admin Hola
                 </span>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
 
-<section class="closing"><h4>Join the community that is committed to making a difference in the world we share.</h4>
+<section class="closing"><h4>Join the agency that is committed to making a difference.</h4>
 
 <div class="text-center col-12">
     <a href="/explore/" title="Explore Campaigns" class="cta button button--wayra button--border-thick button--text-upper text-center"><i class="fas fa-reply"></i> Get A Callback</a>
@@ -557,7 +506,7 @@
 
 
 <!-- Including the footer menu -->
-<?php include_once("includes/footer-menu.php"); ?>
+<?php include_once("includes/footer-new.php"); ?>
 
 <!-- Icluding footer file -->
 <?php include_once("includes/footer.php"); ?>

@@ -29,8 +29,9 @@ window.onbeforeunload = function () {
 function preLoader(){
 
     let preLoader = document.getElementById("pre-loader");
-    preLoader.style.top = -100+'vh';
+    // preLoader.style.top = -100+'vh';
     preLoader.style.opacity = 0;
+    preLoader.style.zIndex = -1;
 }
 
 
@@ -75,14 +76,28 @@ function toggleDayNight(){
   }
 }
 
+// if((/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
 
+//   alert("working");
+// }
+
+function mobileScroll(){
+  if(window.pageYOffset>50){
+     $('body').addClass('scrolled');
+  }
+  else{
+    $('body').removeClass('scrolled');
+  }
+ 
+}
+window.addEventListener('scroll', mobileScroll);
 
 // setTimeout(function(){
 //     let preLoaderImage = document.getElementById("pre-loader-image");
     
 // },1000);
 
-
+if(!(/iPhone|iPad|iPod|Android|webOS|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent) )) {
 
 // Elements motion function 
 function handler(e) {
@@ -110,6 +125,10 @@ function handler(e) {
     }
 
 }
+
+}
+
+
 
 
 
