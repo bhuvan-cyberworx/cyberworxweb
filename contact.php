@@ -7,7 +7,12 @@
 
 
 <div class="contact-enquiry contact-us-page animated fadeIn">
-<section class="hero-banner" >
+
+	<div class="big-heading text-center">
+		    <h3 class=" title">Reach Out to Us.</h3>
+		    <p class="sub-head">If you have a digital requirement, we have you covered!</p>
+	</div>
+<!-- <section class="hero-banner" >
 	<div class="container">
 		<div class="row">
 			<div class="banner-title col-12">
@@ -59,7 +64,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- 
 	<div class="big-heading text-center">
 	    <h3 class=" title"> Get In Touch Anytime.</h3>
@@ -76,7 +81,7 @@
     		<form action="form.php" class="contact-form" method="post">
 
     			<div>
-				    <h3 class="text-center title m0 " style="">Reach out to us.</h3>
+				    <!-- <h3 class="text-center title m0 " style="">Reach out to us.</h3> -->
 				</div>
 				<div class="row">
 					<div class="form-group col-sm-6">

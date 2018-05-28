@@ -1,0 +1,64 @@
+<section class=" pt80 pb80" >
+	<div class="container">
+	<div class="col-12 ">
+		<!-- <div class="col-12 features-box-title text-center">
+			<h4 class="text-center">Why we are Best!</h4>
+		</div> -->
+
+		<div class="col-12 features-box row">
+			<div class="col-5 offset-md-1 feature-box row">
+				<!-- <div class="col-sm-3 feature-image">
+					<img src="assets/images/services/image.png" alt="">
+				</div> -->
+				<div class="col-sm-12 feature-content">
+					<div class="feature-title">
+						<h6>Design</h6>
+					</div>
+					<div class="feature-info">
+						<p>Our innovative tech-driven processes blend efficiency and effectiveness that drives value to your business.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 offset-md-1 feature-box row">
+				<!-- <div class="col-sm-3 feature-image">
+					<img src="assets/images/services/image.png" alt="">
+				</div> -->
+				<div class="col-sm-12 feature-content">
+					<div class="feature-title">
+						<h6>Greatness</h6>
+					</div>
+					<div class="feature-info">
+						<p>5 years of experience infused with creativity and professionalism delivers brilliant designs beyond expectations.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 offset-md-1 feature-box row">
+				<!-- <div class="col-sm-3 feature-image">
+					<img src="assets/images/services/image.png" alt="">
+				</div> -->
+				<div class="col-sm-12 feature-content">
+					<div class="feature-title">
+						<h6>Awesome Development</h6>
+					</div>
+					<div class="feature-info">
+						<p>Our designs are built upon clients and users need combined. We create designs that drive businesses growth.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 offset-md-1 feature-box row">
+				<!-- <div class="col-sm-3 feature-image">
+					<img src="assets/images/services/image.png" alt="">
+				</div> -->
+				<div class="col-sm-12 feature-content">
+					<div class="feature-title">
+						<h6>Awesome Development</h6>
+					</div>
+					<div class="feature-info">
+						<p>We settle for nothing less! We create designs to inspire, acquire and attract.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>

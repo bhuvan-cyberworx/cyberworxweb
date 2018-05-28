@@ -1,5 +1,5 @@
 <!-- Including Header File -->
-<?php include_once("includes/header.php"); ?>
+<?php include_once("includes/header-open.php"); ?>
 
 <!-- Including menu File -->
 <?php include_once("includes/menu.php"); ?>
@@ -16,22 +16,22 @@
     	<div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/AVG-HT.png">
+	                <img src="assets/images/blogs/iot.png">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                    Demo Blog Title One
+	                   Internet of Things: EXPLAINED
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Two
 	                </span>
-	            </div>
+	            </div> -->
 
 
 	        </div>
@@ -39,87 +39,87 @@
         <div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/blog-header800x500.png">
+	                <img src="assets/images/blogs/mobile-app.png">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                   Een jaar lang feest!
+	                   Future of mobile application development
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Exitable%20Logo.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Woman
 	                </span>
-	            </div>
+	            </div> -->
 	        </div>
 	    </div>
 	    <div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/thumbnailvero.png">
+	                <img src="assets/images/blogs/domain.jpg">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                   New kid on the block 'Vero' (of hype?)
+	                   Domain name selection can make or break your business
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Hola
 	                </span>
-	            </div>
+	            </div> -->
 	        </div>
 	    </div>
 
 	    <div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/thumbnailvero.png">
+	                <img src="assets/images/blogs/domain.jpg">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                   New kid on the block 'Vero' (of hype?)
+	                   Domain name selection can make or break your business
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Hola
 	                </span>
-	            </div>
+	            </div> -->
 	        </div>
 	    </div>
 
 	    <div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/AVG-HT.png">
+	                <img src="assets/images/blogs/iot.png">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                    Demo Blog Title One
+	                   Internet of Things: EXPLAINED
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Fotos%20collegas/bart.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Two
 	                </span>
-	            </div>
+	            </div> -->
 
 
 	        </div>
@@ -127,24 +127,27 @@
         <div class="blog-tile-box col-md-4 p0">
 	        <div class="blog-tile">
 	            <div class="blog-image">
-	                <img src="https://cdn2.hubspot.net/hubfs/2061749/blog-header800x500.png">
+	                <img src="assets/images/blogs/mobile-app.png">
 	            </div>
 	            <div class="blog-content">
 	                <h4 class="blog-title">
-	                   Een jaar lang feest!
+	                   Future of mobile application development
 	                </h4>
 	            </div>
 
-	            <div class="blog-admin">
+	            <!-- <div class="blog-admin">
 	                <span class="admin-image">
 	                    <img src="https://cdn2.hubspot.net/hubfs/2061749/Exitable%20Logo.png" alt="">
 	                </span>
 	                <span class="admin-name">
 	                    Admin Woman
 	                </span>
-	            </div>
+	            </div> -->
 	        </div>
 	    </div>
+	    
+
+	   
     </div>
 </div>
 
@@ -159,6 +162,6 @@
 
 
 <!-- Including the footer menu -->
-<?php include_once("includes/footer-menu.php"); ?>
+<?php include_once("includes/footer-new.php"); ?>
 <!-- Icluding footer file -->
 <?php include_once("includes/footer.php"); ?>
