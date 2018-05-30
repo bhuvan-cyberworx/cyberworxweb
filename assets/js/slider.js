@@ -203,8 +203,6 @@ function prevFunction() {
   slideNumber(i -= 1);
 }
 
-
-
 // Next slide function
 function nextFunction() {
  slideNumber(i += 1);
