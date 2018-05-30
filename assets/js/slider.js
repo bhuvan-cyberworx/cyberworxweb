@@ -1,6 +1,8 @@
 // Declaring slider class
 function Slider() {
    var isBrowser, keyFunction;
+
+   
 }
 
 // Method to check browser type and fire related function for mousewheel event
@@ -20,21 +22,22 @@ Slider.prototype.checkBrowser = function() {
     else if(/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))){
       this.isBrowser = "isSafari";
     }
-
+    
     // Creating mousewheel event function based on browser type
     switch(this.isBrowser) {
       case 'isChrome':
       case 'isSafari':
       alert("workeeeee");
-      checkBrowser.prototype.keyFunction = function() {
+      this.keyFunction = function() {
         $('html').on('mousewheel DOMMouseScroll wheel', function(e){
             if( e.originalEvent.wheelDelta < 0 ) {
-                this.incrementSlide();
+                incrementSlide();
                 console.log("hello");
             } else if(e.originalEvent.wheelDelta > 0 ){
-                this.decrementSlide();
+                decrementSlide();
                 console.log("hello");
             }   
+
         });
       }
 
@@ -42,15 +45,16 @@ Slider.prototype.checkBrowser = function() {
 
       case 'isFirefox':
       alert("noworkeeeee");
-       checkBrowser.prototype.keyFunction = function() {
+       this.keyFunction = function() {
         $('html').on('mousewheel DOMMouseScroll wheel', function(e){
           if( e.originalEvent.detail > 0) {
-              this.incrementSlide();
+              incrementSlide();
               console.log("hello");
           } else if( e.originalEvent.detail < 0 ){
-              this.decrementSlide();
+              decrementSlide();
               console.log("hello");
           }   
+
         });
       }
 
@@ -59,38 +63,23 @@ Slider.prototype.checkBrowser = function() {
       default:
       alert("Problem occured");
     }
+
+    //Method to increment the slide number 
+    var incrementSlide = function(){
+      Slider.slideNumber(i += 1);
+    }
+
+    //Method to decrement the slide number 
+    var decrementSlide = function(){
+      Slider.slideNumber(i -= 1);
+    }
 }
-
-
-
-//Method to increment the slide number 
-Slider.prototype.incrementSlide = function(){
-  slideNumber(i += 1);
-}
-
-//Method to decrement the slide number 
-Slider.prototype.decrementSlide = function(){
-  slideNumber(i += 1);
-}
-
 
 
 var NewSlide = new Slider();
 NewSlide.checkBrowser();
-checkBrowser.keyFunction();
+NewSlide.keyFunction();
 
-function incSlideNumber(){
-  slideNumber(i += 1);
-  
-}
-
-
-
-
-
-function decSlideNumber(){
-  slideNumber(i -= 1);
-}
 
 
 let outerContainer = document.getElementById("outer-container");
@@ -98,7 +87,8 @@ let outerTop = outerContainer.offsetTop;
 let i = 0; 
 let letter = document.getElementsByClassName("letter");
 
-function slideNumber(slideID){
+Slider.prototype.slideNumber = function(slideID){
+
 	if(slideID >= letter.length){
 		i -= 1;
     console.log(slideID);
@@ -124,10 +114,11 @@ function slideNumber(slideID){
 		changeSlide(slideID);
     $('html').off();
     setTimeout(function(){
-      keyFunction();
+      NewSlide.keyFunction();
     },1500);
 	}
 }
+
 
 function scrollSlideFunction(){
 
@@ -139,7 +130,7 @@ function scrollSlideFunction(){
     setTimeout(function(){
    		$('body').removeClass('home-slide-inactive');
     },000);
-    setTimeout(function(){keyFunction();},500)
+    setTimeout(function(){NewSlide.keyFunction();},500)
     // // Remove the scroll up event Listener
     window.removeEventListener("scroll",scrollSlideFunction);  
   }

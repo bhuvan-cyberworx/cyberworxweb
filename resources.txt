@@ -64,3 +64,6 @@ add_action( 'init', 'create_posttype' );
 		}
 
 		?>
+
+
+        https://www.phpied.com/3-ways-to-define-a-javascript-class/
