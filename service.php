@@ -5,6 +5,10 @@
 <?php include_once("includes/menu.php"); ?>
 
 <div class="service-page">
+
+	<div class="mid-image">
+		<img src="assets/images/career.jpg" alt="">
+	</div>
 	<div class="big-heading text-center">
 		    <h3 class=" title">Search Engine Optimization</h3>
 		    <p class="sub-head">If you have a digital requirement, we have you covered!</p>
