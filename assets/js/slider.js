@@ -66,12 +66,12 @@ Slider.prototype.checkBrowser = function() {
 
     //Method to increment the slide number 
     var incrementSlide = function(){
-      Slider.slideNumber(i += 1);
+      slideNumber(i += 1);
     }
 
     //Method to decrement the slide number 
     var decrementSlide = function(){
-      Slider.slideNumber(i -= 1);
+      slideNumber(i -= 1);
     }
 }
 
@@ -80,29 +80,23 @@ var NewSlide = new Slider();
 NewSlide.checkBrowser();
 NewSlide.keyFunction();
 
-
-
 let outerContainer = document.getElementById("outer-container");
 let outerTop = outerContainer.offsetTop;
 let i = 0; 
 let letter = document.getElementsByClassName("letter");
 
-Slider.prototype.slideNumber = function(slideID){
+slideNumber = function(slideID){
 
 	if(slideID >= letter.length){
 		i -= 1;
     console.log(slideID);
-		
-      $('html').off();
-      
-    
-    
+    $('html').off();
 		$('body').addClass('home-slide-inactive');
     $('#icon-scroll').css('display','none');
 		scrollTo(document.documentElement, outerTop+20, 800); 
 		setTimeout(function(){
 		    window.addEventListener("scroll",scrollSlideFunction);  
-		},1000);
+		},1100);
 
 	}
 
@@ -115,21 +109,16 @@ Slider.prototype.slideNumber = function(slideID){
     $('html').off();
     setTimeout(function(){
       NewSlide.keyFunction();
-    },1500);
+    },1000);
 	}
 }
 
-
 function scrollSlideFunction(){
-
   if(window.pageYOffset < outerTop ){
-    
     console.log("scrollFunction Script working");
     // $('#icon-scroll').css('display','block');
     scrollTo(document.documentElement, 0, 600);
-    setTimeout(function(){
-   		$('body').removeClass('home-slide-inactive');
-    },000);
+   	$('body').removeClass('home-slide-inactive');
     setTimeout(function(){NewSlide.keyFunction();},500)
     // // Remove the scroll up event Listener
     window.removeEventListener("scroll",scrollSlideFunction);  
@@ -143,7 +132,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
   t--;
   return -c/2 * (t*(t-2) - 1) + b;
 };
-
 
 function scrollTo(element, to, duration) {
     var start = element.scrollTop,
@@ -162,6 +150,7 @@ function scrollTo(element, to, duration) {
     animateScroll();
 }
 
+
 let currentID = i, prevID, nextID ;
 let slide = document.getElementsByClassName('customSlider_slide');
 
@@ -177,6 +166,7 @@ function changeSlide(nextID){
 	},500);
 
 	setTimeout(function(){
+
 	$(slide[nextID]).addClass('active-slide');
 	currentID = nextID;
 	// $('#svg-change').css('transition-delay','5s');
@@ -187,16 +177,10 @@ function changeSlide(nextID){
 		// $('.active-slide .scene-item').css('transition-delay','0s');
 	},200);
 
-		// setTimeout(function(){
-			
-		// },200);
-
 	},800);
 }
 
 // Change SVG function 
-
-
 function changeSVG(nextID){
     var svg = document.getElementById("svg-change");
     var s = Snap(svg);
@@ -210,8 +194,7 @@ function changeSVG(nextID){
     var toSimple = function(){
       currentLetter.animate({ d: nextLetterPoints }, 450, mina.linear); 
     }
-    toSimple();
-  
+    toSimple(); 
 } 
 
 // Previous Slide Function
@@ -219,6 +202,8 @@ function prevFunction() {
   // changeSVG(i -= 1);
   slideNumber(i -= 1);
 }
+
+
 
 // Next slide function
 function nextFunction() {
