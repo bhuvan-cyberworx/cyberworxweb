@@ -1,23 +1,88 @@
 
-var keyFunction = function() {$('html').on('keydown', function(e){
+// var keyFunction = function() {$('html').on('keydown', function(e){
        
-       if(e.which == 38){
-        slideNumber(i -= 1);
-        $('html').off();
-        setTimeout(function(){
-          keyFunction();
-        },1500);
-       }
+//        if(e.which == 38){
+//         slideNumber(i -= 1);
+//         $('html').off();
+//         setTimeout(function(){
+//           keyFunction();
+//         },1500);
+//        }
 
-       if(e.which == 40){
-        slideNumber(i += 1);
-        $('html').off();
-        setTimeout(function(){
-          keyFunction();
-        },1500);
-       }
-});
+//        if(e.which == 40){
+//         slideNumber(i += 1);
+//         $('html').off();
+//         setTimeout(function(){
+//           keyFunction();
+//         },1500);
+//        }
+// });
+// }
+
+// $('body').on('mousewheel DOMMouseScroll', function(e){
+//   if(typeof e.originalEvent.detail == 'number' && e.originalEvent.detail !== 0) {
+//     if(e.originalEvent.detail > 0) {
+//       console.log('Down');
+//     } else if(e.originalEvent.detail < 0){
+//         console.log('Up');
+//     }
+//   } else if (typeof e.originalEvent.wheelDelta == 'number') {
+//     if(e.originalEvent.wheelDelta < 0) {
+//         console.log('Down');
+//     } else if(e.originalEvent.wheelDelta > 0) {
+//         console.log('Up');
+//     }
+//   }
+// });
+
+var keyFunction = function() {$('#customSlider').on('mousewheel DOMMouseScroll', function(e){
+       
+       if(typeof e.originalEvent.detail == 'number' && e.originalEvent.detail !== 0) {
+          if(e.originalEvent.detail > 0) {
+              incSlideNumber();
+          } else if(e.originalEvent.detail < 0){
+              decSlideNumber();
+          }
+        } 
+
+      });
 }
+
+function incSlideNumber(){
+  slideNumber(i += 1);
+  $('#customSlider').off();
+  setTimeout(function(){
+    keyFunction();
+  },1500);
+}
+
+function decSlideNumber(){
+  slideNumber(i -= 1);
+  $('#customSlider').off();
+  setTimeout(function(){
+    keyFunction();
+  },1500);
+}
+
+// $(window).bind('mousewheel DOMMouseScroll', function(event){
+//     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+//         // scroll up
+//     }
+//     else {
+//         // scroll down
+//     }
+// });
+
+// window.addEventListener('wheel', function(e) {
+//   if (e.deltaY < 0) {
+//     console.log('scrolling up');
+//     document.getElementById('status').innerHTML = 'scrolling up';
+//   }
+//   if (e.deltaY > 0) {
+//     console.log('scrolling down');
+//     document.getElementById('status').innerHTML = 'scrolling down';
+//   }
+// });
 
 keyFunction();
 
@@ -33,14 +98,14 @@ function slideNumber(slideID){
     console.log(slideID);
 		setTimeout(function(){
       $('html').off();
-    },1600);
+    },100);
     
 		$('body').addClass('home-slide-inactive');
     $('#icon-scroll').css('display','none');
 		scrollTo(document.documentElement, outerTop+20, 800); 
 		setTimeout(function(){
 		    window.addEventListener("scroll",scrollSlideFunction);  
-		},2500);
+		},1000);
 
 	}
 
@@ -58,13 +123,11 @@ function slideNumber(slideID){
 
 function scrollSlideFunction(){
 
-  if(window.pageYOffset < (outerTop) ){
-    setTimeout(function(){
-      keyFunction();
-    }, 1500);
+  if(window.pageYOffset < outerTop ){
+    
     console.log("scrollFunction Script working");
     // $('#icon-scroll').css('display','block');
-    scrollTo(document.documentElement, 0, 800);
+    scrollTo(document.documentElement, 0, 600);
     setTimeout(function(){
    		$('body').removeClass('home-slide-inactive');
     },000);

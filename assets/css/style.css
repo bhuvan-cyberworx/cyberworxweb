@@ -4437,3 +4437,232 @@ section.portfolio-clients.container {
     margin-top: 5%;
 }
 
+.post-content.container {
+
+    padding-bottom: 5%;
+
+}
+
+.career-page {
+
+    padding: 7% 0 5% 0;
+
+}
+
+.job-list{
+  margin: 0;
+  margin-top: 10%;
+}
+.list-labels {
+    margin-bottom: 3%;
+    width: 100%;
+    margin-bottom: 3%;
+
+}
+.simple-text {
+
+    font-family: montserrat;
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #ddd !important;
+
+}
+.position {
+
+    width: 48%;
+
+}
+
+.location {
+
+    width: 25%;
+
+}
+
+.vacancies {
+
+    width: 25%;
+
+}
+
+.list-labels div {
+
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.job.row {
+    position: relative;
+    width: 100%;
+    padding: 3% 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+.job-vacancies {
+
+    width: 25%;
+
+}
+.job-title {
+
+    width: 48%;
+
+}
+.job-location {
+
+    width: 25%;
+
+}
+
+.job.row:hover:after{
+  transform: translate(50%,0);
+}
+.job.row:after {
+    content: "";
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 35%;
+    color: #ccc;
+    background: url('../images/icon/right.png');
+        background-size: auto auto;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    
+    transition: 0.3s;
+}
+
+.job.row div {
+
+    color: #ccc;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-family: montserrat;
+
+}
+
+.hiring-button {
+    position: relative;
+    margin: 5% 0 8% 0;
+}
+
+.hiring-btn {
+    background: #F08D6A;
+    padding: 2% 4%;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10%;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+
+}
+
+.closing.careers {
+    background: #1d1d1d !important;
+}
+
+.mid-image {
+    width: 100%;
+    margin: 4% 0;
+}
+.mid-image img {
+    width: 100%;
+    
+}
+
+.job-page{
+  padding:5% 0;
+}
+
+.job-details ul {
+    margin: 3% 0;
+    margin: 5% 0px;
+}
+
+.job-details ul h2 {
+
+    font-family: montserrat;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.job-details ul li {
+
+    color: #ccc;
+    font-family: montserrat;
+    font-weight: ;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-size: 14px;
+    margin-left: 1.5%;
+
+}
+
+.hiring-button.job-button {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.job-intro {
+    color: #ccc !important;
+    font-family: montserrat;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+.hiring-btn {
+    border: 0;
+    color: #fff;
+}
+
+#resume {
+    height: 40px;
+    padding: 1% 0% 6% 2%;
+    color: #ccc;
+    font-family: montserrat;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+
+#apply-job {
+
+    margin: 4% 0 0 0;
+
+}
+
+#apply-job .animatelabel {
+
+    font-family: montserrat;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ddd;
+    font-size: 12px;
+
+}
+
+.hiring-button.job-button .hiring-btn {
+
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 0;
+    background: #242424;
+
+}
