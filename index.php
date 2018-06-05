@@ -4,26 +4,6 @@
 <?php include_once("includes/menu.php"); ?>
 
 
-<!-- <div id="pre-loader">
-    <div class="content ">
-        <div class="content__container">
-            <p class="content__container__text">
-              You Need
-            </p>
-
-            <ul class="content__container__list">
-              <li class="content__container__list__item">SEO ?</li>
-              <li class="content__container__list__item">Maketing ?</li>
-              <li class="content__container__list__item">Something ?</li>
-              <li class="content__container__list__item">LYKAN !</li>
-            </ul>
-        </div>
-    </div>
-
-     <div id="pre-loader-image" class="text-center">
-        <img src="assets/images/logo-lykan-white.png" alt="">
-    </div>
-</div> -->
 
 
     <div class='icon-scroll' id="icon-scroll">
@@ -508,4 +488,4 @@
 <?php include_once("includes/footer-new.php"); ?>
 
 <!-- Icluding footer file -->
-<?php include_once("includes/footer.php"); ?>
+<?php include_once("includes/home-footer.php"); ?>

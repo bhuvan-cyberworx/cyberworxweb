@@ -23,7 +23,7 @@
                         <!-- <h2><span class="ion-minus"></span> Testimonials <span class="ion-minus"></span></h2> -->
                         <!-- <i class="fa fa-quote-right"></i> -->
                         
-                        
+                        <h2 class="testimonial-title">Testimonial</h2>
                         <div id="slider" class="carousel slide" data-ride="carousel">
                         
                             <ol class="carousel-indicators">
@@ -34,7 +34,7 @@
                             
                             <div class="carousel-inner">
                                 <div class="carousel-item text-center active">
-                                     <img src="http://via.placeholder.com/350x300">
+                                     <img src="assets/images/mts.jpg">
 
                                     <p>" I like their attention to details and their communication  skills. "</p>
                                     <span class="testimonial-dash"></span>
@@ -44,15 +44,23 @@
                                 </div>
 
                                 <div class="carousel-item ">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                    <img src="http://via.placeholder.com/350x300">
-                                    <h5>Jane Doe</h5>
+                                   <img src="assets/images/spring.jpg">
+
+                                    <p>" I like their attention to details and their communication  skills. "</p>
+                                    <span class="testimonial-dash"></span>
+                                    
+                                    <h5 class="client-name">Jack Currie</h5>
+                                    <span class="client-company-name">The Drama Company</span>
                                 </div>
                                 
                                 <div class="carousel-item">
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                                     <img src="http://via.placeholder.com/350x300">
-                                    <h5>John Doe</h5>
+                                    <img src="assets/images/masu.jpg">
+
+                                    <p>" I like their attention to details and their communication  skills. "</p>
+                                    <span class="testimonial-dash"></span>
+                                    
+                                    <h5 class="client-name">Jack Currie</h5>
+                                    <span class="client-company-name">The Drama Company</span>
                                 </div>
 
                                 
@@ -117,7 +125,7 @@
     
 </div>
 
-<div class="col-md-6" style="padding: 50px; padding-top: 0">
+<div class="col-md-6" style="padding: 00px; padding-top: 0">
 
       <form class="row">
         <!-- Full Name -->
@@ -155,61 +163,81 @@
     margin-left: 0;
     padding-left: 0;">
             <div class="form-check service-tab col-md-6 pl0 ">
-              <input class="form-check-input" type="checkbox" value="" id="seo">
+              <input class="form-check-input" type="checkbox" value="Social Media Marketing" id="seo">
               <label class="form-check-label" for="seo">
               Social Media Marketing
               </label>
             </div>
             <div class="form-check service-tab col-md-6 ">
-              <input class="form-check-input" type="checkbox" value="" id="dm">
+              <input class="form-check-input" type="checkbox" value="Content Marketing" id="dm">
               <label class="form-check-label" for="dm">
               Content Marketing
               </label>
             </div>
             <div class="form-check service-tab col-md-6">
-              <input class="form-check-input" type="checkbox" value="" id="so">
+              <input class="form-check-input" type="checkbox" value="Search Engine Optimization" id="so">
               <label class="form-check-label" for="so">
               Search Engine Optimization
               </label>
             </div>
 
             <div class="form-check service-tab col-md-6 pl0 ">
-              <input class="form-check-input" type="checkbox" value="" id="seo">
-              <label class="form-check-label" for="seo">
-              Social Media Marketing
+              <input class="form-check-input" type="checkbox" value="Photography & Videography" id="pv">
+              <label class="form-check-label" for="pv">
+              Photography & Videography
               </label>
             </div>
             <div class="form-check service-tab col-md-6 ">
-              <input class="form-check-input" type="checkbox" value="" id="dm">
-              <label class="form-check-label" for="dm">
-              Content Marketing
+              <input class="form-check-input" type="checkbox" value="Online Reputation Management" id="orm">
+              <label class="form-check-label" for="orm">
+              Online Reputation Management
               </label>
             </div>
             <div class="form-check service-tab col-md-6">
-              <input class="form-check-input" type="checkbox" value="" id="so">
-              <label class="form-check-label" for="so">
-              Search Engine Optimization
+              <input class="form-check-input" type="checkbox" value="Emailer Marketing" id="em">
+              <label class="form-check-label" for="em">
+              Emailer Marketing
               </label>
             </div>
 
             <div class="form-check service-tab col-md-6 pl0 ">
-              <input class="form-check-input" type="checkbox" value="" id="seo">
-              <label class="form-check-label" for="seo">
-              Social Media Marketing
+              <input class="form-check-input" type="checkbox" value="Digital Media Buying" id="dmb">
+              <label class="form-check-label" for="dmb">
+             Digital Media Buying
               </label>
             </div>
             <div class="form-check service-tab col-md-6 ">
-              <input class="form-check-input" type="checkbox" value="" id="dm">
-              <label class="form-check-label" for="dm">
-              Content Marketing
+              <input class="form-check-input" type="checkbox" value="E-Commerce SEO" id="eseo">
+              <label class="form-check-label" for="eseo">
+              E-Commerce SEO
               </label>
             </div>
             <div class="form-check service-tab col-md-6">
-              <input class="form-check-input" type="checkbox" value="" id="so">
-              <label class="form-check-label" for="so">
-              Search Engine Optimization
+              <input class="form-check-input" type="checkbox" value="Search Engine Marketing" id="sem">
+              <label class="form-check-label" for="sem">
+              Search Engine Marketing
               </label>
             </div>
+
+            <div class="form-check service-tab col-md-6 pl0 ">
+              <input class="form-check-input" type="checkbox" value="Identity Designing & Print" id="idp">
+              <label class="form-check-label" for="idp">
+              Identity Designing & Print
+              </label>
+            </div>
+            <div class="form-check service-tab col-md-6 ">
+              <input class="form-check-input" type="checkbox" value="Influencer Marketing" id="im">
+              <label class="form-check-label" for="im">
+              Influencer Marketing
+              </label>
+            </div>
+            <div class="form-check service-tab col-md-6">
+              <input class="form-check-input" type="checkbox" value="Website Design & Development" id="wdd">
+              <label class="form-check-label" for="wdd">
+              Website Design & Development
+              </label>
+            </div>
+
           </div>
         </div>
 

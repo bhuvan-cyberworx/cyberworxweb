@@ -191,6 +191,8 @@
 
 </div>
 <!-- Including the footer menu -->
+<!-- <script type="text/javascript" src="assets/js/main-home.js"> </script> -->
 <?php include_once("includes/footer-new.php"); ?>
 <!-- Icluding footer file -->
-<?php include_once("includes/footer.php"); ?>
+
+<?php include_once("includes/home-footer.php"); ?>

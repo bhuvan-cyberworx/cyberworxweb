@@ -167,8 +167,60 @@ function processNumber(processID){
   
 }
 
+processHeading[currentProcessID].style.opacity = "1";
+slideContent[currentProcessID].style.opacity = "1";
+processHeading[currentProcessID].style.marginLeft = "00px";
+slideContent[currentProcessID].style.marginTop = "00px";
+
+function changeProcess(nextProcessID){
+ 
+    
+setTimeout(function(){
+    processHeading[currentProcessID].style.marginLeft = "-100px";
+    processHeading[currentProcessID].style.opacity = "0";
+
+  },00);
+
+setTimeout(function(){
+   
+    
+    slideContent[currentProcessID].style.opacity = "0";
+    
+
+  },00);
+
+ setTimeout(function(){
+    processHeading[nextProcessID].style.marginLeft = "0px";
+    processHeading[nextProcessID].style.opacity = "1";
+    
+  },500);
+
+setTimeout(function(){
+   
+    slideContent[nextProcessID].style.marginTop = "0px";
+    slideContent[nextProcessID].style.opacity = "1";
+    slideContent[currentProcessID].style.marginTop = "100px";
+
+  },400);
+
+  console.log(processHeading[currentProcessID]);
+  console.log(processHeading[nextProcessID]);
+  setTimeout(function(){
+    previousProcessID = currentProcessID;
+    currentProcessID = nextProcessID;
+    
+  },800);
+
+}
 
 
+let menuSlideContent = document.getElementsByClassName("menu-slide-content");
+let navigationSectionInfoBox = document.getElementsByClassName("navigation-section-info-box");
+
+
+document.addEventListener("mousemove", handler);
+document.getElementById("prevProcess").addEventListener('click',prevProcess);
+document.getElementById("nextProcess").addEventListener('click',nextProcess);
 
 
 $(document).ready(function(){

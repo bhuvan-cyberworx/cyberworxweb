@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:600,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
 
 /* own custom keyframe animations */
 @keyframes preLoader{
@@ -1020,10 +1020,10 @@ a.direction-reveal__card:hover img {
 }
 
 .carousel-item img {
-    width: 70px;
-    height: 70px;
+        width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .alert.alert-warning {
@@ -1805,13 +1805,16 @@ section#testimonial  .carousel-item img {
     margin-top: 20px;
 }
 section#testimonial .carousel-item  h5{
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
+    display: none;
 }
 
 span.client-company-name {
-    font-size: 12px;
+     font-size: 12px;
     font-weight: 500;
-    color: #999;
+    color: #bbb!important;
+    letter-spacing: 1px;
+    display: none;
 }
 
 div#projectsection .button {
@@ -1821,8 +1824,6 @@ div#projectsection .button {
     letter-spacing: 0.5px;
 }
 /*Caraousel */
-
-
 
 /*Header Two CSS Starts here */
 nav#header-two {
@@ -1840,11 +1841,15 @@ a.navbar-brand.text-dark {
 }
 
 h5.client-name {
-    font-size: 16px;
+        font-size: 12px;
     /* color: #999 !important; */
     margin-top: 30px;
-        font-family: montserrat;
-    font-weight: 700;
+    font-family: montserrat;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    color: #fff !important;
+    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 #header-two a.nav-link {
@@ -1858,8 +1863,8 @@ h5.client-name {
 
 section#testimonial .carousel-indicators li {
    
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     
     border-radius: 50%;
 }
@@ -1874,7 +1879,7 @@ section#testimonial .carousel-indicators .active {
 }
 
 .contact-enquiry {
-    padding: 5% 5% 0 5%;
+    padding: 8% 5% 0 5%;
 }
 
 /*.contact-enquiry h3.title{
@@ -3155,11 +3160,11 @@ small#spam-message {
 
 
 .project-brief textarea {
-    width: 100%;
+        width: 100%;
     height: 150px;
-    background: #fff;
-    border: 1px solid #ddd;
-    /*border: 0;*/
+    background: #333;
+    border: 1px solid #333;
+    /* border: 0; */
     resize: none;
     padding: 2% 2.5%;
     font-family: montserrat;
@@ -3179,22 +3184,22 @@ small#spam-message {
 }
 
 label.text-lable {
-        font-family: montserrat;
-    font-weight: 700;
-    text-transform: capitalize;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: #333;
+    font-family: montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    color: #fff;
 }
 .contact-enquiry form {
-    padding: 3% 0% 10% 0%;
-    background: #F1F4F5;
+    padding: 6% 5% 10% 5%;
+    background: transparent;
     margin-bottom: 8%;
     margin-top: 3%;
 }
 
 .enquire-btn.btn.btn-primary {
-    background: #333;
+    background: #F08D6A;
     padding: 2% 10%;
     border-radius: 0;
     color: #fff;
@@ -3213,17 +3218,18 @@ label.text-lable {
   margin-bottom: 0.5%;
 }
 .contact-enquiry form .form-control {
-    color: #333;
+    color: #eee;
     border: 0;
     border-bottom: 2px solid #eee;
     font-family: montserrat;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     /* padding: 10px 0px; */
     letter-spacing: 0.5px;
     background: #eee;
-    height: 50px;
+    height: 45px;
     padding-left: 5%;
+    letter-spacing: 1.8px;
 }
 
 .contact-enquiry form .form-control:focus{
@@ -3239,14 +3245,14 @@ label.text-lable {
   color: #bbb;
 }
 .form-check.service-tab label.form-check-label {
-    border: 1px solid #ddd;
+        border: 1px solid #333;
     height: 40px;
     line-height: 40px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: montserrat;
     font-size: 10px;
-    letter-spacing: 0.9px;
-    color: #666;
+    letter-spacing: 1.9px;
+    color: #eee;
     border-radius: 3px;
     margin-right: 0px;
     text-transform: capitalize;
@@ -3273,17 +3279,59 @@ input[type=checkbox]#so:checked ~ label.form-check-label{
   border: 2px solid #333;
 }
 
-input[type=checkbox]#seo:checked ~ label.form-check-label{
+input[type=checkbox]#pv:checked ~ label.form-check-label{
   background: #333;
   border: 2px solid #333;
+  color: #fff;
 }
 
-input[type=checkbox]#seo:checked ~ label.form-check-label{
+input[type=checkbox]#orm:checked ~ label.form-check-label{
   background: #333;
   border: 2px solid #333;
+  color: #fff;
 }
 
+input[type=checkbox]#em:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
 
+input[type=checkbox]#dmb:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+input[type=checkbox]#eseo:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+input[type=checkbox]#sem:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+input[type=checkbox]#idp:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+input[type=checkbox]#im:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+input[type=checkbox]#wdd:checked ~ label.form-check-label{
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
 .contact-us-page .form-group {
     margin-bottom: 1.5rem;
 }
@@ -3307,7 +3355,7 @@ input[type=checkbox]#seo:checked ~ label.form-check-label{
     margin-bottom: 7%;
 }
 .contact-enquiry form .form-control{
-  border: 1px solid #333;
+     border: 1px solid #333;
     background: #333;
 }
 
@@ -3431,241 +3479,7 @@ ul.footer-social.list-unstyled.list-inline {
 
 
 
-/*DAY CSS STARTS HERE */
 
-.day #outer-container{
-    background:#fff;
-}
-.day.home-slide-inactive #main-wrap {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-}
-.day  #our-portfolio{
-    background:#F7F6F6;
-}
-.day span.portfolio-data{
-    background: #fff;
-}
-.day #logo-img{
-    content:url("../images/logo_new.png");
-}
-.day .open-menu i{
-    color: #1a1a1a;
-}
-.day .process-section{
-    background: #fff;
-}
-
-.day .section.process-section .title{
-    color: #1a1a1a;
-}
-.day  .process-section .process-slider .process-item h3{
-    color: #1a1a1a;
-}
-
-.day  .process-section .process-slider .process-item h3 span{
-    color: #1a1a1a;
-}
-
-.day .control-c{
-    color: #1a1a1a;
-}
-
-.day  .slide-content p{
-    color: #1a1a1a;
-}
-
-.day section.closing{
-    background:#fff !important;
-}
-
-.day section.closing h4{
-    color: #1a1a1a;
-}
-
-.day section.closing .cta{
-    font-weight: 600;
-    border-color: #1a1a1a;
-    color: #1a1a1a;
-}
-
-.day .footer_bottom{
-    background: #f7f6f6;
-}
-
-.day section.closing{
-    border-bottom: 2px solid #eee;
-}
-.day .footer_addressbar:before{
-    background: #eee;
-    width: 2px;
-}
-.day .footer_addressbar h4{
-    color: #1a1a1a;
-}
-
-.day p.branch_city {
-    color: #1a1a1a;
-}
-
-.day div#footer {
-    background: #f5f5f5;
-    padding:4% 0 2.5% 0;
-}
-
-.day  .footer-content a{
-  color: #1a1a1a;
-}
-/*.day *{
-    transition:0.5s;
-}*/
-.day h1,.day h2,.day h3,.day h4,.day h5,.day h6,.day p,.day span{
-    color: #1a1a1a;
-}
-.day .footer_addressbar p {
-    font-weight: 600;
-    color: #999 !important;
-}
-
-.day .footer_bottom a{
-    color: #666;
-}
-.day .footer_bottom a:hover{
-    color: #1a1a1a;
-}
-
-.day  .view-more a {
-color: #999;
-border: 2px solid #999;
-
-}
-.day  .view-more a:hover {
-color: #fff;
-border: 2px solid #999;
-background: #999;
-}
-
-.day .navigation-section-info-title h6{
-    color : #1a1a1a;
-}
-
-.day .navigation-section-info-text p{
-    color : #1a1a1a;
-}
-.scrolled.open-body.day #main-wrap {
-    transition: 0.2s;
-    border-bottom: 1px solid #eee;
-    background: #fff;
-        box-shadow: 0 4px 23px 0 rgba(0,0,0,.08);
-}
-
-
-.day .portfolio-page span.portfolio-data{
-  background: #eee;
-}
-
-
-
-
-/*Night  CSS Starts Here*/
-
-.night #outer-container{
-    background:#1a1a1a;
-}
-
-.night #our-portfolio{
-    background:#1a1a1a;
-}
-
-body.open-body.night {
-    background: #1a1a1a;
-}
-.open-body.night #main-wrap{
-  border-color: #222;
-}
-/*.night *{
-    transition:0.5s;
-}*/
-
-.night h1,.night h2,.night h3,.night h4,.night h5,.night h6,.night p,.night span{
-    color: #fff;
-}
-
-.night .scene-content span{
-    color: #000;
-}
-
-.night .footer_bottom a{
-    color: #ddd;
-}
-
-.night  .view-more a {
-color: #ddd;
-border: 2px solid #ddd;
-
-}
-.night .navigation-section-info-title h6{
-    color : #1a1a1a;
-}
-
-.night .navigation-section-info-text p{
-    color : #1a1a1a;
-}
-
-.night  .view-more a:hover {
-color: #1a1a1a;
-border: 2px solid #ddd;
-background: #ddd;
-}
-
-.night div#footer {
-    background: #1a1a1a;
-    padding:4% 0 2.5% 0;
-    border-top: 1px solid #222;
-    clear: both;
-}
-
-
-.night .navigation-section {
-    
-    background: #1a1a1a;
-    border-left: 1px solid #222;
-}
-
-
-.night .navigation-section-info-title h6 {
-    color: #fff;
-}
-
-
-.night .navigation-section-info-text p {
-    color: #fff;
-}
-.night .navigation-section-links li a {
-    color: #fff;
-   
-}
-.night .active-menu .menu-close i{
-  color: #fff;
-}
-
-.search__suggestion p {
- color: #fff;
-}
-
-.search__suggestion h3{
- color: #fff;
-}
-
-.scrolled.open-body.night #main-wrap {
-    transition: 0.2s;
-    border-bottom: 1px solid #222;
-    background: #1a1a1a;
-}
-
-.night #menu-logo-id{
-    content:url("../images/logo_white.png");
-}
 
 
 
@@ -4630,15 +4444,13 @@ section.portfolio-clients.container {
 
 #resume {
     height: 40px;
-    padding: 1% 0% 6% 2%;
+    padding: 1% 0% 4% 2%;
     color: #ccc;
     font-family: montserrat;
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 500;
-
 }
-
 
 #apply-job {
 
@@ -4663,7 +4475,7 @@ section.portfolio-clients.container {
     font-size: 14px;
     letter-spacing: 2px;
     border-radius: 0;
-    background: #242424;
+    background: #F08D6A;
 
 }
 
@@ -4674,6 +4486,297 @@ div#formStatus {
     clear: both;
     margin-top: 28%;
 }
+
+
+
+section#testimonial .carousel-item p {
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+
+
+h2.testimonial-title {
+    font-family: montserrat;
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+
+/*DAY CSS STARTS HERE */
+
+.day #outer-container{
+    background:#fff;
+}
+.day.home-slide-inactive #main-wrap {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.day  #our-portfolio{
+    background:#F7F6F6;
+}
+.day span.portfolio-data{
+    background: #fff;
+}
+.day #logo-img{
+    content:url("../images/logo_new.png");
+}
+.day .open-menu i{
+    color: #1a1a1a;
+}
+.day .process-section{
+    background: #fff;
+}
+
+.day .section.process-section .title{
+    color: #1a1a1a;
+}
+.day  .process-section .process-slider .process-item h3{
+    color: #1a1a1a;
+}
+
+.day  .process-section .process-slider .process-item h3 span{
+    color: #1a1a1a;
+}
+
+.day .control-c{
+    color: #1a1a1a;
+}
+
+.day  .slide-content p{
+    color: #1a1a1a;
+}
+
+.day section.closing{
+    background:#fff !important;
+}
+
+.day section.closing h4{
+    color: #1a1a1a;
+}
+
+.day section.closing .cta{
+    font-weight: 600;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
+}
+
+.day .footer_bottom{
+    background: #f7f6f6;
+}
+
+.day section.closing{
+    border-bottom: 2px solid #eee;
+}
+.day .footer_addressbar:before{
+    background: #eee;
+    width: 2px;
+}
+.day .footer_addressbar h4{
+    color: #1a1a1a;
+}
+
+.day p.branch_city {
+    color: #1a1a1a;
+}
+
+.day div#footer {
+    background: #f5f5f5;
+    padding:4% 0 2.5% 0;
+}
+
+.day  .footer-content a{
+  color: #1a1a1a;
+}
+/*.day *{
+    transition:0.5s;
+}*/
+.day h1,.day h2,.day h3,.day h4,.day h5,.day h6,.day p,.day span{
+    color: #1a1a1a;
+}
+.day .footer_addressbar p {
+    font-weight: 600;
+    color: #999 !important;
+}
+
+.day .footer_bottom a{
+    color: #666;
+}
+.day .footer_bottom a:hover{
+    color: #1a1a1a;
+}
+
+.day  .view-more a {
+color: #999;
+border: 2px solid #999;
+
+}
+.day  .view-more a:hover {
+color: #fff;
+border: 2px solid #999;
+background: #999;
+}
+
+.day .navigation-section-info-title h6{
+    color : #1a1a1a;
+}
+
+.day .navigation-section-info-text p{
+    color : #1a1a1a;
+}
+
+
+.scrolled.open-body.day #main-wrap {
+    transition: 0.2s;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+        box-shadow: 0 4px 23px 0 rgba(0,0,0,.08);
+}
+
+
+.day .portfolio-page span.portfolio-data{
+  background: #eee;
+}
+
+
+.day label.text-lable{
+  color: #222;
+}
+
+.day .contact-enquiry form .form-control {
+    border: 1px solid #ddd;
+    background: #eee;
+    color: #333;
+}
+
+.day .form-check.service-tab label.form-check-label {
+       border: 1px solid #ddd;
+    font-weight: 600;
+    color: #999;
+    background: #eee;
+    
+}
+.day .enquire-btn.btn.btn-primary {
+    background: #333;
+}
+
+.day .project-brief textarea {
+
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+.day .contact-enquiry form {
+    padding: 7% 5% 10% 5%;
+    background: #f5f5f5;
+   
+}
+
+
+
+
+
+/*Night  CSS Starts Here*/
+
+.night #outer-container{
+    background:#1a1a1a;
+}
+
+.night #our-portfolio{
+    background:#1a1a1a;
+}
+
+body.open-body.night {
+    background: #1a1a1a;
+}
+.open-body.night #main-wrap{
+  border-color: #222;
+}
+/*.night *{
+    transition:0.5s;
+}*/
+
+.night h1,.night h2,.night h3,.night h4,.night h5,.night h6,.night p,.night span{
+    color: #fff;
+}
+
+.night .scene-content span{
+    color: #000;
+}
+
+.night .footer_bottom a{
+    color: #ddd;
+}
+
+.night  .view-more a {
+color: #ddd;
+border: 2px solid #ddd;
+
+}
+.night .navigation-section-info-title h6{
+    color : #1a1a1a;
+}
+
+.night .navigation-section-info-text p{
+    color : #1a1a1a;
+}
+
+.night  .view-more a:hover {
+color: #1a1a1a;
+border: 2px solid #ddd;
+background: #ddd;
+}
+
+.night div#footer {
+    background: #1a1a1a;
+    padding:4% 0 2.5% 0;
+    border-top: 1px solid #222;
+    clear: both;
+}
+
+
+.night .navigation-section {
+    
+    background: #1a1a1a;
+    border-left: 1px solid #222;
+}
+
+
+.night .navigation-section-info-title h6 {
+    color: #fff;
+}
+
+
+.night .navigation-section-info-text p {
+    color: #fff;
+}
+.night .navigation-section-links li a {
+    color: #fff;
+   
+}
+.night .active-menu .menu-close i{
+  color: #fff;
+}
+
+.search__suggestion p {
+ color: #fff;
+}
+
+.search__suggestion h3{
+ color: #fff;
+}
+
+.scrolled.open-body.night #main-wrap {
+    transition: 0.2s;
+    border-bottom: 1px solid #222;
+    background: #1a1a1a;
+}
+
+.night #menu-logo-id{
+    content:url("../images/logo_white.png");
+}
+
 
 
 @media only screen and (min-width: 1600px){
@@ -4754,3 +4857,12 @@ span.portfolio-data h4 {
     
    }
 }
+
+
+
+
+
+
+
+
+

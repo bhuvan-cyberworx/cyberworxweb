@@ -28,10 +28,13 @@
 <script type="text/javascript" src="assets/js/input-animation.js"> </script>
 <!-- Including bootstrap datepicker js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-
-
+<!-- Slider JS File -->
+<script type="text/javascript" src="assets/js/slider.js"> </script>
+<script type="text/javascript" src="assets/js/slider-safari.js"> </script>
+<!-- Mobile Slider JS File -->
+<script type="text/javascript" src="assets/js/mobile-slider.js"> </script>
 <!-- Main JS File -->
-<script type="text/javascript" src="assets/js/main.js"> </script>
+<script type="text/javascript" src="assets/js/main-home.js"> </script>
 
 <!-- Menu Slider Js File -->
 <!-- <script type="text/javascript" src="assets/js/menu-slider.js"> </script> -->
