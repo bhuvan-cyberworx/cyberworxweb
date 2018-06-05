@@ -30,8 +30,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
 <!-- Slider JS File -->
 <script type="text/javascript" src="assets/js/slider.js"> </script>
-
-
+<script type="text/javascript" src="assets/js/slider-safari.js"> </script>
+<!-- Mobile Slider JS File -->
+<script type="text/javascript" src="assets/js/mobile-slider.js"> </script>
 <!-- Main JS File -->
 <script type="text/javascript" src="assets/js/main.js"> </script>
 

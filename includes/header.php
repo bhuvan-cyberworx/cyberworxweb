@@ -1,4 +1,16 @@
+<?php 
+    if (!isset($_COOKIE['count']))
+    {
+        $cookie = 1;
+        setcookie("count", $cookie);
+    }
+    else
+    {
+        $cookie = ++$_COOKIE['count'];
+        setcookie("count", $cookie);      
+    }
 
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,20 +66,26 @@
         Interested in having the <span> Lykan Media </span> team take a look at your brand and provide valuable feedback?
     </div>
 
-    <form action="" class="popup-form">
+    <form action="" class="popup-form" id="popup-form" onsubmit="validate(); return false;">
         <div class="form-group">            
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+            <span class="validate_help" id="validate_email"></span>
             
         </div>
 
         <div class="form-group">            
             <input type="text" class="form-control" id="number" aria-describedby="numberHelp" placeholder="Enter Number">
+            <span class="validate_help" id="validate_number"></span>
             
         </div>
 
-        <button type="submit" class="popup-submit btn btn-primary">Let's Do This <i class="fas fa-arrow-right"></i></button>
+        <button type="submit" class="popup-submit btn btn-primary" id="submitPopupForm">Let's Do This <i class="fas fa-arrow-right"></i></button>
+
+
+      
     </form>
     <small id="spam-message" class="form-text text-muted">*We will never spam you.</small>
+      <div id="formStatus"></div>
     <div class="no-thanks">
         <span >No Thanks, I Don't Like Free & Valuable Advice.</span>
     </div>
@@ -79,3 +97,4 @@
     
 </div>
     
+<div id="cookie-count" class="d-none"><?php echo $_COOKIE['count']; ?></div> 

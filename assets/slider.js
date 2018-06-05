@@ -6,6 +6,9 @@ function Slider() {
    var isBrowser, keyFunction;   
 }
 
+
+    
+
 // Method to check browser type and fire related function for mousewheel event
 Slider.prototype.checkBrowser = function() {
 
@@ -19,7 +22,11 @@ Slider.prototype.checkBrowser = function() {
       this.isBrowser = "isFirefox";
     }
 
-    
+    // Safari Browser Check
+    else if(/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))){
+      this.isBrowser = "isSafari";
+    }
+
      // Internet Explorer 6-11
     else if(/*@cc_on!@*/false || !!document.documentMode){
       this.isBrowser = "isIE";
@@ -34,6 +41,7 @@ Slider.prototype.checkBrowser = function() {
     // Creating mousewheel event function based on browser type
     switch(this.isBrowser) {
       case 'isChrome':
+      case 'isSafari':
       case 'isEdge':
       case 'isIE':
       this.keyFunction = function() {

@@ -44,7 +44,6 @@
 </div><!-- /search -->
 
 <section class="menu-section ">
-  
   <div class="">
     <div class="row" id="main-menu" class="">
       <div class="col-md-5 slider-section" id="slider-section">

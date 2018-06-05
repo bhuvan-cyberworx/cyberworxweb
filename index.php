@@ -1,4 +1,3 @@
-<!-- Including Header File -->
 <?php include_once("includes/header.php"); ?>
 
 <!-- Including menu File -->

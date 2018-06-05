@@ -1,78 +1,19 @@
 //Check if the device is desktop/laptop/tab
 jQuery(document).ready(function(){
-  if($(window).width() > 560){
-// Declaring slider class
-function Slider() {
-   var isBrowser, keyFunction;   
-}
+  if(/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))){
 
-// Method to check browser type and fire related function for mousewheel event
-Slider.prototype.checkBrowser = function() {
+    alert("safari");
 
-    // Chrome Browser Check
-    if(!!window.chrome && !!window.chrome.webstore){
-      this.isBrowser = "isChrome";
-    }
-
-    // Firefox Browser Check
-    else if(typeof InstallTrigger !== 'undefined'){
-      this.isBrowser = "isFirefox";
-    }
-
-    
-     // Internet Explorer 6-11
-    else if(/*@cc_on!@*/false || !!document.documentMode){
-      this.isBrowser = "isIE";
-    }
-
-
-    else if(!isIE && !!window.StyleMedia){
-      // Edge 20+
-      this.isBrowser = isEdge ;
-    }
-    
-    // Creating mousewheel event function based on browser type
-    switch(this.isBrowser) {
-      case 'isChrome':
-      case 'isEdge':
-      case 'isIE':
-      this.keyFunction = function() {
-        console.log("keyFunction Activated");
-        $('html').on('mousewheel DOMMouseScroll wheel', function(e){
-            if( e.originalEvent.wheelDelta < 0 ) {
-                incrementSlide();
-            } else if(e.originalEvent.wheelDelta > 0 ){
-                decrementSlide();
-                
-            }   
-
-        });
-      }
-
-      break;
-
-      case 'isFirefox':
-       this.keyFunction = function() {
-        $('html').on('mousewheel DOMMouseScroll wheel', function(e){
-          if( e.originalEvent.detail > 0) {
+    keyFunction = function() {
+      console.log("keyFunction Activated");
+      $('html').on('mousewheel DOMMouseScroll wheel', function(e){
+          if( e.originalEvent.wheelDelta < 0 ) {
               incrementSlide();
-             
-          } else if( e.originalEvent.detail < 0 ){
+          } else if(e.originalEvent.wheelDelta > 0 ){
               decrementSlide();
-             
           }   
-
-        });
-      }
-
-      break;
-
-      default:
-      console.log("none");
+      });
     }
-
-    
-}
 
 //Method to increment the slide number 
 var incrementSlide = function(){
@@ -86,9 +27,7 @@ var decrementSlide = function(){
   
 }
 
-var NewSlide = new Slider();
-NewSlide.checkBrowser();
-NewSlide.keyFunction();
+keyFunction();
 
 let outerContainer = document.getElementById("outer-container");
 let outerTop = outerContainer.offsetTop;
@@ -104,12 +43,14 @@ slideNumber = function(slideID){
      window.onwheel = function(){ return false; }
     $('body').addClass('home-slide-inactive');
     $('#icon-scroll').css('display','none');
-    setTimeout(function(){
-      $('html, body').animate({
-        scrollTop: $('#outer-container').offset().top
-    }, 600);
-    },100);
-
+    // setTimeout(function(){
+    //   $('html, body').animate({
+    //     scrollTop: $('#outer-container').offset().top
+    // }, 600);
+    // },100);
+    $('#customSlider').css('transform','translate3d(0,-98%,0)');
+    $('#outer-container').css('transform','translate3d(0,-98vh,0)');
+    $('#footer').css('margin-top','-98vh');
     setTimeout(function(){
         window.onwheel = function(){ return true; }  
     },700);
@@ -124,30 +65,30 @@ slideNumber = function(slideID){
     changeSlide(slideID);
     $('html').off();
     setTimeout(function(){
-      NewSlide.keyFunction();
+      keyFunction();
     },1200);
   }
 }
 
 
 function scrollSlideFunction(){ 
-    if(window.pageYOffset < outerTop ){
+    if(window.pageYOffset <= 1 ){
     $('html').off();
-    $('html, body').animate({
-        scrollTop: $('#customSlider').offset().top
-      }, 600)
+    $('#customSlider').css('transform','translate3d(0,00%,0)');
+    $('#outer-container').css('transform','translate3d(0,00vh,0)');
+    $('#footer').css('margin-top','000vh');
     window.onwheel = function(){ return false; }
 
     setTimeout(function(){
       $('body').removeClass('home-slide-inactive');
 
-    }, 600)
-    setTimeout(function(){NewSlide.keyFunction();
+    }, 700)
+    setTimeout(function(){keyFunction();
 
     },1000)
 
     setTimeout(function(){
-    window.onwheel = function(){ return true; }},600);
+    window.onwheel = function(){ return true; }},700);
         // // Remove the scroll up event Listener
         window.removeEventListener("scroll",scrollSlideFunction);  
       }
@@ -214,3 +155,5 @@ window.addEventListener('scroll', addEventScroll );
 //End of main if statement
   }
 });
+
+
