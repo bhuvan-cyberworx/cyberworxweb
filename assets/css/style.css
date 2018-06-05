@@ -1891,7 +1891,7 @@ section#testimonial .carousel-indicators .active {
 }*/
 
 .contact-us-page{
-  padding:5% 0;
+  padding:5% 0 0 0 ;
 }
 li.client-enquiry {
     width: 23%;
@@ -3472,18 +3472,6 @@ ul.footer-social.list-unstyled.list-inline {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*Portfolio Page CSS starts here */
 .day .portfolio-page #our-portfolio {
     background: #fff;
@@ -3607,11 +3595,6 @@ section.hero-banner:before {
   opacity: 1;
 }
 
-
-
-
-
-
 .successful-project__content {
     position: relative;
     display: flex;
@@ -3619,7 +3602,7 @@ section.hero-banner:before {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background: url(../images/contact_map.png) top #1d1d1d;
+    background: url(../images/contact_map.png) top #222;
         padding: 5% 0;
     font-family: montserrat;
 }
@@ -3683,19 +3666,14 @@ a.small-title--inverted.successful-project__contact-us {
 }
 
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px){
   .home-slide-active{
     overflow-y: auto;
     width: 100vw;
   }
-  
+  .contact-enquiry {
+    padding: 25% 5% 0 5%;
+}
   .home-slide-active #main-wrap{
     width: 100vw;
   }
@@ -3951,7 +3929,7 @@ a.direction {
 
 /*Menu Section*/
 div#navigation-section {
-    width: 100vw;
+    width: 100%;
 }
 
 .menu-logo {
@@ -3995,6 +3973,8 @@ ul.social-links li a {
 .navigation-section-info {
     bottom: 4%;
 }
+
+
 .blog-container{
   margin-top: 80px;
 }
@@ -4011,6 +3991,7 @@ ul.social-links li a {
     font-size: 24px;
     padding-right: 10%;
 }
+
 .scrolled.day  #main-wrap{
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -4028,10 +4009,6 @@ ul.social-links li a {
 .content {
     top: 55%;
 }
-
-
-
-
 
 /*Mobile CSS Media Query Ends Here*/
 }
@@ -4369,7 +4346,7 @@ section.portfolio-clients.container {
 
 .hiring-btn {
     background: #F08D6A;
-    padding: 2% 4%;
+    padding: 1.5% 4%;
     position: relative;
     border-radius: 5px;
     margin-bottom: 10%;
@@ -4396,7 +4373,7 @@ section.portfolio-clients.container {
 }
 
 .job-page{
-  padding:5% 0;
+  padding:5% 0 0 0;
 }
 
 .job-details ul {
@@ -4673,8 +4650,52 @@ background: #999;
    
 }
 
+.day .getin_touch .form-control {
+    background: #eee;
+  }
 
+.day #apply-job .animatelabel {
+    color: #333;
+  }
 
+.day  #resume {
+    
+    color: #333;
+  }
+.day .job-details ul li {
+    color: #666;}
+.day .job-intro {
+    color: #666!important;
+  }
+.day section.closing {
+    background: #f5f5f5 !important;
+}
+
+.day .simple-text {
+    
+    font-weight: 400;
+    color: #666 !important;
+}
+
+.day .job.row div {
+    color: #8a8a8a;
+  }
+.day .list-labels div {
+  
+    color: #333;
+}
+
+.day a.small-title--inverted.successful-project__contact-us {
+
+    color: #333;
+}
+.big-heading h3 {
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 
 /*Night  CSS Starts Here*/

@@ -68,7 +68,6 @@
                             </div>  <!-- carousel-inner -->
                             
                         </div>  <!-- carousel slide -->
- 
             </div>
             
        </div>
@@ -250,14 +249,9 @@
 
         <button type="submit" class="enquire-btn btn btn-primary">Get Started</button>
       </form>
-   
     </div>                               
-							</div>
+</div>
 						
-											
-	
-	
-
 </div>
 
 <!-- Including the footer menu -->

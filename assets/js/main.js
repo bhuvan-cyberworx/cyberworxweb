@@ -224,6 +224,9 @@ function _(id){ return document.getElementById(id); }
 // Regular Expression for validating email addressess
 var regEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
+
+
+
 function validate(){
   var count ;
   // Disabling the submit button and changing the form status
@@ -262,9 +265,8 @@ function validate(){
   
 }
 
-// Function to send mail via ajax 
-function sendPopUpMail(){
 
+function sendPopUpMail(){
   // Setting the form status
   _("formStatus").innerHTML = 'please wait ...';
   
@@ -302,6 +304,93 @@ function sendPopUpMail(){
         _("submitForm").disabled = false;
         _("formStatus").classList.add("mailFail");
         _("formStatus").classList.remove("mailSuccess");
+      }
+    }
+  }
+
+  // Sending the form via ajax
+  ajax.send( formdata );
+}
+
+
+function validateEnquiry(){
+  var count ;
+  // Disabling the submit button and changing the form status
+  _("submitPopupForm").disabled = true;
+  
+  
+  // Validating email 
+  if( (_("email").value).length == 0 || (regEmail.test(_("email").value) == false)){
+
+    _("validate_email").innerHTML = "Please enter valid email id";
+    count = 1;
+    
+  }
+  else{
+    _("validate_email").innerHTML = " ";
+    count = 0;
+  }
+
+  //Validating mobile number 
+  if((_("number").value).length != 10 ||  isNaN(_("number").value)){
+    _("validate_number").innerHTML = "Please enter valid mobile number";
+    count = 1;
+  }
+
+  else{
+    _("validate_number").innerHTML = " ";
+    count = 0;
+  }
+
+  // Enabling the submit button as errors occured
+  _("submitPopupForm").disabled = false;
+
+  // Initializing the sendMail function 
+  if(count == 0){
+    sendEnquiryMail();
+  }
+}
+
+
+// Function to send mail via ajax 
+function sendEnquiryMail(){
+
+  // Setting the form status
+  _("formStatus").innerHTML = 'please wait ...';
+  
+  // Creating a from variable and Initializing it with the form
+  var form = _('popup-form');
+
+  // Declaring a new formData object 
+
+  var formdata = new FormData();
+
+  // Appending the form variables to the declared formData variable 
+  formdata.append( "email_id", _("email").value );
+  formdata.append( "mobile_number", _("number").value );
+  
+  // Declaring a new XMLHttpRequest object
+  var ajax = new XMLHttpRequest();
+
+  // Opening the request 
+  ajax.open( "POST", "mail.php" );
+
+  ajax.onreadystatechange = function() {
+
+    if(ajax.readyState == 4 && ajax.status == 200) {
+
+      // If the ajax quesry responds with succeful sent message 
+      if(ajax.responseText == "success"){
+        _("formStatus").innerHTML = 'Thank you, we have recieved your mail.';
+        form.reset();
+        _("formStatus").classList.add("mailSuccess");
+        _("formStatus").classList.remove("mailFail");
+      } 
+      else {
+        _("formStatus").innerHTML = ajax.responseText;
+        _("submitForm").disabled = false;
+        _("formStatus").classList.add("mailFail");
+        _("formStatus").classList.remove("mailSuccess");
 
       }
     }
@@ -310,3 +399,4 @@ function sendPopUpMail(){
   // Sending the form via ajax
   ajax.send( formdata );
 }
+
